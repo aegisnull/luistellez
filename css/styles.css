@@ -45,6 +45,7 @@
 
 .landing__title {
   text-transform: uppercase;
+  text-align: center;
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.1rem;
