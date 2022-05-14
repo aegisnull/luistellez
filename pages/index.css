@@ -41,13 +41,13 @@
 
 .hero__main-container {
   display: flex;
+  padding-left: 88px;
 }
 
 .hero__left {
   display: flex;
   flex-direction: column;
   max-width: 624px;
-  padding-left: 88px;
 }
 
 .hero__title {
@@ -64,4 +64,13 @@
   line-height: 32px;
   font-weight: 600;
   color: #fff;
+}
+
+.hero__right {
+  display: flex;
+}
+
+.hero__image {
+  max-width: 624px;
+  height: auto;
 }
