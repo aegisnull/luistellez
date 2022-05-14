@@ -10,6 +10,7 @@
   &__container {
     display: flex;
     justify-content: space-between;
+    padding: 43px 100px 121px 80px;
   }
 
   &__logo {
@@ -18,6 +19,12 @@
 
   &__links {
     display: flex;
+    gap: 40px;
+    font-family: "Mulish";
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #fff;
   }
 
   &__link {
@@ -34,4 +41,30 @@
 }
 
 .hero {
+  &__main-container {
+    display: flex;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    max-width: 624px;
+    padding-left: 88px;
+  }
+
+  &__title {
+    font-family: "Neuton";
+    font-size: 72px;
+    line-height: 93.6px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  &__subtitle {
+    font-family: "Mulish";
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    color: #fff;
+  }
 }
