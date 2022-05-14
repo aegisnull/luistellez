@@ -10,7 +10,7 @@
   &__container {
     display: flex;
     justify-content: space-between;
-    padding: 43px 100px 121px 80px;
+    padding: 43px 100px 120px 80px;
   }
 
   &__logo {
@@ -33,47 +33,53 @@
 
   &__socials {
     display: flex;
+    gap: 40px;
+    list-style: none;
   }
 
   &__social {
     list-style: none;
+    color: #fff;
   }
 }
 
 .hero {
-  &__main-container {
-    display: flex;
-    padding-left: 88px;
-  }
+  padding-bottom: 120px;
 
-  &__left {
+  &__container {
     display: flex;
     flex-direction: column;
-    max-width: 624px;
+    padding-left: 240px;
+    max-width: 768px;
+  }
+
+  &__profile {
+    max-width: 64px;
+    border-radius: 50px;
   }
 
   &__title {
     font-family: "Neuton";
-    font-size: 72px;
-    line-height: 93.6px;
-    font-weight: 700;
+    font-size: 60px;
+    line-height: 75px;
+    font-weight: 800;
     color: #fff;
+    margin: 0;
+    padding: 16px;
   }
 
   &__subtitle {
     font-family: "Mulish";
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.625;
+    font-weight: 400;
     color: #fff;
-  }
-
-  &__right {
     display: flex;
+    flex-direction: column;
   }
 
-  &__image {
-    max-width: 624px;
-    height: auto;
+  &__text {
+    margin: 0px;
+    padding-bottom: 12px;
   }
 }
