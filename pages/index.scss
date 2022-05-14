@@ -52,8 +52,8 @@
   &__container {
     display: flex;
     flex-direction: column;
-    padding-left: 240px;
-    max-width: 768px;
+    max-width: 1024px;
+    margin: auto;
   }
 
   &__profile {
@@ -84,5 +84,22 @@
   &__text {
     margin: 0px;
     padding-bottom: 12px;
+  }
+}
+
+.projects {
+  &__container {
+    max-width: 1024px;
+    margin: auto;
+  }
+
+  &__title {
+    font-family: "Inter";
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+  }
+
+  &__subtitle {
   }
 }
