@@ -1,4 +1,12 @@
+@import url(../vendor/fonts.css);
+
+.intro {
+  background-color: #99a8c0;
+}
+
 .header {
+  background-color: #99a8c0;
+
   &__container {
     display: flex;
     justify-content: space-between;
