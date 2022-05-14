@@ -1,0 +1,29 @@
+.header {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 100%;
+  }
+
+  &__links {
+    display: flex;
+  }
+
+  &__link {
+    list-style: none;
+  }
+
+  &__socials {
+    display: flex;
+  }
+
+  &__social {
+    list-style: none;
+  }
+}
+
+.hero {
+}
