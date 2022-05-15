@@ -54,6 +54,7 @@
     flex-direction: column;
     max-width: 1024px;
     margin: auto;
+    padding: 0 32px;
   }
 
   &__profile {
@@ -79,6 +80,7 @@
     color: #fff;
     display: flex;
     flex-direction: column;
+    max-width: 768px;
   }
 
   &__text {
