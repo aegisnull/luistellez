@@ -80,7 +80,7 @@ html {
   font-family: "Inter";
   font-size: 18px;
   line-height: 1.625;
-  font-weight: 400;
+  font-weight: 300;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -95,6 +95,7 @@ html {
 .projects__container {
   max-width: 1024px;
   margin: auto;
+  padding-top: 80px;
 }
 
 .projects__title {
