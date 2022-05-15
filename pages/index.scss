@@ -115,5 +115,58 @@ html {
     font-weight: 300;
     margin: 0;
     color: rgba(55, 65, 85, 0.9);
+    padding-bottom: 64px;
+  }
+}
+
+.card {
+  &__container {
+    display: flex;
+    background-color: #ddd6fe;
+    border-radius: 4px;
+    max-width: 1108px;
+  }
+
+  &__left {
+    &_container {
+      padding: 20px;
+    }
+  }
+
+  &__title {
+  }
+
+  &__tags {
+    font-family: "Inter";
+    font-size: 12px;
+  }
+  &__stack {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+  }
+
+  &__techniques {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+  }
+
+  &__description {
+  }
+
+  &_right {
+  }
+
+  &__image {
+  }
+}
+
+.button {
+  &__container {
+    display: flex;
+  }
+
+  &__text {
   }
 }

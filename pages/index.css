@@ -113,4 +113,37 @@ html {
   font-weight: 300;
   margin: 0;
   color: rgba(55, 65, 85, 0.9);
+  padding-bottom: 64px;
+}
+
+.card__container {
+  display: flex;
+  background-color: #ddd6fe;
+  border-radius: 4px;
+  max-width: 1108px;
+}
+
+.card__left_container {
+  padding: 20px;
+}
+
+.card__tags {
+  font-family: "Inter";
+  font-size: 12px;
+}
+
+.card__stack {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.card__techniques {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+
+.button__container {
+  display: flex;
 }
