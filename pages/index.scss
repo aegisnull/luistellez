@@ -144,12 +144,16 @@ html {
     display: flex;
     list-style: none;
     gap: 15px;
+    font-size: 14px;
+    padding: 0;
   }
 
   &__techniques {
     display: flex;
     gap: 15px;
     list-style: none;
+    padding: 0;
+    font-size: 14px;
   }
 
   &__description {
