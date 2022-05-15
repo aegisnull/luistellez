@@ -1,5 +1,9 @@
 @import url(../vendor/fonts.css);
 
+html {
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
 .intro {
   background-color: #99a8c0;
 }
@@ -100,12 +104,15 @@
     font-size: 24px;
     line-height: 36px;
     font-weight: 600;
+    margin: 0;
   }
 
   &__subtitle {
     font-family: "Inter";
     font-size: 16px;
     line-height: 26px;
-    font-weight: 400;
+    font-weight: 300;
+    margin: 0;
+    color: rgba(55, 65, 85, 0.9);
   }
 }
