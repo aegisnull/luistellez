@@ -50,36 +50,38 @@ html {
 
 .hero {
   padding-bottom: 120px;
+  max-width: 1024px;
+  margin: auto;
 }
 .hero__container {
   display: flex;
   flex-direction: column;
-  max-width: 1024px;
-  margin: auto;
   padding: 0 32px;
 }
 .hero__profile {
   max-width: 64px;
   border-radius: 50px;
+  margin-bottom: 4px;
 }
 .hero__title {
   font-family: "Inter";
-  font-size: 60px;
-  line-height: 75px;
+  font-size: 3.75rem;
+  line-height: 1.25;
   font-weight: 800;
   color: #fff;
-  margin: 0;
-  padding: 16px 0;
+  margin-bottom: 1rem;
+  margin-top: 0;
 }
 .hero__subtitle {
   font-family: "Inter";
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.625;
   font-weight: 300;
   color: #fff;
   display: flex;
   flex-direction: column;
-  max-width: 768px;
+  margin-right: 12rem;
+  margin-bottom: 1.5rem;
 }
 .hero__text {
   margin: 0px;
