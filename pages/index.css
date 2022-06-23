@@ -9,21 +9,22 @@ html {
 
 .header {
   background-color: #99a8c0;
+  padding: 32px 0px;
 }
-
 .header__container {
+  max-width: 1024px;
+  margin: auto;
+  padding: 0px 32px;
   display: flex;
   justify-content: space-between;
-  padding: 43px 100px 120px 80px;
+  align-items: center;
 }
-
 .header__logo {
   margin: 0;
   color: #fff;
   font-family: "aladin";
   font-size: 40px;
 }
-
 .header__links {
   display: flex;
   gap: 40px;
@@ -33,17 +34,14 @@ html {
   font-weight: 600;
   color: #fff;
 }
-
 .header__link {
   list-style: none;
 }
-
 .header__socials {
   display: flex;
   gap: 40px;
   list-style: none;
 }
-
 .header__social {
   list-style: none;
   color: #fff;
@@ -52,7 +50,6 @@ html {
 .hero {
   padding-bottom: 120px;
 }
-
 .hero__container {
   display: flex;
   flex-direction: column;
@@ -60,12 +57,10 @@ html {
   margin: auto;
   padding: 0 32px;
 }
-
 .hero__profile {
   max-width: 64px;
   border-radius: 50px;
 }
-
 .hero__title {
   font-family: "Inter";
   font-size: 60px;
@@ -75,7 +70,6 @@ html {
   margin: 0;
   padding: 16px 0;
 }
-
 .hero__subtitle {
   font-family: "Inter";
   font-size: 18px;
@@ -86,7 +80,6 @@ html {
   flex-direction: column;
   max-width: 768px;
 }
-
 .hero__text {
   margin: 0px;
   padding-bottom: 12px;
@@ -97,7 +90,6 @@ html {
   margin: auto;
   padding-top: 80px;
 }
-
 .projects__title {
   font-family: "Inter";
   font-size: 24px;
@@ -105,7 +97,6 @@ html {
   font-weight: 600;
   margin: 0;
 }
-
 .projects__subtitle {
   font-family: "Inter";
   font-size: 16px;
@@ -119,34 +110,28 @@ html {
 .card {
   padding-bottom: 30px;
 }
-
 .card__container {
   display: flex;
   background-color: #ddd6fe;
   border-radius: 4px;
   max-width: 1108px;
 }
-
 .card__left {
   width: 54%;
 }
-
 .card__left_container {
   padding: 20px;
 }
-
 .card__title {
   font-family: "Inter";
   font-size: 24px;
   line-height: 36px;
   font-weight: 600;
 }
-
 .card__tags {
   font-family: "Inter";
   font-size: 12px;
 }
-
 .card__stack {
   display: flex;
   list-style: none;
@@ -154,7 +139,6 @@ html {
   font-size: 14px;
   padding: 0;
 }
-
 .card__techniques {
   display: flex;
   gap: 15px;
@@ -162,11 +146,9 @@ html {
   padding: 0;
   font-size: 14px;
 }
-
 .card_right {
   width: 46%;
 }
-
 .card__image {
   width: 100%;
   height: 100%;

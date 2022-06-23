@@ -10,11 +10,15 @@ html {
 
 .header {
   background-color: #99a8c0;
+  padding: 32px 0px;
 
   &__container {
+    max-width: 1024px;
+    margin: auto;
+    padding: 0px 32px;
     display: flex;
     justify-content: space-between;
-    padding: 43px 100px 120px 80px;
+    align-items: center;
   }
 
   &__logo {
