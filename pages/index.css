@@ -71,15 +71,21 @@ html {
   color: #000;
   margin: 0;
 }
+.intro__decoration {
+  width: 0px;
+  height: 0px;
+}
 .intro__decoration_left {
   height: 300px;
-  position: absolute;
-  left: 150px;
+  position: relative;
+  right: 550px;
+  bottom: 230px;
 }
 .intro__decoration_right {
   height: 300px;
-  position: absolute;
-  right: 150px;
+  position: relative;
+  bottom: 530px;
+  left: 230px;
 }
 
 .about {
