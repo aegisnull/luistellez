@@ -68,7 +68,7 @@ html {
   }
 
   &__left-container {
-    flex-grow: 1;
+    width: 1400px;
   }
 
   &__profile {
@@ -76,7 +76,6 @@ html {
   }
 
   &__right-container {
-    flex-grow: 2;
     display: flex;
     flex-direction: column;
   }
