@@ -88,6 +88,7 @@ html {
     color: #333333;
     display: flex;
     flex-direction: column;
+    padding-bottom: 18px;
   }
 
   &__text {
@@ -116,19 +117,20 @@ html {
   &__button_secondary {
     text-decoration: none;
     display: flex;
-    background: transparent;
+    background: lightblue;
     border-radius: 0.5rem;
     padding: 0.5rem 1.5rem;
     gap: 0.75rem;
   }
 
   &__button_secondary:hover {
-    background: white;
+    background: turquoise;
   }
 
   &__icon {
     width: 20px;
     display: flex;
+    align-self: center;
   }
 
   &__button-text {
