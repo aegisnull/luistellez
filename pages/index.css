@@ -48,61 +48,57 @@ html {
   color: #fff;
 }
 
-.hero {
-  padding-bottom: 120px;
+.about {
+  padding: 60px 0px;
+  background: #ffecea;
+}
+.about__content {
   max-width: 1024px;
   margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.hero__container {
+.about__left-container {
+  flex-grow: 1;
+}
+.about__profile {
+  width: 70%;
+}
+.about__right-container {
+  flex-grow: 2;
   display: flex;
   flex-direction: column;
-  padding: 0 32px;
 }
-.hero__profile {
-  max-width: 64px;
-  border-radius: 50px;
-  margin-bottom: 4px;
-}
-.hero__title {
-  font-family: "Inter";
-  font-size: 3.75rem;
-  line-height: 1.25;
-  font-weight: 800;
-  color: #fff;
-  margin-bottom: 1rem;
-  margin-top: 0;
-}
-.hero__subtitle {
+.about__subtitle {
   font-family: "Inter";
   font-size: 1.125rem;
   line-height: 1.625;
   font-weight: 300;
-  color: #fff;
+  color: #333333;
   display: flex;
   flex-direction: column;
-  margin-right: 12rem;
-  margin-bottom: 1.5rem;
 }
-.hero__text {
+.about__text {
   margin: 0px;
   padding-bottom: 12px;
 }
-.hero__buttons-container {
+.about__buttons-container {
   display: flex;
   gap: 1.5rem;
 }
-.hero__button_main {
+.about__button_main {
   text-decoration: none;
   display: flex;
-  background: red;
+  background: pink;
   border-radius: 0.5rem;
   padding: 0.5rem 1.5rem;
   gap: 0.75rem;
 }
-.hero__button:hover {
-  background: darkred;
+.about__button_main:hover {
+  background: hotpink;
 }
-.hero__button_secondary {
+.about__button_secondary {
   text-decoration: none;
   display: flex;
   background: transparent;
@@ -110,14 +106,14 @@ html {
   padding: 0.5rem 1.5rem;
   gap: 0.75rem;
 }
-.hero__button_secondary:hover {
+.about__button_secondary:hover {
   background: white;
 }
-.hero__icon {
+.about__icon {
   width: 20px;
   display: flex;
 }
-.hero__button-text {
+.about__button-text {
   font-family: "Inter";
   font-size: 1rem;
   font-weight: 600;
