@@ -3,44 +3,6 @@ html {
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
 }
 
-.intro {
-  background-color: white;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.intro__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.intro__title {
-  font-size: 1.5rem;
-  font-family: "Inter";
-  font-weight: 700;
-  color: #000;
-  margin-bottom: 1rem;
-}
-.intro__name {
-  font-size: 6rem;
-  font-family: "Inter";
-  font-weight: 700;
-  color: #000;
-  margin: 0;
-}
-.intro__decoration_left {
-  height: 300px;
-  position: absolute;
-  left: 150px;
-}
-.intro__decoration_right {
-  height: 300px;
-  position: absolute;
-  right: 150px;
-}
-
 .header {
   background-color: #99a8c0;
   padding: 32px 0px;
@@ -80,6 +42,44 @@ html {
 .header__social {
   list-style: none;
   color: #fff;
+}
+
+.intro {
+  background-color: white;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.intro__title {
+  font-size: 1.5rem;
+  font-family: "Inter";
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1rem;
+}
+.intro__name {
+  font-size: 6rem;
+  font-family: "Inter";
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+}
+.intro__decoration_left {
+  height: 300px;
+  position: absolute;
+  left: 150px;
+}
+.intro__decoration_right {
+  height: 300px;
+  position: absolute;
+  right: 150px;
 }
 
 .about {
