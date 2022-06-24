@@ -46,7 +46,7 @@ html {
 
 .intro {
   background-color: white;
-  height: 400px;
+  height: 550px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,7 +60,7 @@ html {
 .intro__title {
   font-size: 1.5rem;
   font-family: "Inter";
-  font-weight: 700;
+  font-weight: 500;
   color: #000;
   margin-bottom: 1rem;
 }
