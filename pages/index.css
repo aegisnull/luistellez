@@ -251,6 +251,7 @@
   line-height: 36px;
   font-weight: 600;
   color: #de8601;
+  margin-bottom: 0px;
 }
 .card__description {
   font-family: "Inter";
