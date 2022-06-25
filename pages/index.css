@@ -1,8 +1,4 @@
 @import url(../vendor/fonts.css);
-html {
-  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-}
-
 .header {
   background-color: #99a8c0;
   padding: 32px 0px;
@@ -159,6 +155,32 @@ html {
   font-size: 1rem;
   font-weight: 600;
   color: #fff;
+}
+
+.technology__content {
+  max-width: 1024px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.technology__left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.technology__right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.technology__title {
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
 }
 
 .projects__container {
