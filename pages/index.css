@@ -46,7 +46,7 @@ html {
 
 .intro {
   background-color: white;
-  height: 450px;
+  height: 55vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,14 +58,14 @@ html {
   align-items: center;
 }
 .intro__title {
-  font-size: 2.4vmin;
+  font-size: 4vmin;
   font-family: "Inter";
   font-weight: 500;
   color: #000;
   margin-bottom: 1rem;
 }
 .intro__name {
-  font-size: 9.5vmin;
+  font-size: 15vmin;
   font-family: "Inter";
   font-weight: 700;
   color: #000;
@@ -78,14 +78,14 @@ html {
 .intro__decoration_left {
   height: 300px;
   position: relative;
-  right: 550px;
+  right: 600px;
   bottom: 230px;
 }
 .intro__decoration_right {
   height: 300px;
   position: relative;
   bottom: 530px;
-  left: 230px;
+  left: 290px;
 }
 
 .about {
