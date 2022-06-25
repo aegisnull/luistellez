@@ -234,3 +234,6 @@ html {
 .button__container {
   display: flex;
 }
+.button__text {
+  display: flex;
+}

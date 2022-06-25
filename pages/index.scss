@@ -1,5 +1,4 @@
 @import url(../vendor/fonts.css);
-
 html {
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
 }
@@ -282,5 +281,6 @@ html {
   }
 
   &__text {
+    display: flex;
   }
 }
