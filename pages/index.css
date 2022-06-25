@@ -248,9 +248,6 @@
   line-height: 36px;
   font-weight: 600;
 }
-.button__container {
-  display: flex;
-}
-.button__text {
+.card__button-container {
   display: flex;
 }

@@ -296,14 +296,8 @@
     font-weight: 300;
     color: rgba(55, 65, 85, 0.9);
   }
-}
 
-.button {
-  &__container {
-    display: flex;
-  }
-
-  &__text {
+  &__button-container {
     display: flex;
   }
 }
