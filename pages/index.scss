@@ -189,7 +189,7 @@
     margin: auto;
     display: flex;
     justify-content: space-around;
-    padding-top: 40px;
+    padding: 50px 0px;
   }
 
   &__left-container {
@@ -207,7 +207,6 @@
   &__right-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
   &__title {
@@ -216,6 +215,26 @@
     font-weight: 700;
     color: #000;
     text-align: center;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin: 20px;
+    background-color: pink;
+    padding: 15px;
+    border-radius: 0.5rem;
+  }
+
+  &__item:hover {
+    background-color: hotpink;
   }
 }
 

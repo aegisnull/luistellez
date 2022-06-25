@@ -162,7 +162,7 @@
   margin: auto;
   display: flex;
   justify-content: space-around;
-  padding-top: 40px;
+  padding: 50px 0px;
 }
 .technology__left-container {
   display: flex;
@@ -177,7 +177,6 @@
 .technology__right-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .technology__title {
   font-family: "Inter";
@@ -185,6 +184,23 @@
   font-weight: 700;
   color: #000;
   text-align: center;
+}
+.technology__list {
+  list-style: none;
+}
+.technology__item {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  margin: 20px;
+  background-color: pink;
+  padding: 15px;
+  border-radius: 0.5rem;
+}
+.technology__item:hover {
+  background-color: hotpink;
 }
 
 .projects__container {
