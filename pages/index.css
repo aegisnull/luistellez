@@ -209,7 +209,7 @@
 }
 .projects__title {
   font-family: "Inter";
-  font-size: 24px;
+  font-size: 30px;
   line-height: 36px;
   font-weight: 600;
   text-align: center;
@@ -217,9 +217,8 @@
 }
 .projects__subtitle {
   font-family: "Inter";
-  font-size: 16px;
+  font-size: 20px;
   line-height: 26px;
-  font-weight: 300;
   text-align: center;
   color: rgba(55, 65, 85, 0.9);
   padding-bottom: 64px;
@@ -231,6 +230,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 60px;
+  padding-bottom: 50px;
 }
 
 .card {
