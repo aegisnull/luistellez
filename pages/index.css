@@ -162,17 +162,21 @@
   margin: auto;
   display: flex;
   justify-content: space-around;
+  padding-top: 40px;
 }
 .technology__left-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+}
+.technology__middle-container {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 .technology__right-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 .technology__title {
@@ -187,6 +191,7 @@
   max-width: 1024px;
   margin: auto;
   padding-top: 80px;
+  background-color: coral;
 }
 .projects__title {
   font-family: "Inter";
