@@ -228,12 +228,14 @@
   max-width: 1024px;
   margin: auto;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 60px;
 }
 
 .card {
   background-color: #fff2e2;
-  width: 700px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   padding: 40px;

@@ -26,6 +26,10 @@
   .technology__content {
     flex-wrap: wrap;
   }
+
+  .card {
+    width: 70vw;
+  }
 }
 
 @media screen and (max-width: 522px) {
