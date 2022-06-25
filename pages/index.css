@@ -100,7 +100,7 @@ html {
   align-items: center;
 }
 .about__left-container {
-  width: 1400px;
+  max-width: 1400px;
 }
 .about__profile {
   width: 70%;
