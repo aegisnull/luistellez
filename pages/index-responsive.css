@@ -22,6 +22,10 @@
   .about__right-container {
     max-width: 80vw;
   }
+
+  .technology__content {
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 522px) {

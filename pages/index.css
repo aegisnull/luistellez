@@ -177,6 +177,7 @@
 .technology__right-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .technology__title {
   font-family: "Inter";
