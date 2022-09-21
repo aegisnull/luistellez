@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Website under construction using <code>React.js</code> to improve
+          Website is under construction using <code>React.js</code> to improve
           experience.
         </p>
         <strong>Luis Tellez | Front End Web Developer</strong>
