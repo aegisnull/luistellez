@@ -10,6 +10,7 @@ const Home = () => {
             <br/>
             web developer
             </h1>
+            <h2>Frontend Developer / UI/UX Enthusiast</h2>
         </div>
     </div>
   );
