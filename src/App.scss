@@ -4,17 +4,17 @@ $primary-color: #ffd700;
 
 @font-face {
   font-family: "Helvetica Neue";
-    src: url("https://fonts.googleapis.com/css?family=Helvetica+Neue");
+    src: url('./assets/fonts/HelveticaNeue.ttf') format('ttf');
 }
 
 @font-face {
   font-family: "La Belle Aurore";
-    src: url("https://fonts.googleapis.com/css?family=La+Belle+Aurore");
+    src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2');
 }
 
 @font-face {
   font-family: "Coolvetica";
-    src: url("https://fonts.googleapis.com/css?family=Coolvetica");
+    src: url('./assets/fonts/Coolvetica.woff2') format('woff2');
 }
 
 input,
