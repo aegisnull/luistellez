@@ -1,7 +1,7 @@
 {
   "name": "luistellez",
   "version": "0.0.1",
-  "homepage": "https://aegisnull.github.io",
+  "homepage": "luistellez.com",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.7.0",

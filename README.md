@@ -1,6 +1,6 @@
 # Personal Developer Portfolio
 
-[]: # Author: [Luis Tellez](
+Author: Luis Tellez
 
 This project is still under construction and will be updated as I continue to learn and grow as a developer.
 
