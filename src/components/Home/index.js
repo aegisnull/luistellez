@@ -1,6 +1,6 @@
-import LogoTitle from '../../assets/images/logo-l.png'
-import { Link } from 'react-router-dom'
-import './index.scss'
+import LogoTitle from '../../assets/images/logo-l.png';
+import { Link } from 'react-router-dom';
+import './index.scss';
 
 const Home = () => {
   return (
@@ -9,7 +9,7 @@ const Home = () => {
         <h1>
           Hi, <br /> I'm
           <img src={LogoTitle} alt="developer" />
-          Luis Tellez
+          uis Tellez
           <br />
           web developer
         </h1>
@@ -19,7 +19,7 @@ const Home = () => {
         </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

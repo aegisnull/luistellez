@@ -67,12 +67,11 @@
         width: 100%;
         text-align: center;
         opacity: 0;
-        -webkit-transition: all 0.3s ease-out;
         transition: all 0.3s ease-out;
       }
 
       &:first-child {
-        &:after {
+        &::after {
           content: 'HOME';
         }
       }
@@ -87,12 +86,6 @@
     a.contact-link {
       &:after {
         content: 'CONTACT';
-      }
-    }
-
-    a.portfolio-link {
-      &:after {
-        content: 'PORTFOLIO';
       }
     }
 
@@ -119,11 +112,10 @@
         display: block;
         font-size: 15px;
         line-height: 16px;
-        color: #4d4d4e;
-      }
 
-      &:hover svg {
-        color: #ffd700;
+        &:hover svg {
+          color: #ffd700;
+        }
       }
     }
   }
