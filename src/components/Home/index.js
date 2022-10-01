@@ -2,7 +2,7 @@ import LogoTitle from '../../assets/images/logo-l.png';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Logo from './Logo';
 
 const Home = () => {
@@ -23,6 +23,12 @@ const Home = () => {
     'e',
     'r',
   ];
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLetterClass('text-animate-hover');
+    }, 4000);
+  }, []);
 
   return (
     <div className="container home-page">
