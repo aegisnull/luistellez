@@ -29,11 +29,11 @@
   height: 90%;
   min-height: 566px;
   position: absolute;
-  /* opacity: 0; */
+  opacity: 0;
   top: 5%;
   margin: 0 auto;
   z-index: 1;
   transform-style: preserve-3d;
-  animation: fade-in 1s forwards;
+  animation: fadeIn 1s forwards;
   animation-delay: 1s;
 }
