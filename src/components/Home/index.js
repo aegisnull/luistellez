@@ -1,5 +1,6 @@
 import LogoTitle from '../../assets/images/logo-l.png';
 import {Link} from "react-router-dom";
+import './index.scss';
 
 const Home = () => {
     return (
