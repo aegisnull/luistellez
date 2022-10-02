@@ -52,12 +52,63 @@
     h1 {
       font-size: 53px;
       font-family: 'Coolvetica', 'sans-serif';
-        color: #ffd700;
+      color: #ffd700;
       font-weight: 400;
       margin-top: 0;
       position: relative;
       margin-bottom: 40px;
       left: 10px;
+
+      &::before {
+        content: '<h1>';
+        font-family: "La Belle Aurore", cursive;
+        font-size: 18px;
+        position: absolute;
+        margin-top: -10px;
+        left: -10px;
+        opacity: 0.6;
+        line-height: 18px;
+      }
+
+      &::after {
+        content: '</h1>';
+        font-family: "La Belle Aurore", cursive;
+        font-size: 18px;
+        position: absolute;
+        left: -30px;
+        bottom: -20px;
+        opacity: 0.6;
+        margin-left: 20px;
+        line-height: 18px;
+      }
+    }
+
+    p {
+      font-size: 13px;
+      color: #fff;
+      font-family: sans-serif;
+      font-weight: 300;
+      min-width: fit-content;
+      animation: pulse 1s;
+
+      &:nth-of-type(1) {
+        animation-delay: 1.1s;
+      }
+
+      &:nth-of-type(2) {
+        animation-delay: 1.2s;
+      }
+
+      &:nth-of-type(3) {
+        animation-delay: 1.3s;
+      }
+    }
+  }
+
+  .text-animate-hover {
+    &:hover {
+      color: #fff;
+
     }
   }
 }
