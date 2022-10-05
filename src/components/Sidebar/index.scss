@@ -120,3 +120,46 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .nav-bar {
+    background: transparent;
+    position: initial;
+    height: auto;
+    min-height: auto;
+
+    ul,
+    nav {
+      display: none;
+    }
+
+    nav {
+      display: block;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: var(--tertiary-color);
+      height: 100%;
+      margin: 0;
+      z-index: 2;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      a:after {
+        opacity: 1;
+        position: initial;
+        width: auto;
+        margin-left: 10px;
+      }
+
+      a svg {
+        opacity: 1 !important;
+      }
+    }
+  }
+}
