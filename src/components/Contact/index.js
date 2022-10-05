@@ -22,6 +22,10 @@ const Contact = () => {
               idx={15}
             />
           </h1>
+          <p>
+            I am interested in new opportunities and challenges. If you have any
+            questions or want to work with me, please contact me.
+          </p>
         </div>
       </div>
     </>
