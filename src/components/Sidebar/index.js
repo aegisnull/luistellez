@@ -3,7 +3,12 @@ import './index.scss';
 import LogoL from '../../assets/images/logo-l.png';
 import LogoSubtitle from '../../assets/images/logo_sub.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
+import {
+  faBars,
+  faEnvelope,
+  faHome,
+  faUser,
+} from '@fortawesome/free-solid-svg-icons';
 import {
   faGithub,
   faLinkedin,
@@ -62,6 +67,12 @@ const Sidebar = () => (
         </a>
       </li>
     </ul>
+    <FontAwesomeIcon
+      icon={faBars}
+      color="var(--secondary-color)"
+      size="3x"
+      className="hamburger-icon"
+    />
   </div>
 );
 
