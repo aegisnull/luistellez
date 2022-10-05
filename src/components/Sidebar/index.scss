@@ -121,6 +121,10 @@
   }
 }
 
+.hamburger-icon {
+  display: none;
+}
+
 @media screen and (max-width: 1200px) {
   .nav-bar {
     background: transparent;
@@ -160,6 +164,13 @@
       a svg {
         opacity: 1 !important;
       }
+    }
+
+    .hamburger-icon {
+      display: block;
+      position: absolute;
+      top: 15px;
+      right: 15px;
     }
   }
 }
