@@ -13,13 +13,15 @@ const Portfolio = () => {
 
   return (
     <div className="container portfolio-page">
-      <h1 className="page-title">
-        <AnimatedLetters
-          letterClass={letterClass}
-          strArray={['P', 'o', 'r', 't', 'f', 'o', 'l', 'i', 'o']}
-          idx={15}
-        />
-      </h1>
+      <div className="text-zone">
+        <h1>
+          <AnimatedLetters
+            letterClass={letterClass}
+            strArray={['P', 'o', 'r', 't', 'f', 'o', 'l', 'i', 'o']}
+            idx={15}
+          />
+        </h1>
+      </div>
     </div>
   );
 };
