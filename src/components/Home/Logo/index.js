@@ -1,18 +1,12 @@
-import LogoL from '../../../assets/images/logo-l.png'
-import './index.scss'
+import LogoL from '../../../assets/images/home.svg';
+import './index.scss';
 
 const Logo = () => {
-return (
+  return (
     <div className="logo-container">
-        <img
-            className="solid-logo"
-            src={LogoL}
-            alt="JavaScript,  Developer"
-        />
-
+      <img className="solid-logo" src={LogoL} alt="JavaScript,  Developer" />
     </div>
-)
-}
-
+  );
+};
 
 export default Logo;
