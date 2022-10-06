@@ -5,6 +5,7 @@ import LogoSubtitle from '../../assets/images/logo_sub.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faBars,
+  faClose,
   faEnvelope,
   faHome,
   faUser,
@@ -14,15 +15,22 @@ import {
   faLinkedin,
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
+import { useState } from 'react';
 
 const Sidebar = () => {
+  const [showNav, setShowNav] = useState(false);
+
+  function toggleNav() {
+    setShowNav(!showNav);
+  }
+
   return (
     <div className="nav-bar">
-      <Link className="logo" to="/">
+      <Link className="logo" to="/" onClick={() => setShowNav(false)}>
         <img src={LogoL} alt="logo" />
         <img className="sub-logo" src={LogoSubtitle} alt="luistellez" />
       </Link>
-      <nav>
+      <nav className={showNav ? 'mobile-show' : ' '}>
         <NavLink exact="true" activeclassname="active" to="/">
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
@@ -31,6 +39,7 @@ const Sidebar = () => {
           activeclassname="active"
           className="about-link"
           to="/about"
+          onClick={() => setShowNav(false)}
         >
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
@@ -39,9 +48,17 @@ const Sidebar = () => {
           activeclassname="active"
           className="contact-link"
           to="/contact"
+          onClick={() => setShowNav(false)}
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
+        <FontAwesomeIcon
+          onClick={() => setShowNav(false)}
+          icon={faClose}
+          color="#ffd700"
+          size="3x"
+          className="close-icon"
+        />
       </nav>
       <ul>
         <li>
@@ -73,6 +90,7 @@ const Sidebar = () => {
         </li>
       </ul>
       <FontAwesomeIcon
+        onClick={() => toggleNav()}
         icon={faBars}
         color="var(--secondary-color)"
         size="3x"

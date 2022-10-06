@@ -78,3 +78,46 @@
     }
   }
 }
+
+@media screen and (max-width: 800px) {
+  .home-page {
+    .text-zone {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .home-page {
+    h1 {
+      font-size: 35px;
+      margin: 0;
+
+      &::before {
+        content: '<h1>';
+        left: 0px;
+      }
+
+      &::after {
+        content: '</h1>';
+        margin-left: 10px;
+      }
+
+      img {
+        width: 20px;
+        margin-left: 14px;
+      }
+    }
+
+    h2 {
+      margin-top: 15px;
+      font-size: 9px;
+      letter-spacing: 2.5px;
+    }
+
+    .flat-button {
+      font-size: 11px;
+      margin-top: 20px;
+    }
+  }
+}
