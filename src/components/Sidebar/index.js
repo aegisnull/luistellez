@@ -5,6 +5,7 @@ import LogoSubtitle from '../../assets/images/logo_sub.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faBars,
+  faBriefcase,
   faClose,
   faEnvelope,
   faHome,
@@ -42,6 +43,15 @@ const Sidebar = () => {
           onClick={() => setShowNav(false)}
         >
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+        </NavLink>
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="portfolio-link"
+          to="/portfolio"
+          onClick={() => setShowNav(false)}
+        >
+          <FontAwesomeIcon icon={faBriefcase} color="#4d4d4e" />
         </NavLink>
         <NavLink
           exact="true"
