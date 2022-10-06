@@ -4,6 +4,12 @@ import Home from './components/Home';
 import About from './components/About';
 import Layout from './components/Layout';
 import Contact from './components/Contact';
+import ReactGA from 'react-ga';
+
+// Google Analtyics
+const TRACKING_ID = 'G-LGXX8PM9LM';
+ReactGA.initialize(TRACKING_ID);
+// End of snippet for Google Analytics
 
 function App() {
   return (
