@@ -6,6 +6,7 @@ import Layout from './components/Layout';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import ReactGA from 'react-ga';
+import PageNotFound from './components/PageNotFound';
 
 // Google Analtyics
 const TRACKING_ID = 'G-LGXX8PM9LM';
@@ -21,6 +22,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="portfolio" element={<Portfolio />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>
     </>
