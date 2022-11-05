@@ -38,27 +38,34 @@
   animation-delay: 1s;
 }
 
+.container.about-page,
 .container.contact-page,
 .container.portfolio-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+
+  .content {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .text-zone {
-    position: absolute;
-    left: 10%;
-    top: 50%;
-    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     width: 35%;
-    vertical-align: middle;
-    display: table-cell;
-    max-height: 90%;
 
     h1 {
       font-size: 53px;
       font-family: 'Coolvetica', 'sans-serif';
       color: var(--secondary-color);
       font-weight: 400;
-      margin-top: 0;
       position: relative;
-      margin-bottom: 40px;
-      left: 10px;
 
       &::before {
         content: '<h1>';
