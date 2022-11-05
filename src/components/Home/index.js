@@ -2,11 +2,11 @@ import LogoTitle from '../../assets/images/logo-l.png';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
-import { useEffect, useState } from 'react';
+import React from 'react';
 import Logo from './Logo';
 
 const Home = () => {
-  const [letterClass, setLetterClass] = useState('text-animate');
+  const [letterClass, setLetterClass] = React.useState('text-animate');
   const nameArray = [
     ' ',
     'L',
@@ -37,7 +37,7 @@ const Home = () => {
     'r',
   ];
 
-  useEffect(() => {
+  React.useEffect(() => {
     setTimeout(() => {
       setLetterClass('text-animate-hover');
     }, 4000);
