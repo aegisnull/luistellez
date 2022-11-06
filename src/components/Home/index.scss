@@ -1,11 +1,21 @@
 .home-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+
+  .content {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .text-zone {
-    position: absolute;
-    left: 10%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40%;
-    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
   }
 
   h1 {
@@ -22,7 +32,7 @@
       font-size: 18px;
       position: absolute;
       margin-top: -40px;
-      left: 15px;
+      margin-left: 15px;
       opacity: 0.6;
     }
 
@@ -68,13 +78,68 @@
     padding: 10px 18px;
     border: 1px solid var(--secondary-color);
     margin-top: 25px;
-    float: left;
     animation: fadeIn 1s 1.8s backwards;
     white-space: nowrap;
 
     &:hover {
       background-color: var(--secondary-color);
       color: #333;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .home-page {
+    .text-zone {
+      width: 100%;
+    }
+  }
+}
+
+/* @media screen and (max-width: 365px) {
+  .home-page {
+    h1 {
+      font-size: 35px;
+      margin: 0;
+
+      &::before {
+        content: '<h1>';
+        left: 0px;
+      }
+
+      &::after {
+        content: '</h1>';
+        margin-left: 10px;
+      }
+
+      img {
+        width: 20px;
+        margin-left: 14px;
+      }
+    }
+
+    h2 {
+      margin-top: 15px;
+      font-size: 9px;
+      letter-spacing: 2.5px;
+    }
+
+    .flat-button {
+      font-size: 11px;
+      margin-top: 20px;
+    }
+  }
+} */
+
+@media screen and (max-width: 800px) {
+  .home-page {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+    .text-zone {
+      align-items: center;
     }
   }
 }
