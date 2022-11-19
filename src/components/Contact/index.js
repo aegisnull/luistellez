@@ -1,13 +1,13 @@
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
-import { useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import React from 'react';
 
 const Contact = () => {
-  const [letterClass, setLetterClass] = useState('text-animate');
-  const refForm = useRef();
+  const [letterClass, setLetterClass] = React.useState('text-animate');
+  const refForm = React.useRef();
 
-  useEffect(() => {
+  React.useEffect(() => {
     setTimeout(() => {
       setLetterClass('text-animate-hover');
     }, 3000);
