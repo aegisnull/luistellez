@@ -12,7 +12,8 @@ const Home = () => {
           <img src={Avatar} alt="avatar" className="home__avatar" />
           <h2 className="home__welcome">👋🏻 Hi, I'm Luis Tellez.</h2>
           <h1 className="home__description">
-            I build sophisticated websites and web applications.
+            I build <span className="underline">sophisticated</span> websites
+            and web applications.
           </h1>
           <p className="home__paragraph">
             I’m a freelance designer and developer. I help companies ship
