@@ -12,7 +12,7 @@ const About = () => {
   }, []);
 
   return (
-    <section className="section about-page">
+    <section className="section about-page" id="about">
       <div className="about">
         <div className="about__left-container">
           <h1 className="about__title">

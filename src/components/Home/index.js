@@ -7,7 +7,7 @@ import Avatar from '../../assets/images/avatar.png';
 const Home = () => {
   return (
     <>
-      <div className="section home-page">
+      <section className="section home-page" id="home">
         <div className="content">
           <img src={Avatar} alt="avatar" className="home__avatar" />
           <h2 className="home__welcome">👋🏻 Hi, I'm Luis Tellez.</h2>
@@ -24,7 +24,7 @@ const Home = () => {
             See my projects ->
           </Link>
         </div>
-      </div>
+      </section>
       <About />
       <Contact />
     </>
