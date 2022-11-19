@@ -1,7 +1,6 @@
 import './App.scss';
 import { Routes, Route } from 'react-router-dom';
-//import Home from './components/Home';
-import Casa from './components/Casa';
+import Home from './components/Home';
 import About from './components/About';
 import Layout from './components/Layout';
 import Portfolio from './components/Portfolio';
@@ -19,7 +18,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Casa />} />
+          <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="portfolio" element={<Portfolio />} />
           <Route path="contact" element={<Contact />} />
