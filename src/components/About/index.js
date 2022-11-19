@@ -21,7 +21,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="container about-page">
+    <div className="section about-page">
       <div className="content">
         <div className="text-zone">
           <h1>

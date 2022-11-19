@@ -12,7 +12,7 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <div className="container portfolio-page">
+    <div className="section portfolio-page">
       <div className="content">
         <div className="text-zone">
           <h1>

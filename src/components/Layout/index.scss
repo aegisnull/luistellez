@@ -23,16 +23,16 @@
   margin-left: -20px;
 }
 
-.container.about-page {
-  width: 100vw;
-  height: 60vh;
-}
+//.section.about-page {
+//width: 100vw;
+// height: 60vh;
+//}
 
-.container {
-  // width: 100%;
+.section {
+  width: 100vw;
   //will-change: contents;
-  // height: 90%;
-  // min-height: 566px;
+  height: 100vh;
+  //min-height: 566px;
   // position: absolute;
   opacity: 0;
   //top: 5%;
@@ -43,9 +43,9 @@
   animation-delay: 1s;
 }
 
-.container.about-page,
-.container.contact-page,
-.container.portfolio-page {
+.section.about-page,
+.section.contact-page,
+.section.portfolio-page {
   //  width: 100vw;
   // height: 100vh;
   display: flex;
