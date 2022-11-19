@@ -2,6 +2,7 @@ import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import emailjs from '@emailjs/browser';
 import React from 'react';
+import ContactAvatar from '../../assets/images/contact.png';
 
 const Contact = () => {
   const [letterClass, setLetterClass] = React.useState('text-animate');
@@ -47,6 +48,11 @@ const Contact = () => {
               />
             </span>
           </h1>
+          <img
+            className="contact__avatar"
+            src={ContactAvatar}
+            alt="contact avatar"
+          />
           <p className="contact__paragraph">
             I am interested in new opportunities and challenges. If you have any
             questions or want to work with me, please contact me.

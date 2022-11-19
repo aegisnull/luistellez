@@ -2,12 +2,23 @@
   color: white;
   font-family: 'Coolvetica', sans-serif;
   padding-top: 150px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   &__title {
     font-size: 36px;
     font-weight: 700;
     line-height: 43.2px;
     color: var(--secondary-color);
+    text-align: center;
+  }
+
+  &__avatar {
+    width: 120px;
+    height: auto;
   }
 
   &__paragraph {
