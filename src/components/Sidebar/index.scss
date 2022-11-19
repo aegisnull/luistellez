@@ -1,44 +1,50 @@
 .nav-bar {
   background: var(--tertiary-color);
-  width: 60px;
-  height: 100%;
-  position: fixed;
-  top: 0;
   z-index: 3;
-  min-height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 100px;
+  height: 60px;
+  width: 100vw;
+  position: fixed;
 
-  .logo {
-    display: block;
-    padding: 8px 0;
+  .logo-text {
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    font-family: 'Coolvetica', sans-serif;
+    margin: 0;
+    padding-top: 8px;
 
-    img {
-      display: block;
-      margin: 8px auto;
-      width: 24px;
-      height: auto;
+    &::before {
+      content: '{';
+      opacity: 0.5;
+      margin-right: 10px;
+    }
 
-      &.sub-logo {
-        width: 50px;
-      }
+    &::after {
+      content: '}';
+      opacity: 0.5;
+      margin-left: 10px;
     }
   }
 
   nav {
-    display: block;
-    text-align: center;
-    position: absolute;
-    height: 210px;
-    top: 50%;
-    margin-top: -120px;
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-family: 'Coolvetica', sans-serif;
 
     a {
       font-size: 22px;
-      color: #4d4d4e;
-      display: block;
+      color: white;
+      opacity: 0.8;
       line-height: 51px;
       height: 51px;
-      position: relative;
       text-decoration: none;
 
       i {
@@ -48,50 +54,9 @@
       &:hover {
         color: var(--secondary-color);
 
-        svg {
-          opacity: 0;
-        }
-
         &:after {
           opacity: 1;
         }
-      }
-
-      &:after {
-        content: '';
-        font-size: 9px;
-        letter-spacing: 2px;
-        position: absolute;
-        bottom: 0;
-        display: block;
-        width: 100%;
-        text-align: center;
-        opacity: 0;
-        transition: all 0.3s ease-out;
-      }
-    }
-
-    a.home-link {
-      &:after {
-        content: 'HOME';
-      }
-    }
-
-    a.about-link {
-      &:after {
-        content: 'ABOUT';
-      }
-    }
-
-    a.portfolio-link {
-      &:after {
-        content: 'PORTFOLIO';
-      }
-    }
-
-    a.contact-link {
-      &:after {
-        content: 'CONTACT';
       }
     }
 
@@ -103,14 +68,14 @@
   }
 
   ul {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    display: block;
-    padding: 0;
     list-style: none;
-    text-align: center;
-    margin: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-right: 180px;
 
     li {
       a {

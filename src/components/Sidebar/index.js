@@ -1,16 +1,7 @@
 import { Link, NavLink } from 'react-router-dom';
 import './index.scss';
-import LogoL from '../../assets/images/logo-l.png';
-import LogoSubtitle from '../../assets/images/logo_sub.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faBars,
-  faBriefcase,
-  faClose,
-  faEnvelope,
-  faHome,
-  faUser,
-} from '@fortawesome/free-solid-svg-icons';
+import { faBars, faClose } from '@fortawesome/free-solid-svg-icons';
 import {
   faGithub,
   faLinkedin,
@@ -28,8 +19,7 @@ const Sidebar = () => {
   return (
     <div className="nav-bar">
       <Link className="logo" to="/" onClick={() => setShowNav(false)}>
-        <img src={LogoL} alt="logo" />
-        <img className="sub-logo" src={LogoSubtitle} alt="luistellez" />
+        <p className="logo-text">LT</p>
       </Link>
       <nav className={showNav ? 'mobile-show' : ' '}>
         <NavLink
@@ -38,7 +28,7 @@ const Sidebar = () => {
           activeclassname="active"
           to="/"
         >
-          <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+          Home
         </NavLink>
         <NavLink
           exact="true"
@@ -47,7 +37,7 @@ const Sidebar = () => {
           to="/about"
           onClick={() => setShowNav(false)}
         >
-          <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+          About
         </NavLink>
         <NavLink
           exact="true"
@@ -56,7 +46,7 @@ const Sidebar = () => {
           to="/portfolio"
           onClick={() => setShowNav(false)}
         >
-          <FontAwesomeIcon icon={faBriefcase} color="#4d4d4e" />
+          Portfolio
         </NavLink>
         <NavLink
           exact="true"
@@ -65,7 +55,7 @@ const Sidebar = () => {
           to="/contact"
           onClick={() => setShowNav(false)}
         >
-          <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+          Contact
         </NavLink>
         <FontAwesomeIcon
           onClick={() => setShowNav(false)}
