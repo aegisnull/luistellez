@@ -1,11 +1,28 @@
 import './index.scss';
+import AnimatedLetters from '../AnimatedLetters';
+import { useEffect, useRef, useState } from 'react';
 
 const About = () => {
+  const [letterClass, setLetterClass] = useState('text-animate');
+  const refForm = useRef();
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLetterClass('text-animate-hover');
+    }, 3000);
+  }, []);
+
   return (
     <section className="section about-page">
       <div className="about">
         <div className="about__left-container">
-          <h1 className="about__title">⚡ About Me</h1>
+          <h1 className="about__title">
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
+              idx={15}
+            />
+          </h1>
           <p className="about__paragraph">
             I'm a React developer and UI/UX enthusiast with a background in
             business administration. I combined my passion for business with my
