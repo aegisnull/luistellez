@@ -1,6 +1,26 @@
+.contact {
+  color: white;
+  font-family: 'Coolvetica', sans-serif;
+  padding-top: 150px;
+
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.2px;
+    color: var(--secondary-color);
+  }
+
+  &__paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
 .contact-form {
   width: 100%;
-  margin-top: 20px;
+  padding-top: 40px;
+  padding-bottom: 60px;
 
   ul {
     padding: 0;
