@@ -21,7 +21,7 @@ const Home = () => {
             together!
           </p>
           <Link to="/contact" className="home__button">
-            See my projects ->
+            See my projects →
           </Link>
         </div>
       </section>
