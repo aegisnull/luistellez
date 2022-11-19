@@ -9,7 +9,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { useState } from 'react';
 
-const Sidebar = () => {
+const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
 
   function toggleNav() {
@@ -105,4 +105,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default Navbar;
