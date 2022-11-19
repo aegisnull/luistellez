@@ -16,11 +16,13 @@ const About = () => {
       <div className="about">
         <div className="about__left-container">
           <h1 className="about__title">
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
-              idx={15}
-            />
+            <span className="underline">
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
+                idx={15}
+              />
+            </span>
           </h1>
           <p className="about__paragraph">
             I'm a React developer and UI/UX enthusiast with a background in

@@ -4,6 +4,16 @@
   height: 100%;
 }
 
+.underline {
+  padding: 0 8px 10px 6px;
+  background-image: url('../../assets/images/underline.svg');
+  -webkit-background-position: 50% 100%;
+  background-position: 50% 100%;
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .top-tags {
   bottom: auto;
   top: 35px;
