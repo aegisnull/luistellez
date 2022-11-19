@@ -1,0 +1,35 @@
+.section.home-page {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  .content {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    max-width: 576px;
+    font-family: 'Coolvetica', sans-serif;
+    text-align: center;
+
+    .home__welcome {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 25px;
+    }
+    .home__description {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 45px;
+    }
+    .home__paragraph {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+}
