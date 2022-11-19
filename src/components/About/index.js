@@ -1,12 +1,11 @@
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
-import { useEffect, useRef, useState } from 'react';
+import React from 'react';
 
 const About = () => {
-  const [letterClass, setLetterClass] = useState('text-animate');
-  const refForm = useRef();
+  const [letterClass, setLetterClass] = React.useState('text-animate');
 
-  useEffect(() => {
+  React.useEffect(() => {
     setTimeout(() => {
       setLetterClass('text-animate-hover');
     }, 3000);
