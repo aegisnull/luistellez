@@ -23,6 +23,11 @@
   margin-left: -20px;
 }
 
+.container.about-page {
+  width: 100vw;
+  height: 60vh;
+}
+
 .container {
   // width: 100%;
   //will-change: contents;
@@ -41,8 +46,8 @@
 .container.about-page,
 .container.contact-page,
 .container.portfolio-page {
-  width: 100vw;
-  height: 100vh;
+  //  width: 100vw;
+  // height: 100vh;
   display: flex;
 
   .content {
