@@ -2,12 +2,14 @@ import './index.scss';
 import { Link } from 'react-router-dom';
 import About from '../About';
 import Contact from '../Contact';
+import Avatar from '../../assets/images/avatar.png';
 
 const Casa = () => {
   return (
     <>
       <div className="section home-page">
         <div className="content">
+          <img src={Avatar} alt="avatar" className="home__avatar" />
           <h2 className="home__welcome">👋🏻 Hi, I'm Luis Tellez.</h2>
           <h1 className="home__description">
             I build sophisticated websites and web applications.
@@ -17,7 +19,7 @@ const Casa = () => {
             quality software for happy customers. Let's celebrate your success
             together!
           </p>
-          <Link to="/contact" className="flat-button">
+          <Link to="/contact" className="home__button">
             See my projects ->
           </Link>
         </div>
