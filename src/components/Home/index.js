@@ -2,6 +2,7 @@ import './index.scss';
 import { Link } from 'react-router-dom';
 import About from '../About';
 import Contact from '../Contact';
+import Portfolio from '../Portfolio';
 import Avatar from '../../assets/images/avatar.png';
 
 const Home = () => {
@@ -26,6 +27,7 @@ const Home = () => {
         </div>
       </section>
       <About />
+      <Portfolio />
       <Contact />
     </>
   );
