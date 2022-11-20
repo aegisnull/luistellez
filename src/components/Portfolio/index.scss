@@ -88,3 +88,13 @@
     }
   }
 }
+
+@media screen and (max-width: 375px) {
+  .card {
+    height: 500px;
+  }
+
+  .card__button {
+    padding: 0;
+  }
+}
