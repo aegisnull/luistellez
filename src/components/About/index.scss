@@ -40,3 +40,27 @@
     }
   }
 }
+
+@media screen and (max-width: 929px) {
+  .about-page {
+    padding-top: 50px;
+
+    .about {
+      flex-direction: column;
+
+      &__left-container {
+        width: 100%;
+        text-align: justify;
+      }
+
+      &__right-container {
+        width: 100%;
+      }
+
+      &__profile-picture {
+        width: 200px;
+        height: auto;
+      }
+    }
+  }
+}
