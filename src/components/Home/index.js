@@ -21,9 +21,9 @@ const Home = () => {
             quality software for happy customers. Let's celebrate your success
             together!
           </p>
-          <Link to="/contact" className="home__button">
-            See my projects →
-          </Link>
+          <p className="home__button">
+            <a href="#portfolio">See my projects →</a>
+          </p>
         </div>
       </section>
       <About />
