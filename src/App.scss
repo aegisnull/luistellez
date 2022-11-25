@@ -7,6 +7,10 @@ $primary-color: #ffd700;
   --tertiary-color: #{#0b1a2f};
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @import 'animate.css';
 
 @font-face {
