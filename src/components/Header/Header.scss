@@ -27,3 +27,13 @@
     }
   }
 }
+
+$breakpoint-tablet: 600px;
+
+@media screen and (max-width: $breakpoint-tablet) {
+  .header {
+    &__nav {
+      display: none;
+    }
+  }
+}
