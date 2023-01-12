@@ -1,0 +1,29 @@
+.header {
+  &__container {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 20px;
+    height: 60px;
+  }
+
+  &__nav {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+
+    &_link {
+      & > a {
+        text-decoration: none;
+        color: var(--white-color);
+      }
+
+      &::before {
+        content: '#';
+        color: var(--accent-color);
+      }
+    }
+  }
+}
