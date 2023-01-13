@@ -1,5 +1,53 @@
 .card {
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+
   &__image {
     border: 1px solid var(--gray-color);
+  }
+
+  &__tags {
+    border: 1px solid var(--gray-color);
+    display: flex;
+    gap: 8px;
+    padding: 8px;
+  }
+
+  &__tag {
+    font-family: 'Fira Code', monospace;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--gray-color);
+  }
+
+  &__content {
+    border: 1px solid var(--gray-color);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  &__title {
+    font-family: 'Roboto-Slab', serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31.65px;
+    color: var(--white-color);
+  }
+
+  &__description {
+    font-family: 'Fira Code', monospace;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--gray-color);
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 16px;
   }
 }

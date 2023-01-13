@@ -12,11 +12,13 @@ function Card() {
       <div className='card__content'>
         <h3 className='card__title'>NewsExplorer</h3>
         <p className='card__description'>News Reader App</p>
-        <div className='button_accent'>
-          <div className='button__text'>Live</div>
-        </div>
-        <div className='button'>
-          <div className='button__text'>Github</div>
+        <div className='card__buttons'>
+          <div className='button_accent'>
+            <div className='button__text'>Live</div>
+          </div>
+          <div className='button'>
+            <div className='button__text'>Github</div>
+          </div>
         </div>
       </div>
     </article>
