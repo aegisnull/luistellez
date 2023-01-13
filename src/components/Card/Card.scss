@@ -2,6 +2,7 @@
   width: 330px;
   display: flex;
   flex-direction: column;
+  margin: auto;
 
   &__image {
     border: 1px solid var(--gray-color);
@@ -49,5 +50,11 @@
   &__buttons {
     display: flex;
     gap: 16px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .card {
+    width: 100%;
   }
 }
