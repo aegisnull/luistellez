@@ -10,7 +10,7 @@ function Home() {
           <span className='home__title_accent'> UI/UX Enthusiast</span>
         </h1>
         <h2 className='home__subtitle'>I build sophisticated websites and web applications.</h2>
-        <div className='button_accent home__button'>
+        <div className='button_accent'>
           <div className='button__text'>Contact me !!</div>
         </div>
       </div>
