@@ -49,6 +49,19 @@ code {
   line-height: 21px;
 }
 
+.title {
+  font-family: 'Fira Code', monospace;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+  color: var(--white-color);
+}
+
+.title::before {
+  content: '#';
+  color: var(--accent-color);
+}
+
 @media screen and (max-width: 1024px) {
   .App {
     width: 90vw;

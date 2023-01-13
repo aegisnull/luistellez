@@ -1,0 +1,14 @@
+.projects {
+  padding-top: 74px;
+
+  .projects__title {
+    display: flex;
+    align-items: center;
+  }
+  &__line {
+    width: 511px;
+    height: 1px;
+    background-color: var(--accent-color);
+    margin-left: 16px;
+  }
+}
