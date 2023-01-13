@@ -1,4 +1,5 @@
 import './Projects.scss';
+import Card from '../Card/Card';
 
 function Projects() {
   return (
@@ -9,6 +10,11 @@ function Projects() {
           <div className='projects__line' />
         </div>
         <div className='projects__nav'>View all</div>
+      </div>
+      <div className='projects__cards'>
+        <Card />
+        <Card />
+        <Card />
       </div>
     </section>
   );
