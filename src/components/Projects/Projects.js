@@ -7,6 +7,7 @@ function Projects() {
         <h2 className='title'>projects</h2>
         <div className='projects__line' />
       </div>
+      <div className='projects__nav'>View all</div>
     </section>
   );
 }
