@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Roboto-Slab';
+  font-weight: 600;
+  font-style: normal;
+  src: url(./fonts/RobotoSlab-SemiBold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  font-weight: 400;
+  font-style: normal;
+  src: url(./fonts/FiraCode-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  font-weight: 500;
+  font-style: normal;
+  src: url(./fonts/FiraCode-Medium.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  font-weight: 600;
+  font-style: normal;
+  src: url(./fonts/FiraCode-SemiBold.woff2) format('woff2');
+}
