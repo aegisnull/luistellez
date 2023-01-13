@@ -38,6 +38,7 @@
   }
 
   &__avatar {
+    max-width: 100%;
   }
 
   &__tooltip {
@@ -71,6 +72,29 @@
           transition: 0.2s;
         }
       }
+    }
+  }
+}
+
+$breakpoint-mobile: 1080px;
+
+@media screen and (max-width: $breakpoint-mobile) {
+  .home {
+    flex-direction: column;
+    padding-top: 34px;
+
+    &__container-info {
+      padding-top: 0;
+    }
+
+    &__title {
+    }
+
+    &__subtitle {
+    }
+
+    &__container-avatar {
+      padding-top: 24px;
     }
   }
 }

@@ -15,7 +15,7 @@ function Home() {
         </div>
       </div>
       <div className='home__container-avatar'>
-        <img src={Avatar} alt='Luis Tellez' />
+        <img src={Avatar} alt='Luis Tellez' className='home__avatar' />
         <div className='home__tooltip'>
           <div className='home__tooltip_square' />
           <div className='home__tooltip_text'>
