@@ -43,4 +43,8 @@ code {
 .button__text {
   color: var(--white-color);
   padding: 8px 16px;
+  font-family: 'Fira Code', monospace;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
 }
