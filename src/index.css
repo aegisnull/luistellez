@@ -31,6 +31,12 @@ code {
   width: fit-content;
 }
 
+.button:hover {
+  background-color: var(--gray-color);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
 .button_accent {
   border: 1px solid var(--accent-color);
   width: fit-content;
