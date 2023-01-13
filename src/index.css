@@ -33,6 +33,13 @@ code {
   border: 1px solid var(--accent-color);
 }
 
+.button_accent:hover {
+  background-color: var(--accent-color);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
 .button__text {
   color: var(--white-color);
+  padding: 8px 16px;
 }
