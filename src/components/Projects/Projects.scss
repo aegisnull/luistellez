@@ -1,5 +1,8 @@
 .projects {
   padding-top: 74px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   .projects__title {
     display: flex;
@@ -10,5 +13,23 @@
     height: 1px;
     background-color: var(--accent-color);
     margin-left: 16px;
+  }
+
+  &__nav {
+    font-family: 'Fira Code', monospace;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--white-color);
+
+    &:hover {
+      color: var(--accent-color);
+      transition: 0.2s;
+      cursor: pointer;
+    }
+
+    &::after {
+      content: ' ~~>';
+    }
   }
 }
