@@ -1,13 +1,18 @@
 .projects {
   padding-top: 74px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 
-  .projects__title {
+  &__container {
+    padding-bottom: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
     display: flex;
     align-items: center;
   }
+
   &__line {
     width: 511px;
     height: 1px;
