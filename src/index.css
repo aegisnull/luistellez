@@ -28,10 +28,12 @@ code {
 
 .button {
   border: 1px solid var(--gray-color);
+  width: fit-content;
 }
 
 .button_accent {
   border: 1px solid var(--accent-color);
+  width: fit-content;
 }
 
 .button_accent:hover {
