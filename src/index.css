@@ -1,4 +1,4 @@
-@import-normalize;
+@import './vendor/reset.css';
 
 :root {
   --background-color: #282c33;
