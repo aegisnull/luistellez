@@ -1,5 +1,6 @@
 import './Projects.scss';
 import Card from '../Card/Card';
+import cardData from '../../utils/cardData';
 
 function Projects() {
   return (
@@ -12,9 +13,16 @@ function Projects() {
         <div className='projects__nav'>View all</div>
       </div>
       <div className='projects__cards'>
-        <Card />
-        <Card />
-        <Card />
+        {cardData.map((card) => (
+          <Card
+            image={card.image}
+            tags={card.tags}
+            title={card.title}
+            description={card.description}
+            live={card.live}
+            github={card.github}
+          />
+        ))}
       </div>
     </section>
   );
