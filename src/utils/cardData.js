@@ -18,3 +18,7 @@ const cardData = [
 ];
 
 export default cardData;
+
+// images should be store in the src/images/projects folder
+// images should be named with kebab-case
+// images should be 330x201 pixels
