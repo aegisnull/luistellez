@@ -18,7 +18,9 @@ function Home() {
         <img src={Avatar} alt='Luis Tellez' />
         <div className='home__tooltip'>
           <div className='home__tooltip_square' />
-          <div className='home__tooltip_text'>Currently working on Portfolio</div>
+          <div className='home__tooltip_text'>
+            Currently working on <span className='home__tooltip_text_bold'>Portfolio</span>
+          </div>
         </div>
       </div>
     </section>
