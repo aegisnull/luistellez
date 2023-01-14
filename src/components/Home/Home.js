@@ -19,7 +19,14 @@ function Home() {
         <div className='home__tooltip'>
           <div className='home__tooltip_square' />
           <div className='home__tooltip_text'>
-            Currently working on <span className='home__tooltip_text_bold'>Portfolio</span>
+            Currently working on{' '}
+            <a
+              href='https://github.com/aegisnull/news-explorer-frontend'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <span className='home__tooltip_text_bold'>Portfolio</span>
+            </a>
           </div>
         </div>
       </div>
