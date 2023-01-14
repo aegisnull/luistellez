@@ -59,6 +59,15 @@ const cardData = [
     live: 'https://aegisnull.github.io/practicum-art-gallery/',
     github: 'https://github.com/aegisnull/practicum-art-gallery',
   },
+  {
+    image:
+      'https://user-images.githubusercontent.com/27663011/212457366-178d4929-d1d5-490e-bf05-0834cc9a9e14.gif',
+    tags: ['HTML', 'CSS', 'BEM'],
+    title: 'Aprender a Aprender',
+    description: 'Learning Info Website',
+    live: 'https://aegisnull.github.io/aprender-a-aprender/',
+    github: 'https://github.com/aegisnull/aprender-a-aprender',
+  },
 ];
 
 export default cardData;
