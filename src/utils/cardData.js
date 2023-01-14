@@ -26,6 +26,14 @@ const cardData = [
     live: 'https://google.com',
     github: 'https://github.com/aegisnull/react-around-api-full_es',
   },
+  {
+    image:
+      'https://user-images.githubusercontent.com/27663011/212450825-0e9ceef1-2fa5-4528-8e66-a4bb1ffb5bb5.gif',
+    tags: ['WordPress', 'PHP', 'HTML', 'CSS'],
+    title: 'GMG Manufacturing',
+    description: 'WordPress Website',
+    live: 'https://gmgmanufacturing.com',
+  },
 ];
 
 export default cardData;
