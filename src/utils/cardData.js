@@ -68,6 +68,15 @@ const cardData = [
     live: 'https://aegisnull.github.io/aprender-a-aprender/',
     github: 'https://github.com/aegisnull/aprender-a-aprender',
   },
+  {
+    image:
+      'https://user-images.githubusercontent.com/27663011/212457551-0f7e8e98-f790-40b6-b97e-5abccc060194.gif',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    title: 'Memorama Game',
+    description: 'Memory Game Website',
+    live: 'https://aegisnull.github.io/memorama/',
+    github: 'https://github.com/aegisnull/memorama',
+  },
 ];
 
 export default cardData;
