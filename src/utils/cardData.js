@@ -31,8 +31,16 @@ const cardData = [
       'https://user-images.githubusercontent.com/27663011/212450825-0e9ceef1-2fa5-4528-8e66-a4bb1ffb5bb5.gif',
     tags: ['WordPress', 'PHP', 'HTML', 'CSS'],
     title: 'GMG Manufacturing',
-    description: 'WordPress Website',
+    description: 'Local Manufacturing  Website',
     live: 'https://gmgmanufacturing.com',
+  },
+  {
+    image:
+      'https://user-images.githubusercontent.com/27663011/212452645-58c41c60-3ac6-4bfd-9497-fb6093b24206.gif',
+    tags: ['HTML', 'CSS', 'jQuery'],
+    title: 'Circulo Café',
+    description: 'Coffee Shop Website',
+    live: 'https://circulocafe.com',
   },
 ];
 
