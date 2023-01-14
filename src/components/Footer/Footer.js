@@ -19,33 +19,35 @@ function Footer() {
         </div>
         <div className='footer__container_socials'>
           <p className='footer__socials_title'>Media</p>
-          <a
-            href='
+          <div className='footer__socials'>
+            <a
+              href='
                 https://www.linkedin.com/'
-            target='_blank'
-            rel='noreferrer'
-            className='footer__socials_link'
-          >
-            <img className='footer__socials_icon' src={GitHub} alt='GitHub icon' />
-          </a>
-          <a
-            href='
+              target='_blank'
+              rel='noreferrer'
+              className='footer__socials_link'
+            >
+              <img className='footer__socials_icon' src={GitHub} alt='GitHub icon' />
+            </a>
+            <a
+              href='
                 https://www.linkedin.com/'
-            target='_blank'
-            rel='noreferrer'
-            className='footer__socials_link'
-          >
-            <img className='footer__socials_icon' src={Twitter} alt='Twitter icon' />
-          </a>
-          <a
-            href='
+              target='_blank'
+              rel='noreferrer'
+              className='footer__socials_link'
+            >
+              <img className='footer__socials_icon' src={Twitter} alt='Twitter icon' />
+            </a>
+            <a
+              href='
                 https://www.linkedin.com/'
-            target='_blank'
-            rel='noreferrer'
-            className='footer__socials_link'
-          >
-            <img className='footer__socials_icon' src={LinkedIn} alt='LinkedIn icon' />
-          </a>
+              target='_blank'
+              rel='noreferrer'
+              className='footer__socials_link'
+            >
+              <img className='footer__socials_icon' src={LinkedIn} alt='LinkedIn icon' />
+            </a>
+          </div>
         </div>
       </div>
       <p className='footer__copy'>Made by Luis Tellez</p>
