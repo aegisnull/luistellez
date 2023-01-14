@@ -2,7 +2,7 @@ const cardData = [
   {
     image:
       'https://user-images.githubusercontent.com/27663011/212429268-38a790be-a69f-4219-b336-2d709a7038b9.gif',
-    tags: ['React', 'Node', 'MongoDB'],
+    tags: ['React', 'NodeJS', 'ExpressJS', 'MongoDB'],
     title: 'News Explorer',
     description: 'News Reader Full Stack App',
     live: 'https://aegisnews.students.nomoredomainssbs.ru',
@@ -14,8 +14,17 @@ const cardData = [
     tags: ['HTML', 'CSS', 'JavaScript'],
     title: 'Moody',
     description: 'Hackathon Project Landing Page',
+    live: 'https://moody-app.netlify.app',
+    github: 'https://github.com/aegisnull/moody',
+  },
+  {
+    image:
+      'https://user-images.githubusercontent.com/27663011/212450534-f83b5c93-f89f-4511-9e1b-30edc70a1573.gif',
+    tags: ['React', 'NodeJS', 'ExpressJS', 'MongoDB'],
+    title: 'Around The U.S.',
+    description: 'Instagram like app',
     live: 'https://google.com',
-    github: 'https://google.com',
+    github: 'https://github.com/aegisnull/react-around-api-full_es',
   },
 ];
 

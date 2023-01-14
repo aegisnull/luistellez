@@ -4,7 +4,7 @@ import cardData from '../../utils/cardData';
 
 function Projects() {
   return (
-    <section className='projects'>
+    <section className='projects' id='projects'>
       <div className='projects__container'>
         <div className='projects__title'>
           <h2 className='title'>projects</h2>

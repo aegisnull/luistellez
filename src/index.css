@@ -75,3 +75,7 @@ code {
     width: 90vw;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}

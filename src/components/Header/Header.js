@@ -11,16 +11,16 @@ function Header() {
         </li>
 
         <li className='header__nav_link'>
-          <a href='#works'>works</a>
+          <a href='#projects'>projects</a>
         </li>
 
-        <li className='header__nav_link'>
+        {/*         <li className='header__nav_link'>
           <a href='#about-me'>about-me</a>
         </li>
 
         <li className='header__nav_link'>
           <a href='#contact'>contact</a>
-        </li>
+        </li> */}
       </nav>
     </header>
   );

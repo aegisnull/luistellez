@@ -4,7 +4,7 @@ import Projects from '../Projects/Projects';
 
 function Main() {
   return (
-    <main>
+    <main id='home'>
       <Home />
       <Quote />
       <Projects />
