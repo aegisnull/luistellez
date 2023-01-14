@@ -50,6 +50,15 @@ const cardData = [
     description: 'Accounting Website',
     live: 'https://aegisnull.github.io/prepara-tu-conta/',
   },
+  {
+    image:
+      'https://user-images.githubusercontent.com/27663011/212457133-fff84375-98be-455a-9007-3e29878309a1.gif',
+    tags: ['HTML', 'CSS', 'CSS Grid'],
+    title: 'Practicum Art Gallery',
+    description: 'Art Gallery Website',
+    live: 'https://aegisnull.github.io/practicum-art-gallery/',
+    github: 'https://github.com/aegisnull/practicum-art-gallery',
+  },
 ];
 
 export default cardData;
