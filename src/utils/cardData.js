@@ -42,6 +42,14 @@ const cardData = [
     description: 'Coffee Shop Website',
     live: 'https://circulocafe.com',
   },
+  {
+    image:
+      'https://user-images.githubusercontent.com/27663011/212455443-7c18dc92-1fd1-48de-85ae-948759c41cb5.gif',
+    tags: ['HTML', 'CSS', 'jQuery'],
+    title: 'Prepara tu Conta',
+    description: 'Accounting Website',
+    live: 'https://aegisnull.github.io/prepara-tu-conta/',
+  },
 ];
 
 export default cardData;
