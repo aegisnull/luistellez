@@ -1,30 +1,16 @@
 .contact {
-  color: white;
-  font-family: 'Coolvetica', sans-serif;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  &__title {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 43.2px;
-    color: var(--gray-color);
-    text-align: center;
-  }
-
   &__paragraph {
+    font-family: 'Fira Code', monospace;
+    font-weight: 500;
     font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
+    line-height: 21px;
+    color: var(--gray-color);
+    //max-width: 505px;
   }
 }
 
 .contact-form {
-  width: 100%;
-  padding-top: 40px;
+  padding-top: 45px;
   padding-bottom: 60px;
 
   ul {
@@ -54,6 +40,11 @@
     color: #fff;
     padding: 0 20px;
     box-sizing: border-box;
+
+    &:focus {
+      border: 1px solid var(--accent-color);
+      outline: 1px solid var(--accent-color);
+    }
   }
 
   textarea {
@@ -68,6 +59,11 @@
     padding: 20px;
     box-sizing: border-box;
     min-height: 150px;
+
+    &:focus {
+      border: 1px solid var(--accent-color);
+      outline: 1px solid var(--accent-color);
+    }
   }
 
   .contact__button {
