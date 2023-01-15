@@ -2,9 +2,14 @@ import './Skills.scss';
 
 function Skills() {
   return (
-    <div className='skills'>
-      <h1>Skills</h1>
-    </div>
+    <section className='skills'>
+      <div className='skills__container'>
+        <div className='skills__title'>
+          <h2 className='title'>skills</h2>
+          <div className='skills__line' />
+        </div>
+      </div>
+    </section>
   );
 }
 

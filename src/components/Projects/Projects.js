@@ -19,7 +19,7 @@ function Projects() {
   }, [currentPath]);
 
   return (
-    <section className='projects' id='projects'>
+    <section className='projects'>
       <div className='projects__container'>
         <div className='projects__title'>
           <h2 className='title'>projects</h2>
