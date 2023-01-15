@@ -24,7 +24,8 @@
     "lint:fix": "eslint --fix",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "stylelint": "stylelint '**/*.{css,scss}' --config ./.stylelintrc"
   },
   "eslintConfig": {
     "extends": [
@@ -54,6 +55,12 @@
     "eslint-plugin-react": "^7.32.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "gh-pages": "^4.0.0",
-    "prettier": "^2.8.2"
+    "prettier": "^2.8.3",
+    "stylelint": "^14.16.1",
+    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-standard-scss": "^6.1.0",
+    "stylelint-prettier": "^2.0.0",
+    "stylelint-scss": "^4.3.0",
+    "stylelint-selector-bem-pattern": "^2.1.1"
   }
 }
