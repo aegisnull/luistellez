@@ -35,7 +35,7 @@
   &__card {
     display: flex;
     flex-direction: column;
-    max-width: 178px;
+    width: 178px;
     height: max-content;
     border: 1px solid var(--gray-color);
 
@@ -81,6 +81,10 @@ $breakpoint-mobile: 426px;
     &__container_content {
       flex-direction: column;
       align-items: center;
+    }
+
+    &__card-container {
+      justify-content: center;
     }
 
     &__image {
