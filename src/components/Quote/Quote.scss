@@ -22,7 +22,7 @@
 
     &::before,
     &::after {
-      content: url(../../images/quotes.svg);
+      content: url('../../images/quotes.svg');
       position: absolute;
       background-image: linear-gradient(var(--background-color), var(--background-color));
       background-size: 100% 40%;
@@ -40,7 +40,7 @@
   }
 
   &__author {
-    font-family: "Fira Code", monospace;
+    font-family: 'Fira Code', monospace;
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;

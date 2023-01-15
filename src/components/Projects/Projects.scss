@@ -22,7 +22,7 @@
   }
 
   &__nav {
-    font-family: "Fira Code", monospace;
+    font-family: 'Fira Code', monospace;
     font-weight: 500;
     font-size: 16px;
     line-height: 21px;
@@ -35,7 +35,7 @@
     }
 
     &::after {
-      content: " ~~>";
+      content: ' ~~>';
     }
 
     a {
@@ -63,7 +63,7 @@
     width: fit-content;
     padding: 25px;
     height: 48px;
-    font-family: "Fira Code", monospace;
+    font-family: 'Fira Code', monospace;
     font-weight: 500;
     font-size: 16px;
     line-height: 21px;

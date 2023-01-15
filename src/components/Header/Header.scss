@@ -17,14 +17,14 @@
       & > a {
         text-decoration: none;
         color: var(--white-color);
-        font-family: "Fira Code", monospace;
+        font-family: 'Fira Code', monospace;
         font-weight: 500;
         font-size: 16px;
         line-height: 21px;
       }
 
       &::before {
-        content: "#";
+        content: '#';
         color: var(--accent-color);
       }
     }
