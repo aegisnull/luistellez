@@ -1,10 +1,22 @@
 import './Projects.scss';
+import React from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import Card from '../Card/Card';
 import cardData from '../../utils/cardData';
 
 function Projects() {
   const currentPath = useLocation().pathname;
+  const [cardsToShow, setCardsToShow] = React.useState(3);
+
+  const handleViewMore = () => {
+    setCardsToShow(cardsToShow + 3);
+  };
+
+  React.useEffect(() => {
+    if (currentPath === '/projects') {
+      setCardsToShow(cardData.length);
+    }
+  }, [currentPath]);
 
   return (
     <section className='projects' id='projects'>
@@ -20,8 +32,9 @@ function Projects() {
         ) : null}
       </div>
       <div className='projects__cards'>
-        {cardData.map((card) => (
+        {cardData.slice(0, cardsToShow).map((card) => (
           <Card
+            key={card.id}
             image={card.image}
             tags={card.tags}
             title={card.title}
@@ -31,6 +44,11 @@ function Projects() {
           />
         ))}
       </div>
+      {cardData.length > cardsToShow && (
+        <button onClick={handleViewMore} type='button' className='projects__button'>
+          View more
+        </button>
+      )}
     </section>
   );
 }

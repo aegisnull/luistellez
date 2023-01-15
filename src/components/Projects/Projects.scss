@@ -55,4 +55,30 @@
     flex-wrap: wrap;
     gap: 16px;
   }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 25px;
+    height: 48px;
+    font-family: 'Fira Code', monospace;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--white-color);
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
+
+    margin: 48px auto 0;
+
+    &:hover {
+      background-color: var(--accent-color);
+      transition: 0.2s;
+      cursor: pointer;
+    }
+  }
 }
