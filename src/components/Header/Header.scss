@@ -4,6 +4,10 @@
   align-items: flex-end;
   height: 60px;
 
+  &__logo {
+    cursor: pointer;
+  }
+
   &__nav {
     display: flex;
     list-style: none;

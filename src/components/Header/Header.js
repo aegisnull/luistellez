@@ -5,7 +5,9 @@ import Logo from '../../images/logo.svg';
 function Header() {
   return (
     <header className='header'>
-      <img src={Logo} alt='Logo' />
+      <Link to='/'>
+        <img src={Logo} alt='Logo' className='header__logo' />
+      </Link>
       <nav className='header__nav'>
         <li className='header__nav_link'>
           <Link to='/'>home</Link>
