@@ -25,7 +25,8 @@
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "stylelint": "stylelint '**/*.{css,scss}' --config ./.stylelintrc"
+    "stylelint": "stylelint '**/*.{css,scss}' --config ./.stylelintrc",
+    "stylelint:fix": "stylelint '**/*.{css,scss}' --config ./.stylelintrc --fix"
   },
   "eslintConfig": {
     "extends": [
