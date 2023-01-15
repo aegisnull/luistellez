@@ -77,6 +77,15 @@ const cardData = [
     live: 'https://aegisnull.github.io/memorama/',
     github: 'https://github.com/aegisnull/memorama',
   },
+  {
+    image:
+      'https://user-images.githubusercontent.com/27663011/212532459-704509d4-4c52-4cc7-ae9c-1712ea45e766.gif',
+    tags: ['HTML', 'CSS'],
+    title: 'Odin Landing Page',
+    description: 'Simple Landing Page',
+    live: 'https://aegisnull.github.io/odin-landing-page/',
+    github: 'https://github.com/aegisnull/odin-landing-page',
+  },
 ];
 
 export default cardData;
