@@ -37,6 +37,17 @@
     &::after {
       content: ' ~~>';
     }
+
+    a {
+      text-decoration: none;
+      color: var(--white-color);
+
+      &:hover {
+        color: var(--accent-color);
+        transition: 0.2s;
+        cursor: pointer;
+      }
+    }
   }
 
   &__cards {

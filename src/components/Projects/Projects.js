@@ -1,5 +1,5 @@
 import './Projects.scss';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import Card from '../Card/Card';
 import cardData from '../../utils/cardData';
 
@@ -13,7 +13,11 @@ function Projects() {
           <h2 className='title'>projects</h2>
           <div className='projects__line' />
         </div>
-        {currentPath === '/' ? <div className='projects__nav'>View all</div> : null}
+        {currentPath === '/' ? (
+          <div className='projects__nav'>
+            <Link to='/projects'>View all</Link>
+          </div>
+        ) : null}
       </div>
       <div className='projects__cards'>
         {cardData.map((card) => (
