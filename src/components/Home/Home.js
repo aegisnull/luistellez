@@ -1,4 +1,5 @@
 import './Home.scss';
+import { Link } from 'react-router-dom';
 import Avatar from '../../images/avatar.png';
 
 function Home() {
@@ -11,7 +12,9 @@ function Home() {
         </h1>
         <h2 className='home__subtitle'>I build sophisticated websites and web applications.</h2>
         <div className='button_accent'>
-          <div className='button__text'>Contact me !!</div>
+          <Link to='/contact'>
+            <div className='button__text'>Contact me !!</div>
+          </Link>
         </div>
       </div>
       <div className='home__container-avatar'>
@@ -19,13 +22,9 @@ function Home() {
         <div className='home__tooltip'>
           <div className='home__tooltip_square' />
           <div className='home__tooltip_text'>
-            Currently working on{' '}
-            <a
-              href='https://github.com/aegisnull/news-explorer-frontend'
-              target='_blank'
-              rel='noreferrer'
-            >
-              <span className='home__tooltip_text_bold'>Portfolio</span>
+            Currently working on
+            <a href='https://github.com/aegisnull/luistellez' target='_blank' rel='noreferrer'>
+              <span className='home__tooltip_text_bold'> Portfolio</span>
             </a>
           </div>
         </div>
