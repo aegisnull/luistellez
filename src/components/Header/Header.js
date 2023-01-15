@@ -17,11 +17,11 @@ function Header() {
 
         {/*         <li className='header__nav_link'>
           <a href='#about-me'>about-me</a>
-        </li>
+        </li> */}
 
         <li className='header__nav_link'>
-          <a href='#contact'>contact</a>
-        </li> */}
+          <Link to='/contact'>contact</Link>
+        </li>
       </nav>
     </header>
   );

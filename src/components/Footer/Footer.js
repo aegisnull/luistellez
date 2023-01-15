@@ -22,7 +22,7 @@ function Footer() {
           <div className='footer__socials'>
             <a
               href='
-                https://www.linkedin.com/'
+              https://github.com/aegisnull'
               target='_blank'
               rel='noreferrer'
               className='footer__socials_link'
@@ -31,7 +31,7 @@ function Footer() {
             </a>
             <a
               href='
-                https://www.linkedin.com/'
+              https://twitter.com/LuisTellezDev'
               target='_blank'
               rel='noreferrer'
               className='footer__socials_link'
@@ -40,7 +40,7 @@ function Footer() {
             </a>
             <a
               href='
-                https://www.linkedin.com/'
+              https://www.linkedin.com/in/luistellezv/'
               target='_blank'
               rel='noreferrer'
               className='footer__socials_link'

@@ -1,0 +1,87 @@
+.contact {
+  padding-top: 112px;
+
+  &__paragraph {
+    font-family: 'Fira Code', monospace;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--gray-color);
+    //max-width: 505px;
+  }
+}
+
+.contact-form {
+  padding-top: 45px;
+  padding-bottom: 60px;
+
+  ul {
+    li {
+      padding-bottom: 16px;
+    }
+
+    li.half {
+      width: 49%;
+      margin-left: 2%;
+      float: left;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  input {
+    width: 100%;
+    border: 1px solid var(--gray-color);
+    background: transparent;
+    height: 37px;
+    font-family: 'Fira Code', monospace;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    &:focus {
+      border: 1px solid var(--accent-color);
+      outline: 1px solid var(--accent-color);
+    }
+  }
+
+  textarea {
+    width: 100%;
+    border: 1px solid var(--gray-color);
+    background: transparent;
+    font-family: 'Fira Code', monospace;
+    font-weight: 400;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 150px;
+
+    &:focus {
+      border: 1px solid var(--accent-color);
+      outline: 1px solid var(--accent-color);
+    }
+  }
+
+  .contact__button {
+    color: var(--white-color);
+    width: fit-content;
+    font-size: 16px;
+    font-family: 'Fira Code', monospace;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid var(--accent-color);
+  }
+
+  .contact__button:hover {
+    background: var(--accent-color);
+    transition: 0.2s;
+    cursor: pointer;
+  }
+}

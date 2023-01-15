@@ -82,3 +82,27 @@
     }
   }
 }
+
+$breakpoint-tablet: 931px;
+$breakpoint-mobile: 426px;
+
+@media screen and (max-width: $breakpoint-tablet) {
+  .projects {
+    &__container {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    &__line {
+      width: 239px;
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+  .projects {
+    &__line {
+      display: none;
+    }
+  }
+}
