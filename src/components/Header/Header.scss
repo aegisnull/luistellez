@@ -1,7 +1,7 @@
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
+  justify-content: space-between;
   height: 60px;
 
   &__logo {
@@ -10,17 +10,17 @@
 
   &__nav {
     display: flex;
-    list-style: none;
     gap: 32px;
+    list-style: none;
 
     &_link {
       & > a {
-        text-decoration: none;
         color: var(--white-color);
-        font-family: 'Fira Code', monospace;
         font-weight: 500;
         font-size: 16px;
+        font-family: 'Fira Code', monospace;
         line-height: 21px;
+        text-decoration: none;
       }
 
       &::before {

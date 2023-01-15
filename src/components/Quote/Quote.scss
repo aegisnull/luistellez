@@ -4,29 +4,29 @@
   align-items: center;
 
   &__container {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    position: relative;
   }
 
   &__text {
-    font-family: Roboto-Slab, serif;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 32px;
-    color: var(--white-color);
-    border: 1px solid var(--gray-color);
     width: fit-content;
     padding: 32px;
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 24px;
+    font-family: Roboto-Slab, serif;
+    line-height: 32px;
+    border: 1px solid var(--gray-color);
 
     &::before,
     &::after {
       content: url('../../images/quotes.svg');
       position: absolute;
       background-image: linear-gradient(var(--background-color), var(--background-color));
-      background-size: 100% 40%;
       background-repeat: no-repeat;
+      background-size: 100% 40%;
     }
 
     &::before {
@@ -34,19 +34,19 @@
     }
 
     &::after {
-      bottom: 30px;
       right: 20px;
+      bottom: 30px;
     }
   }
 
   &__author {
-    font-family: 'Fira Code', monospace;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
-    color: var(--gray-color);
-    border: 1px solid var(--gray-color);
     width: fit-content;
     padding: 16px;
+    color: var(--gray-color);
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Fira Code', monospace;
+    line-height: 16px;
+    border: 1px solid var(--gray-color);
   }
 }

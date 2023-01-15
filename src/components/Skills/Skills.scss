@@ -1,9 +1,9 @@
 .skills {
   &__container {
-    padding-bottom: 12px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding-bottom: 12px;
   }
 
   &__title {
@@ -14,8 +14,8 @@
   &__line {
     width: 239px;
     height: 1px;
-    background-color: var(--accent-color);
     margin-left: 16px;
+    background-color: var(--accent-color);
   }
 
   &__container_content {
@@ -38,29 +38,29 @@
     border: 1px solid var(--gray-color);
 
     &-title {
-      font-family: 'Fira Code', monospace;
+      padding: 8px;
+      color: var(--white-color);
       font-weight: 500;
       font-size: 16px;
+      font-family: 'Fira Code', monospace;
       line-height: 21px;
-      color: var(--white-color);
       border-bottom: 1px solid var(--gray-color);
-      padding: 8px;
     }
 
     &-list {
       display: flex;
       flex-wrap: wrap;
+      gap: 8px;
       height: auto;
       padding: 8px;
-      gap: 8px;
     }
 
     &-item {
-      font-family: 'Fira Code', monospace;
+      color: var(--gray-color);
       font-weight: 500;
       font-size: 16px;
+      font-family: 'Fira Code', monospace;
       line-height: 21px;
-      color: var(--gray-color);
     }
   }
 }
