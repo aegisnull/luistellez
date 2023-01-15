@@ -79,12 +79,28 @@ const cardData = [
   },
   {
     image:
+      'https://user-images.githubusercontent.com/27663011/212532655-ecfb189c-ebcc-46eb-9eb2-b1703792a181.gif',
+    tags: ['WordPress', 'PHP', 'HTML', 'CSS'],
+    title: 'Intelegal',
+    description: 'Website for Law Firm',
+    live: 'https://intelegal.com.mx',
+  },
+  {
+    image:
       'https://user-images.githubusercontent.com/27663011/212532459-704509d4-4c52-4cc7-ae9c-1712ea45e766.gif',
     tags: ['HTML', 'CSS'],
     title: 'Odin Landing Page',
     description: 'Simple Landing Page',
     live: 'https://aegisnull.github.io/odin-landing-page/',
     github: 'https://github.com/aegisnull/odin-landing-page',
+  },
+  {
+    image:
+      'https://user-images.githubusercontent.com/27663011/212532801-b1ae47a5-cf27-41a4-a166-673c0e697032.gif',
+    tags: ['WordPress', 'PHP', 'HTML', 'CSS'],
+    title: 'Intelegal Landing Page',
+    description: 'Landing Page for Real Estate',
+    live: 'https://vulnerables.intelegal.com.mx/desarrollo-inmobiliario/',
   },
 ];
 
