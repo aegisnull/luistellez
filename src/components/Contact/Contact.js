@@ -12,12 +12,12 @@ function Contact() {
       .sendForm('service_dqm28n8', 'template_2xn3nhq', refForm.current, 'iDsCGoKJNkMjEoYgL')
       .then(
         () => {
-          alert('Message sent, I will contact you shortly');
-          window.location.reload(false);
+          //  alert('Message sent, I will contact you shortly');
+          //  window.location.reload(false);
           refForm.current.reset();
         },
         () => {
-          alert('An error occured, please try again');
+          // alert('An error occured, please try again');
         },
       );
   };
