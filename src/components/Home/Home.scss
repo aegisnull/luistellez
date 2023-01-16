@@ -1,19 +1,19 @@
 .home {
+  display: flex;
   padding-top: 65px;
   padding-bottom: 112px;
-  display: flex;
 
   &__container-info {
     padding-top: 71px;
   }
 
   &__title {
-    font-family: 'Roboto-Slab', serif;
-    font-weight: 600;
-    color: var(--white-color);
-    font-size: 32px;
-    line-height: 42.2px;
     max-width: 537px;
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 32px;
+    font-family: Roboto-Slab, serif;
+    line-height: 42.2px;
 
     &_accent {
       color: var(--accent-color);
@@ -24,11 +24,11 @@
     max-width: 463px;
     padding-top: 32px;
     padding-bottom: 24px;
-    font-family: 'Fira Code', monospace;
+    color: var(--gray-color);
     font-weight: 400;
     font-size: 16px;
+    font-family: 'Fira Code', monospace;
     line-height: 25px;
-    color: var(--gray-color);
   }
 
   &__container-avatar {
@@ -42,33 +42,33 @@
   }
 
   &__tooltip {
-    border: 1px solid var(--gray-color);
     display: flex;
     align-items: center;
+    border: 1px solid var(--gray-color);
 
     &_square {
-      margin-left: 8px;
+      display: block;
       width: 16px;
       height: 16px;
+      margin-left: 8px;
       background-color: var(--accent-color);
-      display: block;
     }
 
     &_text {
       padding: 8px 80px 8px 10px;
       color: var(--gray-color);
-      font-family: 'Fira Code', monospace;
       font-weight: 500;
       font-size: 16px;
+      font-family: 'Fira Code', monospace;
       line-height: 21px;
 
       &_bold {
-        font-weight: 600;
         color: var(--white-color);
+        font-weight: 600;
 
         &:hover {
-          cursor: pointer;
           color: var(--accent-color);
+          cursor: pointer;
           transition: 0.2s;
         }
       }
@@ -84,8 +84,8 @@ $breakpoint-mobile: 1080px;
     padding-top: 34px;
 
     &__container-info {
-      padding-top: 0;
       margin: auto;
+      padding-top: 0;
     }
 
     &__container-avatar {

@@ -1,17 +1,17 @@
 .footer {
-  border-top: 1px solid var(--gray-color);
-  width: 100vw;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  width: 100vw;
   padding-bottom: 32px;
+  border-top: 1px solid var(--gray-color);
+  transform: translateX(-50%);
 
   &__container {
+    display: flex;
+    justify-content: space-between;
     max-width: 1024px;
     margin: auto;
     padding-top: 32px;
-    display: flex;
-    justify-content: space-between;
 
     &_info {
       display: flex;
@@ -25,20 +25,20 @@
   }
 
   &__mail {
-    font-family: 'Fira Code', monospace;
+    color: var(--gray-color);
     font-weight: 400;
     font-size: 16px;
+    font-family: 'Fira Code', monospace;
     line-height: 21px;
-    color: var(--gray-color);
   }
 
   &__subtitle {
     padding-top: 16px;
-    font-family: 'Fira Code', monospace;
+    color: var(--white-color);
     font-weight: 400;
     font-size: 16px;
+    font-family: 'Fira Code', monospace;
     line-height: 21px;
-    color: var(--white-color);
   }
 
   &__logo {
@@ -52,22 +52,22 @@
     padding-top: 12px;
 
     &_title {
-      font-family: 'Fira Code', monospace;
+      color: var(--white-color);
       font-weight: 500;
       font-size: 24px;
+      font-family: 'Fira Code', monospace;
       line-height: 21px;
-      color: var(--white-color);
     }
   }
 
   &__copy {
     padding-top: 48px;
-    text-align: center;
-    font-family: 'Fira Code', monospace;
+    color: var(--gray-color);
     font-weight: 400;
     font-size: 16px;
+    font-family: 'Fira Code', monospace;
     line-height: 21px;
-    color: var(--gray-color);
+    text-align: center;
   }
 }
 

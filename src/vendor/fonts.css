@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'Roboto-Slab';
+  font-family: Roboto-Slab;
   font-weight: 500;
   font-style: normal;
   src: url(./fonts/RobotoSlab-Medium.woff2) format('woff2');
 }
 
 @font-face {
-  font-family: 'Roboto-Slab';
+  font-family: Roboto-Slab;
   font-weight: 600;
   font-style: normal;
   src: url(./fonts/RobotoSlab-SemiBold.woff2) format('woff2');

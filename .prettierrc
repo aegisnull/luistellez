@@ -1,4 +1,5 @@
 {
+  "plugins": ["prettier-plugin-rational-order"],
   "semi": true,
   "tabWidth": 2,
   "printWidth": 100,
