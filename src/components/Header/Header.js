@@ -1,8 +1,16 @@
 import './Header.scss';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../images/logo.svg';
+import MobileMenu from './MobileMenu';
 
 function Header() {
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  function handleMobileMenuClick() {
+    setIsOpen(!isOpen);
+  }
+
   return (
     <header className='header'>
       <Link to='/'>
@@ -25,6 +33,13 @@ function Header() {
           <Link to='/contact'>contact</Link>
         </li>
       </nav>
+      <button
+        className='header__menu-btn'
+        type='button'
+        onClick={handleMobileMenuClick}
+        aria-label='Toggle mobile menu'
+      />
+      {isOpen ? <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} /> : null}
     </header>
   );
 }
