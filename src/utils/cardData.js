@@ -5,7 +5,7 @@ const cardData = [
     tags: ['React', 'NodeJS', 'ExpressJS', 'MongoDB'],
     title: 'News Explorer',
     description: 'News Reader Full Stack App',
-    live: 'https://aegisnews.students.nomoredomainssbs.ru',
+    live: 'http://news-explorer.projects.luistellez.com',
     github: 'https://github.com/aegisnull/news-explorer-frontend',
   },
   {
@@ -23,7 +23,7 @@ const cardData = [
     tags: ['React', 'NodeJS', 'ExpressJS', 'MongoDB'],
     title: 'Around The U.S.',
     description: 'Instagram like app',
-    live: 'https://google.com',
+    live: 'http://aroundus.projects.luistellez.com',
     github: 'https://github.com/aegisnull/react-around-api-full_es',
   },
   {
