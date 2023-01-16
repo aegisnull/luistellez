@@ -61,6 +61,10 @@
       font-size: 16px;
       font-family: 'Fira Code', monospace;
       line-height: 21px;
+
+      &:hover {
+        color: var(--white-color);
+      }
     }
   }
 }
