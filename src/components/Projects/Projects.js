@@ -2,7 +2,7 @@ import './Projects.scss';
 import React from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import Card from '../Card/Card';
-import cardData from '../../utils/cardData';
+import cardData from '../../utils/Projects';
 
 function Projects() {
   const currentPath = useLocation().pathname;
