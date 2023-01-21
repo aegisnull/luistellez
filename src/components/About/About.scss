@@ -1,9 +1,10 @@
 .about {
-  padding-bottom: 112px;
+  padding-top: 112px;
+
   &__container {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 48px;
+    padding-bottom: 17px;
   }
 
   &__title {
@@ -21,13 +22,13 @@
   &__content {
     display: flex;
     gap: 129px;
-    align-items: center;
     justify-content: space-between;
 
     &_text {
       display: flex;
       flex-direction: column;
       gap: 16px;
+      padding-top: 38px;
     }
 
     &_img {
