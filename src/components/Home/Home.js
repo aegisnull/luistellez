@@ -5,7 +5,7 @@ import Avatar from '../../images/avatar.webp';
 function Home() {
   return (
     <section className='home'>
-      <div className='home__container-info'>
+      <div className='home__container-info swing-in-left-fwd'>
         <h1 className='home__title'>
           Hi, I&apos;m Luis Tellez a <span className='home__title_accent'>web developer</span> and
           <span className='home__title_accent'> UI/UX Enthusiast</span>
