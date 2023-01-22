@@ -16,11 +16,11 @@ function Card({ image, tags, title, description, live, github }) {
         <p className='card__description'>{description}</p>
         <div className='card__buttons'>
           <a href={live} className='button_accent' target='_blank' rel='noopener noreferrer'>
-            <div className='button__text'>Live</div>
+            <div className='button__text card__button_live'>Live</div>
           </a>
           {github && (
             <a href={github} className='button' target='_blank' rel='noopener noreferrer'>
-              <div className='button__text'>Github</div>
+              <div className='button__text card__button_git'>Github</div>
             </a>
           )}
         </div>
