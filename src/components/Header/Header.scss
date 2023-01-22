@@ -24,12 +24,18 @@
 
     &_link {
       & > a {
-        color: var(--white-color);
-        font-weight: 500;
+        color: var(--gray-color);
+        font-weight: 400;
         font-size: 16px;
         font-family: 'Fira Code', monospace;
         line-height: 21px;
         text-decoration: none;
+      }
+
+      & > a.active {
+        color: var(--white-color);
+        font-weight: 500;
+        transition: 0.2s;
       }
 
       &::before {
