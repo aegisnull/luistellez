@@ -1,5 +1,5 @@
 import './About.scss';
-import AboutImg from '../../images/about-me.png';
+import AboutImg from '../../images/about-me.webp';
 
 function About() {
   return (

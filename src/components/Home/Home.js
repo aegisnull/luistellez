@@ -1,6 +1,6 @@
 import './Home.scss';
 import { Link } from 'react-router-dom';
-import Avatar from '../../images/avatar.png';
+import Avatar from '../../images/avatar.webp';
 
 function Home() {
   return (
