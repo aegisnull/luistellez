@@ -17,7 +17,7 @@ function Home() {
           </Link>
         </div>
       </div>
-      <div className='home__container-avatar'>
+      <div className='home__container-avatar bounce-in-right'>
         <img src={Avatar} alt='Luis Tellez' className='home__avatar' />
         <div className='home__tooltip'>
           <div className='home__tooltip_square' />
