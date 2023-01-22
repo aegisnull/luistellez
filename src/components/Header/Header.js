@@ -1,6 +1,6 @@
 import './Header.scss';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Logo from '../../images/logo.svg';
 import MobileMenu from './MobileMenu';
 
@@ -13,16 +13,16 @@ function Header() {
 
   return (
     <header className='header'>
-      <Link to='/'>
+      <NavLink to='/'>
         <img src={Logo} alt='Logo' className='header__logo' />
-      </Link>
+      </NavLink>
       <nav className='header__nav'>
         <li className='header__nav_link'>
-          <Link to='/'>home</Link>
+          <NavLink to='/'>home</NavLink>
         </li>
 
         <li className='header__nav_link'>
-          <Link to='/projects'>projects</Link>
+          <NavLink to='/projects'>projects</NavLink>
         </li>
 
         {/*         <li className='header__nav_link'>
@@ -30,7 +30,7 @@ function Header() {
         </li> */}
 
         <li className='header__nav_link'>
-          <Link to='/contact'>contact</Link>
+          <NavLink to='/contact'>contact</NavLink>
         </li>
       </nav>
       <button
