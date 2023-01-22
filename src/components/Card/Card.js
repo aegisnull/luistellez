@@ -2,7 +2,7 @@ import './Card.scss';
 
 function Card({ image, tags, title, description, live, github }) {
   return (
-    <article className='card'>
+    <article className='card fade-in'>
       <video autoPlay muted loop className='card__image' width='328px' height='200px'>
         <source src={image} type='video/webm' />
       </video>

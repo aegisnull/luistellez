@@ -40,12 +40,14 @@ Feel free to customize the portfolio to suit your needs. You can change the cont
 
 You can add your own projects by editing the src/utils/cardData.js file, with the following format:
 
+```
 {
-image:
-'https://user-images.githubusercontent.com/27663011/212429268-38a790be-a69f-4219-b336-2d709a7038b9.gif',
-tags: ['React', 'NodeJS', 'ExpressJS', 'MongoDB'],
-title: 'News Explorer',
-description: 'News Reader Full Stack App',
-live: 'https://aegisnews.students.nomoredomainssbs.ru',
-github: 'https://github.com/aegisnull/news-explorer-frontend',
-}
+    image:
+      'https://user-images.githubusercontent.com/27663011/213897954-0a5e1b49-773b-4790-9ded-ee9c7a02ed15.webm',
+    tags: ['React', 'NodeJS', 'ExpressJS', 'MongoDB'],
+    title: 'News Explorer',
+    description: 'News Reader Full Stack App',
+    live: 'http://news-explorer.projects.luistellez.com',
+    github: 'https://github.com/aegisnull/news-explorer-frontend',
+  },
+```

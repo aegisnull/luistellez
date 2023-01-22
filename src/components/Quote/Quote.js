@@ -3,7 +3,7 @@ import './Quote.scss';
 function Quote() {
   return (
     <section className='quote'>
-      <div className='quote__container'>
+      <div className='quote__container text-focus-in'>
         <q className='quote__text'>Simplicity is the soul of efficiency</q>
         <p className='quote__author'>- Austin Freeman</p>
       </div>
