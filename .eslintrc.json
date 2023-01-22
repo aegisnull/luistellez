@@ -15,5 +15,7 @@
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
     "no-underscore-dangle": "off",
-    "jsx-a11y/control-has-associated-label": "off"  }
+    "jsx-a11y/control-has-associated-label": "off",
+    "jsx-a11y/media-has-caption": "off"
+  }
 }

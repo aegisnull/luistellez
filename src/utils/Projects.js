@@ -1,7 +1,7 @@
 const cardData = [
   {
     image:
-      'https://user-images.githubusercontent.com/27663011/212429268-38a790be-a69f-4219-b336-2d709a7038b9.gif',
+      'https://user-images.githubusercontent.com/27663011/213897954-0a5e1b49-773b-4790-9ded-ee9c7a02ed15.webm',
     tags: ['React', 'NodeJS', 'ExpressJS', 'MongoDB'],
     title: 'News Explorer',
     description: 'News Reader Full Stack App',
@@ -10,7 +10,7 @@ const cardData = [
   },
   {
     image:
-      'https://user-images.githubusercontent.com/27663011/212430554-4c31bead-b218-46ce-be6d-0dc21e40ec9c.gif',
+      'https://user-images.githubusercontent.com/27663011/213898091-5b70f8ba-f172-41ee-993b-8e14b349ef04.webm',
     tags: ['HTML', 'CSS', 'JavaScript'],
     title: 'Moody',
     description: 'Hackathon Project Landing Page',
@@ -19,7 +19,7 @@ const cardData = [
   },
   {
     image:
-      'https://user-images.githubusercontent.com/27663011/212450534-f83b5c93-f89f-4511-9e1b-30edc70a1573.gif',
+      'https://user-images.githubusercontent.com/27663011/213898105-5b145fbc-9b7a-4e1e-9e1f-96c0c6a9f65a.webm',
     tags: ['React', 'NodeJS', 'ExpressJS', 'MongoDB'],
     title: 'Around The U.S.',
     description: 'Instagram like app',
@@ -28,7 +28,7 @@ const cardData = [
   },
   {
     image:
-      'https://user-images.githubusercontent.com/27663011/212450825-0e9ceef1-2fa5-4528-8e66-a4bb1ffb5bb5.gif',
+      'https://user-images.githubusercontent.com/27663011/213898124-9ce0d236-a355-459a-90dd-adbb0208ce6d.webm',
     tags: ['WordPress', 'PHP', 'HTML', 'CSS'],
     title: 'GMG Manufacturing',
     description: 'Local Manufacturing  Website',
@@ -36,7 +36,7 @@ const cardData = [
   },
   {
     image:
-      'https://user-images.githubusercontent.com/27663011/212452645-58c41c60-3ac6-4bfd-9497-fb6093b24206.gif',
+      'https://user-images.githubusercontent.com/27663011/213898146-5761ad79-d819-4481-b433-4c1d2aa19da5.webm',
     tags: ['HTML', 'CSS', 'jQuery'],
     title: 'Circulo Café',
     description: 'Coffee Shop Website',
@@ -44,7 +44,7 @@ const cardData = [
   },
   {
     image:
-      'https://user-images.githubusercontent.com/27663011/212455443-7c18dc92-1fd1-48de-85ae-948759c41cb5.gif',
+      'https://user-images.githubusercontent.com/27663011/213898184-0a2fe67c-9dea-4086-8d4f-6f55ffa00716.webm',
     tags: ['HTML', 'CSS', 'jQuery'],
     title: 'Prepara tu Conta',
     description: 'Accounting Website',
@@ -52,7 +52,7 @@ const cardData = [
   },
   {
     image:
-      'https://user-images.githubusercontent.com/27663011/212457133-fff84375-98be-455a-9007-3e29878309a1.gif',
+      'https://user-images.githubusercontent.com/27663011/213898199-d247b9d6-229d-4a0c-a765-0a1f0d6a4410.webm',
     tags: ['HTML', 'CSS', 'CSS Grid'],
     title: 'Practicum Art Gallery',
     description: 'Art Gallery Website',
@@ -61,7 +61,7 @@ const cardData = [
   },
   {
     image:
-      'https://user-images.githubusercontent.com/27663011/212457366-178d4929-d1d5-490e-bf05-0834cc9a9e14.gif',
+      'https://user-images.githubusercontent.com/27663011/213898207-4f2fc689-80f5-486b-8856-06fe0803ce59.webm',
     tags: ['HTML', 'CSS', 'BEM'],
     title: 'Aprender a Aprender',
     description: 'Learning Info Website',
@@ -70,7 +70,7 @@ const cardData = [
   },
   {
     image:
-      'https://user-images.githubusercontent.com/27663011/212457551-0f7e8e98-f790-40b6-b97e-5abccc060194.gif',
+      'https://user-images.githubusercontent.com/27663011/213898241-74ad4f65-9f9b-46ff-ae93-f7c16d470eeb.webm',
     tags: ['HTML', 'CSS', 'JavaScript'],
     title: 'Memorama Game',
     description: 'Memory Game Website',
@@ -79,7 +79,7 @@ const cardData = [
   },
   {
     image:
-      'https://user-images.githubusercontent.com/27663011/212532655-ecfb189c-ebcc-46eb-9eb2-b1703792a181.gif',
+      'https://user-images.githubusercontent.com/27663011/213898282-441125d5-46c8-4782-9de9-3404d433a88e.webm',
     tags: ['WordPress', 'PHP', 'HTML', 'CSS'],
     title: 'Intelegal',
     description: 'Website for Law Firm',
@@ -87,7 +87,7 @@ const cardData = [
   },
   {
     image:
-      'https://user-images.githubusercontent.com/27663011/212532459-704509d4-4c52-4cc7-ae9c-1712ea45e766.gif',
+      'https://user-images.githubusercontent.com/27663011/213898310-f0d73e8f-b109-4996-a4a3-81f77cf0026c.webm',
     tags: ['HTML', 'CSS'],
     title: 'Odin Landing Page',
     description: 'Simple Landing Page',
@@ -96,7 +96,7 @@ const cardData = [
   },
   {
     image:
-      'https://user-images.githubusercontent.com/27663011/212532801-b1ae47a5-cf27-41a4-a166-673c0e697032.gif',
+      'https://user-images.githubusercontent.com/27663011/213898326-1806ba53-293b-4e97-a3e0-0ead6b16e521.webm',
     tags: ['WordPress', 'PHP', 'HTML', 'CSS'],
     title: 'Intelegal Landing Page',
     description: 'Landing Page for Real Estate',

@@ -3,7 +3,9 @@ import './Card.scss';
 function Card({ image, tags, title, description, live, github }) {
   return (
     <article className='card'>
-      <img src={image} alt={title} className='card__image' />
+      <video autoPlay muted loop className='card__image' width='328px' height='200px'>
+        <source src={image} type='video/webm' />
+      </video>
       <div className='card__tags'>
         {tags.map((tag) => (
           <span className='card__tag'>{tag}</span>
