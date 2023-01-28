@@ -23,8 +23,8 @@ function Home() {
           <div className='home__tooltip_square' />
           <div className='home__tooltip_text'>
             Currently working on
-            <a href='https://github.com/aegisnull/luistellez' target='_blank' rel='noreferrer'>
-              <span className='home__tooltip_text_bold'> Portfolio</span>
+            <a href='https://github.com/aegisnull/adicare' target='_blank' rel='noreferrer'>
+              <span className='home__tooltip_text_bold'> AdiCare</span>
             </a>
           </div>
         </div>
