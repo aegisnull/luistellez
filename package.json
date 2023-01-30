@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "lint": "eslint ./src",
     "lint:fix": "eslint --fix",
-    "format": "prettier --write 'src/**/*.{js,jsx,scss}'"
+    "format": "prettier --write 'src/**/*.{js,jsx,scss}'",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
@@ -31,6 +32,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.0",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^5.0.0",
     "prettier": "^2.8.3",
     "prettier-plugin-rational-order": "^1.0.3",
     "vite": "^4.0.0"
