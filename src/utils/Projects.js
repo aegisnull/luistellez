@@ -32,7 +32,7 @@ const cardData = [
     tags: ['WordPress', 'PHP', 'HTML', 'CSS'],
     title: 'GMG Manufacturing',
     description: 'Local Manufacturing  Website',
-    live: 'https://gmgmanufacturing.com',
+    live: 'https://web.archive.org/web/20221208215442/https://gmgmanufacturing.com/',
   },
   {
     image:
