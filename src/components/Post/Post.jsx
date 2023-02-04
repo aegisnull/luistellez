@@ -1,16 +1,15 @@
-import Markdown from 'markdown-to-jsx';
 import React from 'react';
+import Markdown from 'markdown-to-jsx';
 
 function Post() {
-  const [post, setPost] = React.useState(null);
+  const [post, setPost] = React.useState('');
 
   React.useEffect(() => {
-    import('../../posts/hello-world.md').then((post) => {
-      fetch(post.default)
-        .then((res) => res.text())
-        .then((text) => setPost(text))
-        .finally(() => console.log(post));
-    });
+    fetch(
+      'https://raw.githubusercontent.com/aegisnull/luistellez/feat/blog/src/posts/hello-world.md',
+    )
+      .then((res) => res.text())
+      .then((text) => setPost(text));
   }, []);
 
   return (
