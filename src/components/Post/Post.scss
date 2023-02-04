@@ -1,0 +1,40 @@
+.post {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
+  font-family: Roboto-Slab, serif;
+
+  h1 {
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  h3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  ul {
+    padding-left: 20px;
+    font-size: 15px;
+  }
+
+  li {
+    padding-top: 5px;
+    list-style: disc;
+  }
+}
