@@ -14,7 +14,7 @@ function Post() {
 
   return (
     <div className='post'>
-      <Markdown>{post}</Markdown>
+      <Markdown options={{ wrapper: 'article' }}>{post}</Markdown>
     </div>
   );
 }
