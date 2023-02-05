@@ -5,6 +5,7 @@ import Code from '../Code/Code';
 import { useParams } from 'react-router-dom';
 
 function Post() {
+  // get the id from the url visited by the user and use it to import the markdown file from the posts folder
   const id = useParams().id;
 
   const [post, setPost] = React.useState('');
