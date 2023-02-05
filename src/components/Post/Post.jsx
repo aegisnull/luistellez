@@ -52,15 +52,18 @@ function Post() {
     return readTime;
   }
 
+  const formatDate = (date) => {
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    return new Date(date).toLocaleDateString('en-US', options);
+  };
+
   console.log(metadata);
 
   return (
     <article className='post'>
       <h1>{metadata.title}</h1>
       <div className='post__meta'>
-        {' '}
-        published {metadata.datePublished} - updated {metadata.dateUpdated} /{' '}
-        {readTime(countWords(post))} mins read
+        {formatDate(metadata.datePublished)} / {readTime(countWords(post))} mins read
       </div>
 
       <Markdown
