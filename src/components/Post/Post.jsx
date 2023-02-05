@@ -1,6 +1,8 @@
 import './Post.scss';
 import React from 'react';
 import Markdown from 'markdown-to-jsx';
+import Code from '../Code/Code';
+
 function Post() {
   const [post, setPost] = React.useState('');
 
@@ -13,8 +15,20 @@ function Post() {
   }, []);
 
   return (
-    <div className='post'>
-      <Markdown options={{ wrapper: 'article' }}>{post}</Markdown>
+    <div className='article-wrapper'>
+      <article className='post'>
+        <Markdown
+          options={{
+            overrides: {
+              Code: {
+                component: Code,
+              },
+            },
+          }}
+        >
+          {post}
+        </Markdown>
+      </article>
     </div>
   );
 }

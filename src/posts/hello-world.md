@@ -1,6 +1,16 @@
 # Hello World!
 
-I'm a full stack JavaScript web developer, and I'm thrilled to be writing my first blog post on my portfolio website. In this post, I'd like to give you a brief introduction to who I am and what I do.
+I'm a full stack JavaScript web developer, and I'm thrilled to be writing my first blog post on my portfolio website. In this post, I'd like to give you a brief introduction to who I am and what I do, and what better way to do that than with a classic "Hello World!" post? Let's get started!, the JavaScript way of course.
+
+<Code language="javascript">
+const me = {
+  name: 'Luis Tellez',
+  age: 28,
+  title: 'Full Stack JavaScript Web Developer',
+  skills: ['JavaScript', 'React', 'Node.js', 'Express', 'MongoDB', 'MySQL'],
+  interests: ['Web Development', 'Kpop', 'Target Archery', 'Technology']
+};
+</Code>
 
 ## Who I am
 
