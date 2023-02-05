@@ -2,13 +2,16 @@ import './Post.scss';
 import React from 'react';
 import Markdown from 'markdown-to-jsx';
 import Code from '../Code/Code';
+import { useParams } from 'react-router-dom';
 
 function Post() {
+  const id = useParams().id;
+
   const [post, setPost] = React.useState('');
   const [metadata, setMetadata] = React.useState({});
 
   React.useEffect(() => {
-    import('../../posts/hello-world.md').then((res) => {
+    import(`../../posts/${id}.md`).then((res) => {
       fetch(res.default)
         .then((response) => response.text())
         .then((text) => {
@@ -18,7 +21,7 @@ function Post() {
           setPost(cleanedText);
         });
     });
-  }, []);
+  }, [id]);
 
   // function that extracts the metadata from the markdown file imported
   function extractMetadata(markdown) {
@@ -56,8 +59,6 @@ function Post() {
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     return new Date(date).toLocaleDateString('en-US', options);
   };
-
-  console.log(metadata);
 
   return (
     <article className='post'>
