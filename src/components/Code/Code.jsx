@@ -5,7 +5,7 @@ import jsx from 'react-syntax-highlighter/dist/esm/languages/prism/jsx';
 import './Code.scss';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-const Code = ({ children, language }) => {
+function Code({ children, language }) {
   const [isCopied, setIsCopied] = useState(false);
 
   SyntaxHighlighter.registerLanguage('jsx', jsx);
@@ -40,6 +40,6 @@ const Code = ({ children, language }) => {
       </SyntaxHighlighter>
     </div>
   );
-};
+}
 
 export default Code;

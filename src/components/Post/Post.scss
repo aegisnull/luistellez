@@ -2,25 +2,26 @@
   padding-top: 50px;
   padding-bottom: 50px;
   color: white;
-  font-family: Roboto-Slab, serif;
+  font-family: 'Poppins', serif;
 
   h1 {
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     color: var(--accent-color);
-    font-weight: 700;
-    font-size: 40px;
+    font-weight: 800;
+    font-size: 4.2vw;
+    line-height: 1.2;
     text-align: center;
   }
 
   h2 {
-    padding-top: 20px;
+    padding-top: 50px;
     padding-bottom: 20px;
     font-weight: 600;
     font-size: 30px;
   }
 
   h3 {
-    padding-top: 20px;
+    padding-top: 50px;
     padding-bottom: 20px;
     font-weight: 500;
     font-size: 20px;
