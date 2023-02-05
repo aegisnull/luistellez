@@ -57,7 +57,11 @@ function Post() {
   return (
     <article className='post'>
       <h1>{metadata.title}</h1>
-      <div className='post__meta'>JULY 02, 2028 / {readTime(countWords(post))} mins read</div>
+      <div className='post__meta'>
+        {' '}
+        published {metadata.datePublished} - updated {metadata.dateUpdated} /{' '}
+        {readTime(countWords(post))} mins read
+      </div>
 
       <Markdown
         options={{
