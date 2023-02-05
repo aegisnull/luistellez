@@ -4,8 +4,6 @@ datePublished: 2023-02-04
 dateModified: 2023-02-05
 ---
 
-# Hello World!
-
 I'm a full stack JavaScript web developer, and I'm thrilled to be writing my first blog post on my portfolio website. In this post, I'd like to give you a brief introduction to who I am and what I do, and what better way to do that than with a classic "Hello World!" post? Let's get started!, the JavaScript way of course.
 
 <Code language="javascript">

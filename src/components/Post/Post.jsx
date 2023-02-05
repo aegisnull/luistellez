@@ -5,19 +5,33 @@ import Code from '../Code/Code';
 
 function Post() {
   const [post, setPost] = React.useState('');
+  const [metadata, setMetadata] = React.useState({});
 
   React.useEffect(() => {
     import('../../posts/hello-world.md').then((res) => {
       fetch(res.default)
         .then((response) => response.text())
         .then((text) => {
+          const metadata = extractMetadata(text);
+          setMetadata(metadata);
           const cleanedText = removeMetadata(text);
-          const title = findTitle(cleanedText);
-          const postWithoutTitle = removeTitle(cleanedText, title);
-          setPost(postWithoutTitle);
+          setPost(cleanedText);
         });
     });
   }, []);
+
+  // function that extracts the metadata from the markdown file imported
+  function extractMetadata(markdown) {
+    const startIndex = markdown.indexOf('---');
+    const endIndex = markdown.indexOf('---', startIndex + 3);
+    const metadataText = markdown.slice(startIndex + 3, endIndex).trim();
+    const metadataLines = metadataText.split('\n');
+    return metadataLines.reduce((acc, line) => {
+      const [key, value] = line.split(':');
+      acc[key.trim()] = value.trim();
+      return acc;
+    }, {});
+  }
 
   // function that removes the metadata from the markdown file imported
   function removeMetadata(markdown) {
@@ -31,23 +45,20 @@ function Post() {
     return str.split(' ').length;
   }
 
-  // function that finds the title of the markdown file imported it checks for the first # and then returns the text after it removing the #
-  function findTitle(markdown) {
-    let match = markdown.match(/^#[^\n]+/m);
-    return match ? match[0].slice(1) : null;
+  function readTime(wordCount) {
+    const wordsPerMinute = 200;
+    const minutes = wordCount / wordsPerMinute;
+    const readTime = Math.ceil(minutes);
+    return readTime;
   }
 
-  function removeTitle(markdown, title) {
-    const titleIndex = markdown.indexOf(title);
-    const endOfLineIndex = markdown.indexOf('\n', titleIndex);
-    return markdown.slice(0, titleIndex) + markdown.slice(endOfLineIndex + 1);
-  }
-
-  console.log(countWords(post));
-  console.log(findTitle(post));
+  console.log(metadata);
 
   return (
     <article className='post'>
+      <h1>{metadata.title}</h1>
+      <div className='post__meta'>JULY 02, 2028 / {readTime(countWords(post))} mins read</div>
+
       <Markdown
         options={{
           overrides: {

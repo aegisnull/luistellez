@@ -4,8 +4,19 @@
   color: white;
   font-family: 'Poppins', serif;
 
-  h1 {
+  &__meta {
+    padding-top: 20px;
     padding-bottom: 50px;
+    color: var(--accent-color);
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 1px solid var(--accent-color);
+  }
+
+  h1 {
+    padding-bottom: 20px;
     color: var(--accent-color);
     font-weight: 800;
     font-size: 4.2vw;
