@@ -41,6 +41,11 @@
     list-style: disc;
   }
 
+  a {
+    color: var(--accent-color);
+    font-weight: 500;
+  }
+
   blockquote {
     margin: 1.5em 10px;
     padding: 0.5em 10px;
@@ -62,40 +67,5 @@
     & p:first-child {
       padding-top: 15px;
     }
-  }
-}
-
-.article-wrapper {
-  padding: 2rem;
-}
-
-.article__cover img {
-  width: 100%;
-}
-
-a {
-  color: var(--accent-color);
-  font-weight: 500;
-}
-
-code {
-  color: var(--code-color);
-}
-
-@media screen and (max-width: 1024px) {
-  main.main {
-    width: 70%;
-  }
-}
-
-@media screen and (max-width: 920px) {
-  main.main {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 520px) {
-  main.main {
-    width: 90%;
   }
 }

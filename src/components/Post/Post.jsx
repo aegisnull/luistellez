@@ -15,21 +15,19 @@ function Post() {
   }, []);
 
   return (
-    <div className='article-wrapper'>
-      <article className='post'>
-        <Markdown
-          options={{
-            overrides: {
-              Code: {
-                component: Code,
-              },
+    <article className='post'>
+      <Markdown
+        options={{
+          overrides: {
+            Code: {
+              component: Code,
             },
-          }}
-        >
-          {post}
-        </Markdown>
-      </article>
-    </div>
+          },
+        }}
+      >
+        {post}
+      </Markdown>
+    </article>
   );
 }
 

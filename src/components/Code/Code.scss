@@ -1,6 +1,5 @@
 .code {
   position: relative;
-  // padding: 20px;
   border: 1px solid rgba(0, 0, 255, 0.1);
   border-radius: 10px;
 }
@@ -10,11 +9,11 @@
   top: 0;
   right: 0;
   z-index: 1;
-}
 
-.code__icons button {
-  padding: 10px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
+  & button {
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
 }
