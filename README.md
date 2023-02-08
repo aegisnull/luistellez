@@ -14,7 +14,9 @@ Welcome to my developer portfolio! This portfolio was built using React, a JavaS
 
 ## Lighthouse Report
 
-<img width="442" alt="Lighthouse Report" src="https://user-images.githubusercontent.com/27663011/213899577-1f029e54-3da4-4652-83cd-54680acace44.png">
+<img width="413" alt="Lighthouse report" src="https://user-images.githubusercontent.com/27663011/217423631-c758a25b-b62b-4829-adfc-b8fca04b9447.png">
+
+<img width="482" alt="Performance metrics" src="https://user-images.githubusercontent.com/27663011/217423969-127f8613-1139-4d8a-8c0c-7ade8c1e9ac5.png">
 
 ## Installation
 
