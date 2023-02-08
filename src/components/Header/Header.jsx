@@ -1,8 +1,8 @@
-import './Header.scss';
-import React from 'react';
-import { NavLink, Link } from 'react-router-dom';
-import Logo from '../../images/logo.svg';
-import MobileMenu from './MobileMenu';
+import styles from "./Header.module.scss";
+import React from "react";
+import Link from "next/link";
+import MobileMenu from "./MobileMenu";
+import Image from "next/image";
 
 function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -12,32 +12,38 @@ function Header() {
   }
 
   return (
-    <header className='header'>
-      <Link to='/'>
-        <img src={Logo} alt='Logo' className='header__logo' />
+    <header className={styles.header}>
+      <Link href="/">
+        <Image
+          src="./images/logo.svg"
+          alt="Logo"
+          width={107}
+          height={21}
+          className={styles.header__logo}
+        />
       </Link>
-      <nav className='header__nav'>
-        <li className='header__nav_link'>
-          <NavLink to='/'>home</NavLink>
+      <nav className={styles.header__nav}>
+        <li className={styles.header__nav_link}>
+          <Link href="/">home</Link>
         </li>
 
-        <li className='header__nav_link'>
-          <NavLink to='/projects'>projects</NavLink>
+        <li className={styles.header__nav_link}>
+          <Link href="/projects">projects</Link>
         </li>
 
         {/*         <li className='header__nav_link'>
           <a href='#about-me'>about-me</a>
         </li> */}
 
-        <li className='header__nav_link'>
-          <NavLink to='/contact'>contact</NavLink>
+        <li className={styles.header__nav_link}>
+          <Link href="/contact">contact</Link>
         </li>
       </nav>
       <button
-        className='header__menu-btn'
-        type='button'
+        className={styles.header__menu_btn}
+        type="button"
         onClick={handleMobileMenuClick}
-        aria-label='Toggle mobile menu'
+        aria-label="Toggle mobile menu"
       />
       {isOpen ? <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} /> : null}
     </header>

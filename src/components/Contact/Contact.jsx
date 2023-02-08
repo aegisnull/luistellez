@@ -1,6 +1,6 @@
-import './Contact.scss';
-import emailjs from '@emailjs/browser';
-import React from 'react';
+import styles from "./Contact.module.scss";
+import emailjs from "@emailjs/browser";
+import React from "react";
 
 function Contact() {
   const refForm = React.useRef();
@@ -9,7 +9,12 @@ function Contact() {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_dqm28n8', 'template_2xn3nhq', refForm.current, 'iDsCGoKJNkMjEoYgL')
+      .sendForm(
+        "service_dqm28n8",
+        "template_2xn3nhq",
+        refForm.current,
+        "iDsCGoKJNkMjEoYgL"
+      )
       .then(
         () => {
           //  alert('Message sent, I will contact you shortly');
@@ -18,39 +23,48 @@ function Contact() {
         },
         () => {
           // alert('An error occured, please try again');
-        },
+        }
       );
   };
 
   return (
-    <section className='contact'>
-      <div className='projects__container'>
-        <div className='projects__title'>
-          <h2 className='title'>contact</h2>
-          <div className='projects__line' />
+    <section className={styles.contact}>
+      <div className={styles.contact__container}>
+        <div className={styles.contact__title}>
+          <h2 className="title">contact</h2>
+          <div className={styles.contact__line} />
         </div>
       </div>
-      <p className='contact__paragraph'>
-        I am interested in new opportunities and challenges. If you have any questions or want to
-        work with me, please contact me.
+      <p className={styles.contact__paragraph}>
+        I am interested in new opportunities and challenges. If you have any
+        questions or want to work with me, please contact me.
       </p>
-      <div className='contact-form'>
+      <div className={styles.contact_form}>
         <form ref={refForm} onSubmit={sendEmail}>
           <ul>
-            <li className='half'>
-              <input type='text' name='name' placeholder='Name' required />
+            <li className={styles.half}>
+              <input type="text" name="name" placeholder="Name" required />
             </li>
-            <li className='half'>
-              <input type='email' name='email' placeholder='Email' required />
-            </li>
-            <li>
-              <input type='text' name='subject' placeholder='Subject' required />
+            <li className={styles.half}>
+              <input type="email" name="email" placeholder="Email" required />
             </li>
             <li>
-              <textarea name='message' placeholder='Message' required />
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
             </li>
             <li>
-              <input type='submit' className='contact__button' value='Send' />
+              <textarea name="message" placeholder="Message" required />
+            </li>
+            <li>
+              <input
+                type="submit"
+                className={styles.contact__button}
+                value="Send"
+              />
             </li>
           </ul>
         </form>
