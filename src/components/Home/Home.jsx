@@ -1,30 +1,43 @@
-import './Home.scss';
-import { Link } from 'react-router-dom';
-import Avatar from '../../images/avatar.webp';
+import styles from "./Home.module.scss";
+import Link from "next/link";
+import Image from "next/image";
 
 function Home() {
   return (
-    <section className='home'>
-      <div className='home__container-info swing-in-left-fwd'>
-        <h1 className='home__title'>
-          Hi, I&apos;m Luis Tellez a <span className='home__title_accent'>web developer</span> and
-          <span className='home__title_accent'> UI/UX Enthusiast</span>
+    <section className={styles.home}>
+      <div className={styles.home__container_info}>
+        <h1 className={styles.home__title}>
+          Hi, I&apos;m Luis Tellez a
+          <span className={styles.home__title_accent}>web developer</span> and
+          <span className={styles.home__title_accent}> UI/UX Enthusiast</span>
         </h1>
-        <h2 className='home__subtitle'>I build sophisticated websites and web applications.</h2>
-        <div className='button_accent'>
-          <Link to='/contact'>
-            <div className='button__text'>Contact me !!</div>
+        <h2 className={styles.home__subtitle}>
+          I build sophisticated websites and web applications.
+        </h2>
+        <div className="button_accent">
+          <Link href="/contact">
+            <div className="button__text">Contact me !!</div>
           </Link>
         </div>
       </div>
-      <div className='home__container-avatar bounce-in-right'>
-        <img src={Avatar} alt='Luis Tellez' className='home__avatar' />
-        <div className='home__tooltip'>
-          <div className='home__tooltip_square' />
-          <div className='home__tooltip_text'>
+      <div className={styles.home__container_avatar}>
+        <Image
+          src="/images/avatar.webp"
+          width={453}
+          height={383}
+          alt="Luis Tellez"
+          className={styles.home__avatar}
+        />
+        <div className={styles.home__tooltip}>
+          <div className={styles.home__tooltip_square} />
+          <div className={styles.home__tooltip_text}>
             Currently working on
-            <a href='https://github.com/aegisnull/adicare' target='_blank' rel='noreferrer'>
-              <span className='home__tooltip_text_bold'> AdiCare</span>
+            <a
+              href="https://github.com/aegisnull/adicare"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span className={styles.home__tooltip_text_bold}> AdiCare</span>
             </a>
           </div>
         </div>

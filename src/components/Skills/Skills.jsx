@@ -1,25 +1,31 @@
-import './Skills.scss';
-import DecorativeImage from '../../images/skills.svg';
-import skills from '../../utils/Skills';
+import styles from "./Skills.module.scss";
+import skills from "../../utils/Skills";
+import Image from "next/image";
 
 function Skills() {
   return (
-    <section className='skills'>
-      <div className='skills__container'>
-        <div className='skills__title'>
-          <h2 className='title'>skills</h2>
-          <div className='skills__line' />
+    <section className={styles.skills}>
+      <div className={styles.skills__container}>
+        <div className={styles.skills__title}>
+          <h2 className="title">skills</h2>
+          <div className={styles.skills__line} />
         </div>
       </div>
-      <div className='skills__container_content'>
-        <img src={DecorativeImage} alt='skills' className='skills__image' />
-        <div className='skills__card-container'>
+      <div className={styles.skills__container_content}>
+        <Image
+          src="./images/skills.svg"
+          width={349}
+          height={286}
+          alt="skills"
+          className={styles.skills__image}
+        />
+        <div className={styles.skills__card_container}>
           {skills.map((skill) => (
-            <div key={skill.id} className='skills__card'>
-              <h3 className='skills__card-title'>{skill.title}</h3>
-              <ul className='skills__card-list'>
+            <div key={skill.id} className={styles.skills__card}>
+              <h3 className={styles.skills__card_title}>{skill.title}</h3>
+              <ul className={styles.skills__card_list}>
                 {skill.items.map((item, index) => (
-                  <li key={index} className='skills__card-item'>
+                  <li key={index} className={styles.skills__card_item}>
                     {item}
                   </li>
                 ))}

@@ -1,56 +1,82 @@
-import './Footer.scss';
-import Logo from '../../images/logo.svg';
-import Twitter from '../../images/twitter.svg';
-import LinkedIn from '../../images/linkedin.svg';
-import GitHub from '../../images/github.svg';
+import styles from "./Footer.module.scss";
+import Image from "next/image";
 
 function Footer() {
   return (
-    <footer className='footer'>
-      <div className='footer__container'>
-        <div className='footer__container_info'>
-          <div className='footer__container_info_contact'>
-            <img src={Logo} alt='Luis Tellez' className='footer__logo' />
-            <a href='mailto:aegisnull@protonmail.com' className='footer__mail'>
+    <footer className={styles.footer}>
+      <div className={styles.footer__container}>
+        <div className={styles.footer__container_info}>
+          <div className={styles.footer__container_info_contact}>
+            <Image
+              src="./images/logo.svg"
+              alt="Luis Tellez"
+              width={50}
+              height={50}
+              className={styles.footer__logo}
+            />
+            <a
+              href="mailto:aegisnull@protonmail.com"
+              className={styles.footer__mail}
+            >
               aegisnull@protonmail.com
             </a>
           </div>
-          <p className='footer__subtitle'>Full Stack Web Developer (MERN) based in Mexico</p>
+          <p className={styles.footer__subtitle}>
+            Full Stack Web Developer (MERN) based in Mexico
+          </p>
         </div>
-        <div className='footer__container_socials'>
-          <p className='footer__socials_title'>Media</p>
-          <div className='footer__socials'>
+        <div className={styles.footer__container_socials}>
+          <p className={styles.footer__socials_title}>Media</p>
+          <div className={styles.footer__socials}>
             <a
-              href='
-              https://github.com/aegisnull'
-              target='_blank'
-              rel='noreferrer'
-              className='footer__socials_link'
+              href="
+              https://github.com/aegisnull"
+              target="_blank"
+              rel="noreferrer"
+              className={styles.footer__socials_link}
             >
-              <img className='footer__socials_icon' src={GitHub} alt='GitHub icon' />
+              <Image
+                className={styles.footer__socials_icon}
+                src="./images/github.svg"
+                width={30}
+                height={30}
+                alt="GitHub icon"
+              />
             </a>
             <a
-              href='
-              https://twitter.com/LuisTellezDev'
-              target='_blank'
-              rel='noreferrer'
-              className='footer__socials_link'
+              href="
+              https://twitter.com/LuisTellezDev"
+              target="_blank"
+              rel="noreferrer"
+              className={styles.footer__socials_link}
             >
-              <img className='footer__socials_icon' src={Twitter} alt='Twitter icon' />
+              <Image
+                className={styles.footer__socials_icon}
+                src="./images/twitter.svg"
+                width={30}
+                height={30}
+                alt="Twitter icon"
+              />
             </a>
             <a
-              href='
-              https://www.linkedin.com/in/luistellezv/'
-              target='_blank'
-              rel='noreferrer'
-              className='footer__socials_link'
+              href="
+              https://www.linkedin.com/in/luistellezv/"
+              target="_blank"
+              rel="noreferrer"
+              className={styles.footer__socials_link}
             >
-              <img className='footer__socials_icon' src={LinkedIn} alt='LinkedIn icon' />
+              <Image
+                className={styles.footer__socials_icon}
+                src="./images/linkedin.svg"
+                width={30}
+                height={30}
+                alt="LinkedIn icon"
+              />
             </a>
           </div>
         </div>
       </div>
-      <p className='footer__copy'>Made by Luis Tellez</p>
+      <p className={styles.footer__copy}>Made by Luis Tellez</p>
     </footer>
   );
 }

@@ -24,7 +24,7 @@
     gap: 80px;
   }
 
-  &__card-container {
+  &__card_container {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
@@ -37,17 +37,17 @@
     height: max-content;
     border: 1px solid var(--gray-color);
 
-    &-title {
+    &_title {
       padding: 8px;
       color: var(--white-color);
       font-weight: 500;
       font-size: 16px;
-      font-family: 'Fira Code', monospace;
+      font-family: "Fira Code", monospace;
       line-height: 21px;
       border-bottom: 1px solid var(--gray-color);
     }
 
-    &-list {
+    &_list {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
@@ -55,11 +55,11 @@
       padding: 8px;
     }
 
-    &-item {
+    &_item {
       color: var(--gray-color);
       font-weight: 500;
       font-size: 16px;
-      font-family: 'Fira Code', monospace;
+      font-family: "Fira Code", monospace;
       line-height: 21px;
 
       &:hover {
@@ -85,7 +85,7 @@ $breakpoint-mobile: 426px;
       align-items: center;
     }
 
-    &__card-container {
+    &__card_container {
       justify-content: center;
     }
 

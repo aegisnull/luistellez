@@ -2,9 +2,10 @@ import './Post.scss';
 import React from 'react';
 import Markdown from 'markdown-to-jsx';
 import Code from '../Code/Code';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 
 function Post() {
+  const navigate = useNavigate();
   // get the id from the url visited by the user and use it to import the markdown file from the posts folder
   const id = useParams().id;
 
@@ -12,17 +13,19 @@ function Post() {
   const [metadata, setMetadata] = React.useState({});
 
   React.useEffect(() => {
-    import(`../../posts/${id}.md`).then((res) => {
-      fetch(res.default)
-        .then((response) => response.text())
-        .then((text) => {
-          const metadata = extractMetadata(text);
-          setMetadata(metadata);
-          const cleanedText = removeMetadata(text);
-          setPost(cleanedText);
-        });
-    });
-  }, [id]);
+    import(`../../posts/${id}.md`)
+      .then((res) => {
+        fetch(res.default)
+          .then((response) => response.text())
+          .then((text) => {
+            const metadata = extractMetadata(text);
+            setMetadata(metadata);
+            const cleanedText = removeMetadata(text);
+            setPost(cleanedText);
+          });
+      })
+      .catch(() => navigate('/'));
+  }, [id, navigate]);
 
   // function that extracts the metadata from the markdown file imported
   function extractMetadata(markdown) {

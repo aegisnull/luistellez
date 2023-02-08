@@ -1,11 +1,12 @@
-import './Projects.scss';
-import React from 'react';
-import { useLocation, Link } from 'react-router-dom';
-import Card from '../Card/Card';
-import cardData from '../../utils/Projects';
+import styles from "./Projects.module.scss";
+import React from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import Card from "../Card/Card";
+import cardData from "../../utils/Projects";
 
 function Projects() {
-  const currentPath = useLocation().pathname;
+  const router = useRouter();
   const [cardsToShow, setCardsToShow] = React.useState(3);
 
   const handleViewMore = () => {
@@ -13,25 +14,25 @@ function Projects() {
   };
 
   React.useEffect(() => {
-    if (currentPath === '/projects') {
+    if (router.pathname === "/projects") {
       setCardsToShow(cardData.length);
     }
-  }, [currentPath]);
+  }, [router.pathname]);
 
   return (
-    <section className='projects'>
-      <div className='projects__container'>
-        <div className='projects__title'>
-          <h2 className='title'>projects</h2>
-          <div className='projects__line' />
+    <section className={styles.projects}>
+      <div className={styles.projects__container}>
+        <div className={styles.projects__title}>
+          <h2 className="title">projects</h2>
+          <div className={styles.projects__line} />
         </div>
-        {currentPath === '/' ? (
-          <div className='projects__nav'>
-            <Link to='/projects'>View all</Link>
+        {router.pathname === "/" ? (
+          <div className={styles.projects__nav}>
+            <Link href="/projects">View all</Link>
           </div>
         ) : null}
       </div>
-      <div className='projects__cards'>
+      <div className={styles.projects__cards}>
         {cardData.slice(0, cardsToShow).map((card) => (
           <Card
             key={card.id}
@@ -45,7 +46,11 @@ function Projects() {
         ))}
       </div>
       {cardData.length > cardsToShow && (
-        <button onClick={handleViewMore} type='button' className='projects__button'>
+        <button
+          onClick={handleViewMore}
+          type="button"
+          className={styles.projects__button}
+        >
           View more
         </button>
       )}

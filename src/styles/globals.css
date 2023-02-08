@@ -1,6 +1,6 @@
-@import './vendor/reset.css';
-@import './vendor/fonts.css';
-@import './vendor/animations.css';
+@import "../vendor/reset.css";
+@import "../vendor/fonts.css";
+@import "../vendor/animations.css";
 
 :root {
   --background-color: #282c33;
@@ -12,8 +12,8 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   background-color: var(--background-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -51,7 +51,7 @@ body {
   color: var(--white-color);
   font-weight: 500;
   font-size: 16px;
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
   line-height: 21px;
 }
 
@@ -59,12 +59,12 @@ body {
   color: var(--white-color);
   font-weight: 500;
   font-size: 32px;
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
   line-height: 42px;
 }
 
 .title::before {
-  content: '#';
+  content: "#";
   color: var(--accent-color);
 }
 
