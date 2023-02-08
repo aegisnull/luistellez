@@ -1,0 +1,83 @@
+.post {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
+  font-family: 'Poppins', serif;
+
+  &__meta {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    color: var(--accent-color);
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 1px solid var(--accent-color);
+  }
+
+  h1 {
+    padding-bottom: 20px;
+    color: var(--accent-color);
+    font-weight: 800;
+    font-size: 4.2vw;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  h2 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  h3 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 15px;
+    font-family: Lato, sans-serif;
+  }
+
+  ul {
+    padding-left: 20px;
+    font-size: 15px;
+  }
+
+  li {
+    padding-top: 5px;
+    list-style: disc;
+  }
+
+  a {
+    color: var(--accent-color);
+    font-weight: 500;
+  }
+
+  blockquote {
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    background: var(--accent-color);
+    border-left: 10px solid rebeccapurple;
+
+    & strong {
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    & p {
+      padding-bottom: 15px;
+      font-size: 15px;
+      font-family: Lato, sans-serif;
+      font-style: italic;
+    }
+
+    & p:first-child {
+      padding-top: 15px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.code {
+  position: relative;
+  margin: 30px 0;
+  overflow: hidden;
+  color: #d4d4d4;
+  font-size: 12px;
+}
+
+.code__icons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+
+  & button {
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}

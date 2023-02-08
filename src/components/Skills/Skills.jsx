@@ -15,11 +15,13 @@ function Skills() {
         <img src={DecorativeImage} alt='skills' className='skills__image' />
         <div className='skills__card-container'>
           {skills.map((skill) => (
-            <div className='skills__card'>
+            <div key={skill.id} className='skills__card'>
               <h3 className='skills__card-title'>{skill.title}</h3>
               <ul className='skills__card-list'>
-                {skill.items.map((item) => (
-                  <li className='skills__card-item'>{item}</li>
+                {skill.items.map((item, index) => (
+                  <li key={index} className='skills__card-item'>
+                    {item}
+                  </li>
                 ))}
               </ul>
             </div>

@@ -7,6 +7,7 @@
   --accent-color: #c778dd;
   --gray-color: #abb2bf;
   --white-color: #fff;
+  --code-color: #282c33;
 }
 
 body {
@@ -16,10 +17,6 @@ body {
   background-color: var(--background-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 .App {

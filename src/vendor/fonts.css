@@ -1,34 +1,55 @@
 @font-face {
-  font-family: Roboto-Slab;
   font-weight: 500;
+  font-family: Roboto-Slab;
   font-style: normal;
   src: url(./fonts/RobotoSlab-Medium.woff2) format('woff2');
 }
 
 @font-face {
-  font-family: Roboto-Slab;
   font-weight: 600;
+  font-family: Roboto-Slab;
   font-style: normal;
   src: url(./fonts/RobotoSlab-SemiBold.woff2) format('woff2');
 }
 
 @font-face {
-  font-family: 'Fira Code';
   font-weight: 400;
+  font-family: 'Fira Code';
   font-style: normal;
   src: url(./fonts/FiraCode-Regular.woff2) format('woff2');
 }
 
 @font-face {
-  font-family: 'Fira Code';
   font-weight: 500;
+  font-family: 'Fira Code';
   font-style: normal;
   src: url(./fonts/FiraCode-Medium.woff2) format('woff2');
 }
 
 @font-face {
-  font-family: 'Fira Code';
   font-weight: 600;
+  font-family: 'Fira Code';
   font-style: normal;
   src: url(./fonts/FiraCode-SemiBold.woff2) format('woff2');
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: 'Poppins';
+  font-style: normal;
+  src: url(./fonts/Poppins-Medium.woff2) format('woff2');
+}
+
+@font-face {
+  font-weight: 600;
+  font-family: 'Poppins';
+  font-style: normal;
+  src: url(./fonts/Poppins-SemiBold.woff2) format('woff2');
+}
+
+@font-face {
+  font-weight: 800;
+  font-family: 'Poppins';
+  font-style: normal;
+  src: url(./fonts/Poppins-ExtraBold.woff2) format('woff2');
 }

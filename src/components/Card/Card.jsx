@@ -7,8 +7,10 @@ function Card({ image, tags, title, description, live, github }) {
         <source src={image} type='video/webm' />
       </video>
       <div className='card__tags'>
-        {tags.map((tag) => (
-          <span className='card__tag'>{tag}</span>
+        {tags.map((tag, index) => (
+          <span key={index} className='card__tag'>
+            {tag}
+          </span>
         ))}
       </div>
       <div className='card__content'>
