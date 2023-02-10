@@ -22,7 +22,7 @@ function Header() {
           className={styles.header__logo}
         />
       </Link>
-      <nav className={styles.header__nav}>
+      <ul className={styles.header__nav}>
         <li className={styles.header__nav_link}>
           <Link href="/">home</Link>
         </li>
@@ -38,7 +38,7 @@ function Header() {
         <li className={styles.header__nav_link}>
           <Link href="/contact">contact</Link>
         </li>
-      </nav>
+      </ul>
       <button
         className={styles.header__menu_btn}
         type="button"
