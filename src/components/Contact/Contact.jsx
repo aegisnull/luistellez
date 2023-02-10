@@ -1,23 +1,23 @@
 import styles from "./Contact.module.scss";
 import emailjs from "@emailjs/browser";
 import ReCAPTCHA from "react-google-recaptcha";
-import React from "react";
+import React, { useRef, useState } from "react";
 import InfoTooltip from "../InfoTooltip/InfoTooltip";
 
 function Contact() {
-  const refForm = React.useRef();
-  const [isSuccess, setIsSuccess] = React.useState(false);
-  const [isOpen, setIsOpen] = React.useState(false);
+  const refForm = useRef(null);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  function openModal() {
+  const openModal = () => {
     setIsOpen(true);
-  }
+  };
 
-  function closeModal() {
+  const closeModal = () => {
     setIsOpen(false);
-  }
+  };
 
-  const sendEmail = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     emailjs
@@ -30,19 +30,18 @@ function Contact() {
       .then(
         () => {
           setIsSuccess(true);
-          openModal(isSuccess);
+          openModal();
           refForm.current.reset();
         },
         () => {
           setIsSuccess(false);
-          openModal(isSuccess);
+          openModal();
         }
       );
   };
 
   return (
     <section className={styles.contact}>
-      <InfoTooltip onClose={closeModal} isOpen={isOpen} isSuccess={isSuccess} />
       <div className={styles.contact__container}>
         <div className={styles.contact__title}>
           <h2 className="title">contact</h2>
@@ -54,7 +53,7 @@ function Contact() {
         questions or want to work with me, please contact me.
       </p>
       <div className={styles.contact_form}>
-        <form ref={refForm} onSubmit={sendEmail}>
+        <form ref={refForm} onSubmit={handleSubmit}>
           <ul>
             <li className={styles.half}>
               <input type="text" name="name" placeholder="Name" required />
@@ -75,7 +74,7 @@ function Contact() {
             </li>
             <ReCAPTCHA
               sitekey="6Lf0PWokAAAAABkLDBA_5MkgDQZRiR7HUk6wQBrn"
-              onChange={sendEmail}
+              onChange={handleSubmit}
             />
             <br />
             <li>
@@ -88,6 +87,7 @@ function Contact() {
           </ul>
         </form>
       </div>
+      <InfoTooltip onClose={closeModal} isOpen={isOpen} isSuccess={isSuccess} />
     </section>
   );
 }
