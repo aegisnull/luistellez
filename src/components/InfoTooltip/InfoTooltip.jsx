@@ -10,6 +10,15 @@ function InfoTooltip(props) {
     ? "Success! I will respond to you soon."
     : "Oops, something went wrong! Please try again.";
   const imageAlt = props.isSuccess ? "Success" : "Fail";
+  const [isVisible, setIsVisible] = React.useState(false);
+
+  React.useEffect(() => {
+    if (props.isOpen) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  }, [props.isOpen]);
 
   React.useEffect(() => {
     function handleClickOutside(event) {
@@ -29,7 +38,7 @@ function InfoTooltip(props) {
   return (
     <div
       className={`${styles.modal} ${styles.modal_tooltip} ${
-        props.isOpen ? styles.modal_active : ""
+        isVisible ? styles.modal_active : ""
       }`}
     >
       <div className={styles.modal__container}>
