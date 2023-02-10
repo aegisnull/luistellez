@@ -26,6 +26,7 @@ function Home() {
           width={453}
           height={383}
           alt="Luis Tellez"
+          priority={true}
           className={styles.home__avatar}
         />
         <div className={styles.home__tooltip}>

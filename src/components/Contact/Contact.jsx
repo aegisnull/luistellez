@@ -57,41 +57,34 @@ function Contact() {
       </p>
       <div className={styles.contact_form}>
         <form ref={refForm} onSubmit={handleSubmit}>
-          <ul>
-            <li className={styles.half}>
-              <input type="text" name="name" placeholder="Name" required />
-            </li>
-            <li className={styles.half}>
-              <input type="email" name="email" placeholder="Email" required />
-            </li>
-            <li>
-              <input
-                type="text"
-                name="subject"
-                placeholder="Subject"
-                required
-              />
-            </li>
-            <li>
-              <textarea name="message" placeholder="Message" required />
-            </li>
-            <li className={styles.hidden}>
-              <input
-                type="text"
-                placeholder="Email Confirm"
-                name="email-confirm"
-                tabIndex="-1"
-              />
-            </li>
-            <br />
-            <li>
-              <input
-                type="submit"
-                className={styles.contact__button}
-                value="Send"
-              />
-            </li>
-          </ul>
+          <div className={styles.half}>
+            <input type="text" name="name" placeholder="Name" required />
+          </div>
+          <div className={styles.half}>
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+          <div>
+            <input type="text" name="subject" placeholder="Subject" required />
+          </div>
+          <div>
+            <textarea name="message" placeholder="Message" required />
+          </div>
+          <div className={styles.hidden}>
+            <input
+              type="text"
+              placeholder="Email Confirm"
+              name="email-confirm"
+              tabIndex="-1"
+            />
+          </div>
+          <br />
+          <div>
+            <input
+              type="submit"
+              className={styles.contact__button}
+              value="Send"
+            />
+          </div>
         </form>
       </div>
       <InfoTooltip onClose={closeModal} isOpen={isOpen} isSuccess={isSuccess} />
