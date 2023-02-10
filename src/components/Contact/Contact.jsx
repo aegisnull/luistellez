@@ -1,6 +1,5 @@
 import styles from "./Contact.module.scss";
 import emailjs from "@emailjs/browser";
-import ReCAPTCHA from "react-google-recaptcha";
 import React, { useRef, useState } from "react";
 import InfoTooltip from "../InfoTooltip/InfoTooltip";
 
@@ -19,6 +18,10 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const honeypot = e.target.querySelector("input[name='email-confirm']");
+    if (honeypot.value) {
+      return false;
+    }
 
     emailjs
       .sendForm(
@@ -72,10 +75,14 @@ function Contact() {
             <li>
               <textarea name="message" placeholder="Message" required />
             </li>
-            <ReCAPTCHA
-              sitekey="6Lf0PWokAAAAABkLDBA_5MkgDQZRiR7HUk6wQBrn"
-              onChange={handleSubmit}
-            />
+            <li className={styles.hidden}>
+              <input
+                type="text"
+                placeholder="Email Confirm"
+                name="email-confirm"
+                tabIndex="-1"
+              />
+            </li>
             <br />
             <li>
               <input
