@@ -1,9 +1,21 @@
 import styles from "./Contact.module.scss";
 import emailjs from "@emailjs/browser";
+import ReCAPTCHA from "react-google-recaptcha";
 import React from "react";
+import InfoTooltip from "../InfoTooltip/InfoTooltip";
 
 function Contact() {
   const refForm = React.useRef();
+  const [isSuccess, setIsSuccess] = React.useState(false);
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -17,18 +29,20 @@ function Contact() {
       )
       .then(
         () => {
-          //  alert('Message sent, I will contact you shortly');
-          //  window.location.reload(false);
+          setIsSuccess(true);
+          openModal(isSuccess);
           refForm.current.reset();
         },
         () => {
-          // alert('An error occured, please try again');
+          setIsSuccess(false);
+          openModal(isSuccess);
         }
       );
   };
 
   return (
     <section className={styles.contact}>
+      <InfoTooltip onClose={closeModal} isOpen={isOpen} isSuccess={isSuccess} />
       <div className={styles.contact__container}>
         <div className={styles.contact__title}>
           <h2 className="title">contact</h2>
@@ -59,10 +73,10 @@ function Contact() {
             <li>
               <textarea name="message" placeholder="Message" required />
             </li>
-            <div
-              className="g-recaptcha"
-              data-sitekey="6Lf0PWokAAAAABkLDBA_5MkgDQZRiR7HUk6wQBrn"
-            ></div>
+            <ReCAPTCHA
+              sitekey="6Lf0PWokAAAAABkLDBA_5MkgDQZRiR7HUk6wQBrn"
+              onChange={sendEmail}
+            />
             <br />
             <li>
               <input

@@ -8,7 +8,7 @@ function Home() {
       <div className={styles.home__container_info}>
         <h1 className={styles.home__title}>
           Hi, I&apos;m Luis Tellez a
-          <span className={styles.home__title_accent}>web developer</span> and
+          <span className={styles.home__title_accent}> web developer</span> and
           <span className={styles.home__title_accent}> UI/UX Enthusiast</span>
         </h1>
         <h2 className={styles.home__subtitle}>
