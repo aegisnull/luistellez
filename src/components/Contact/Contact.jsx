@@ -60,7 +60,7 @@ function Contact() {
               <textarea name="message" placeholder="Message" required />
             </li>
             <div
-              class="g-recaptcha"
+              className="g-recaptcha"
               data-sitekey="6Lf0PWokAAAAABkLDBA_5MkgDQZRiR7HUk6wQBrn"
             ></div>
             <br />
