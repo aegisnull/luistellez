@@ -1,0 +1,55 @@
+.container {
+  background-color: #f8f8f8;
+  padding: 20px;
+  max-width: 60vw;
+  margin: 5vh auto;
+}
+
+.blog__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.blog__date {
+  font-size: 1.2rem;
+  color: gray;
+  margin-right: 20px;
+}
+
+.post__tags {
+  font-size: 1.2rem;
+  color: gray;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* Add a border and padding to the code block container */
+.code-block {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Style the code block text */
+.code-block code {
+  font-size: 1.2rem;
+  font-family: Consolas, monospace;
+  color: #333;
+}
+
+/* Style the inline code */
+/* code {
+  font-size: 1.2rem;
+  font-family: Consolas, monospace;
+  color: #333;
+  background-color: #f8f8f8;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+ */
+
+.blog__paragraph {
+  font-size: 1rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
