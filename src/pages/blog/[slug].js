@@ -19,6 +19,7 @@ const Post = ({ post }) => {
     <div className="App">
       <Header />
       <section className={styles.container}>
+        <img className={styles.blog__cover} src={post.metadata.cover} />
         <h2 className={styles.blog__title}>{post.metadata.title}</h2>
         <span className={styles.blog__date}>{post.metadata.date}</span>
         <p className={styles.post__tags}>{post.metadata.tags.join(", ")}</p>
