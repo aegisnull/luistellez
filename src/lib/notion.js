@@ -4,68 +4,75 @@ const notion = new Client({
   auth: process.env.NOTION_TOKEN,
 });
 
-export const getDatabase = async (databaseId) => {
-  const response = await notion.databases.query({
-    database_id: databaseId,
-  });
-  return response.results;
-};
-
-export const getPage = async (pageId) => {
-  const response = await notion.pages.retrieve({ page_id: pageId });
-  return response;
-};
-
-export const getBlocks = async (blockId) => {
-  blockId = blockId.replaceAll("-", "");
-
-  const { results } = await notion.blocks.children.list({
-    block_id: blockId,
-    page_size: 100,
+export const getAllPublished = async () => {
+  const posts = await notion.databases.query({
+    database_id: process.env.NOTION_DATABASE_ID,
+    filter: {
+      property: "Published",
+      checkbox: {
+        equals: true,
+      },
+    },
+    sorts: [
+      {
+        property: "Date",
+        direction: "descending",
+      },
+    ],
   });
 
-  // Fetches all child blocks recursively - be mindful of rate limits if you have large amounts of nested blocks
-  // See https://developers.notion.com/docs/working-with-page-content#reading-nested-blocks
-  const childBlocks = results.map(async (block) => {
-    if (block.has_children) {
-      const children = await getBlocks(block.id);
-      return { ...block, children };
-    }
-    return block;
-  });
+  const allPosts = posts.results;
 
-  return await Promise.all(childBlocks).then((blocks) => {
-    return blocks.reduce((acc, curr) => {
-      if (curr.type === "bulleted_list_item") {
-        if (acc[acc.length - 1]?.type === "bulleted_list") {
-          acc[acc.length - 1][acc[acc.length - 1].type].children?.push(curr);
-        } else {
-          acc.push({
-            id: getRandomInt(10 ** 99, 10 ** 100).toString(),
-            type: "bulleted_list",
-            bulleted_list: { children: [curr] },
-          });
-        }
-      } else if (curr.type === "numbered_list_item") {
-        if (acc[acc.length - 1]?.type === "numbered_list") {
-          acc[acc.length - 1][acc[acc.length - 1].type].children?.push(curr);
-        } else {
-          acc.push({
-            id: getRandomInt(10 ** 99, 10 ** 100).toString(),
-            type: "numbered_list",
-            numbered_list: { children: [curr] },
-          });
-        }
-      } else {
-        acc.push(curr);
-      }
-      return acc;
-    }, []);
+  return allPosts.map((post) => {
+    return getPageMetaData(post);
   });
 };
 
-function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+const getPageMetaData = (post) => {
+  const getTags = (tags) => {
+    const allTags = tags.map((tag) => {
+      return tag.name;
+    });
+
+    return allTags;
+  };
+
+  return {
+    id: post.id,
+    title: post.properties.Name.title[0].plain_text,
+    tags: getTags(post.properties.Tags.multi_select),
+    description: post.properties.Description.rich_text[0].plain_text,
+    date: getToday(post.properties.Date.last_edited_time),
+    slug: post.properties.Slug.rich_text[0].plain_text,
+  };
+};
+
+function getToday(datestring) {
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+
+  let date = new Date();
+
+  if (datestring) {
+    date = new Date(datestring);
+  }
+
+  const day = date.getDate();
+  const month = months[date.getMonth()];
+  const year = date.getFullYear();
+  let today = `${month} ${day}, ${year}`;
+
+  return today;
 }
