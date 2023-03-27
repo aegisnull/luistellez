@@ -1,3 +1,4 @@
+import Head from "next/head";
 import ReactMarkdown from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/cjs/styles/prism";
@@ -17,6 +18,11 @@ const CodeBlock = ({ language, codestring }) => {
 const Post = ({ post }) => {
   return (
     <div className="App">
+      <Head>
+        <title>{post.metadata.title}</title>
+        <meta name="description" content={post.metadata.description} />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <Header />
       <section className={styles.container}>
         <img className={styles.blog__cover} src={post.metadata.cover} />
