@@ -53,3 +53,9 @@
   line-height: 1.2;
   margin-bottom: 20px;
 }
+
+.blog__subheading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}

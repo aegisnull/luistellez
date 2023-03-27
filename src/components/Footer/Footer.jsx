@@ -8,7 +8,7 @@ function Footer() {
         <div className={styles.footer__container_info}>
           <div className={styles.footer__container_info_contact}>
             <Image
-              src="./images/logo.svg"
+              src="/images/logo.svg"
               alt="Luis Tellez"
               width={50}
               height={50}
@@ -37,7 +37,7 @@ function Footer() {
             >
               <Image
                 className={styles.footer__socials_icon}
-                src="./images/github.svg"
+                src="/images/github.svg"
                 width={30}
                 height={30}
                 alt="GitHub icon"
@@ -52,7 +52,7 @@ function Footer() {
             >
               <Image
                 className={styles.footer__socials_icon}
-                src="./images/twitter.svg"
+                src="/images/twitter.svg"
                 width={30}
                 height={30}
                 alt="Twitter icon"
@@ -67,7 +67,7 @@ function Footer() {
             >
               <Image
                 className={styles.footer__socials_icon}
-                src="./images/linkedin.svg"
+                src="/images/linkedin.svg"
                 width={30}
                 height={30}
                 alt="LinkedIn icon"

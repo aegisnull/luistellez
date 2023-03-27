@@ -15,7 +15,7 @@ function Header() {
     <header className={styles.header}>
       <Link href="/">
         <Image
-          src="./images/logo.svg"
+          src="/images/logo.svg"
           alt="Logo"
           width={107}
           height={21}
