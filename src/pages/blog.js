@@ -18,7 +18,7 @@ function BlogPage({ posts }) {
               <section key={index} className={styles.card}>
                 <div>
                   <h2>
-                    <Link href={`/posts/${post.slug}`} legacyBehavior>
+                    <Link href={`/blog/${post.slug}`} legacyBehavior>
                       <a className={styles.action}>{post.title}</a>
                     </Link>
                   </h2>
