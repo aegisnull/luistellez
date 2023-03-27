@@ -36,6 +36,10 @@ function Header() {
         </li> */}
 
         <li className={styles.header__nav_link}>
+          <Link href="/blog">blog</Link>
+        </li>
+
+        <li className={styles.header__nav_link}>
           <Link href="/contact">contact</Link>
         </li>
       </ul>
