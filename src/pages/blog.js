@@ -13,20 +13,41 @@ function BlogPage({ posts }) {
         <Header />
         <div className={styles.container}>
           <main className={styles.main}>
-            <h1>Blog</h1>
-            {posts.map((post, index) => (
-              <section key={index} className={styles.card}>
-                <div>
-                  <h2>
-                    <Link href={`/blog/${post.slug}`} legacyBehavior>
-                      <a className={styles.action}>{post.title}</a>
-                    </Link>
-                  </h2>
-                  <div>{post.date}</div>
-                </div>
-                <p>{post.description}</p>
-              </section>
-            ))}
+            <div className={styles.blog__title}>
+              <h2 className="title">Blog</h2>
+              <div className={styles.blog__line} />
+            </div>
+            <div className={styles.cards__container}>
+              {posts.map((post, index) => (
+                <article key={index} className={styles.card}>
+                  <img
+                    className={styles.card__image}
+                    width="328px"
+                    height="200px"
+                    src={post.cover}
+                  />
+                  <div className={styles.card__tags}>
+                    {post.tags.map((tag, index) => (
+                      <span key={index} className={styles.card__tag}>
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <div className={styles.card__content}>
+                    <div className={styles.card__postdate}>{post.date}</div>
+                    <h2>
+                      <Link href={`/blog/${post.slug}`} legacyBehavior>
+                        <a className={styles.card__title}>{post.title}</a>
+                      </Link>
+                    </h2>
+
+                    <p className={styles.card__description}>
+                      {post.description}
+                    </p>
+                  </div>
+                </article>
+              ))}
+            </div>
           </main>
         </div>
         <Footer />
