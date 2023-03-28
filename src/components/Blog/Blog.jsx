@@ -24,8 +24,8 @@ function Blog({ posts }) {
               <div className={styles.card__content}>
                 <div className={styles.card__postdate}>{post.date}</div>
                 <h2>
-                  <Link href={`/blog/${post.slug}`} legacyBehavior>
-                    <a className={styles.card__title}>{post.title}</a>
+                  <Link href={`/blog/${post.slug}`} className={styles.card__title}>
+                    {post.title}
                   </Link>
                 </h2>
 
