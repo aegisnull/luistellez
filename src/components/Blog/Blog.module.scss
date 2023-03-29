@@ -121,3 +121,28 @@
     }
   }
 }
+
+$breakpoint-tablet: 931px;
+$breakpoint-mobile: 426px;
+
+@media screen and (max-width: $breakpoint-tablet) {
+  .blog {
+    &__container {
+      flex-direction: column;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    &__line {
+      width: 239px;
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+  .blog {
+    &__line {
+      display: none;
+    }
+  }
+}
