@@ -1,9 +1,48 @@
-.container {
-  padding: 0 2rem;
-}
+.blog {
+  padding-top: 74px;
+  padding-bottom: 105px;
 
-.main {
-  padding: 4rem;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 48px;
+  }
+
+  &__nav {
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Fira Code', monospace;
+    line-height: 21px;
+
+    &:hover {
+      color: var(--accent-color);
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    &::after {
+      content: ' ~~>';
+    }
+
+    a {
+      color: var(--white-color);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--accent-color);
+        cursor: pointer;
+        transition: 0.2s;
+      }
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
 }
 
 .card {
@@ -14,14 +53,6 @@
   border: 1px solid #eaeaea;
   height: 420px;
   overflow: hidden;
-}
-
-.cards__container {
-  padding-top: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 48px;
 }
 
 .blog__title {

@@ -1,5 +1,5 @@
-import styles from "./About.module.scss";
-import Image from "next/image";
+import styles from './About.module.scss';
+import Image from 'next/image';
 
 function About() {
   return (
@@ -14,13 +14,12 @@ function About() {
         <div className={styles.about__content_text}>
           <p className={styles.about__text}>Hello!, I am Luis Tellez.</p>
           <p className={styles.about__text}>
-            I am a web developer with a background in business consulting. I am
-            passionate about creating intuitive and user-friendly web
-            applications.
+            I am a web developer with a background in business consulting. I am passionate about
+            creating intuitive and user-friendly web applications.
           </p>
           <p className={styles.about__text}>
-            I have experience with HTML, CSS, JavaScript, React, Node.js,
-            Express, MongoDB, and MySQL.
+            I have experience with HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, and
+            MySQL.
           </p>
           <p className={styles.about__text}>
             Looking for remote work opportunities. I am available for hire.
