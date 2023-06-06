@@ -17,7 +17,7 @@ const skills = [
   {
     id: 4,
     title: 'Other',
-    items: ['HTML', 'CSS', 'SASS', 'REST'],
+    items: ['HTML', 'CSS', 'SASS', 'REST', 'JEST', 'Cypress', 'React Testing Library'],
   },
   {
     id: 5,
