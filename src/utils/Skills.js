@@ -17,12 +17,17 @@ const skills = [
   {
     id: 4,
     title: 'Other',
-    items: ['HTML', 'CSS', 'SASS', 'REST', 'JEST', 'Cypress', 'React Testing Library'],
+    items: ['HTML', 'CSS', 'SASS', 'REST'],
   },
   {
     id: 5,
     title: 'Frameworks',
     items: ['React', 'Express', 'Node'],
+  },
+  {
+    id: 6,
+    title: 'Testing',
+    items: ['Jest', 'Cypress', 'React Testing Library', 'K6'],
   },
 ];
 export default skills;
