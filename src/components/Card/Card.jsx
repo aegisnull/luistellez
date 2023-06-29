@@ -3,7 +3,14 @@ import styles from './Card.module.scss';
 function Card({ image, tags, title, description, live, github }) {
   return (
     <article className={styles.card}>
-      <video autoPlay muted loop className={styles.card__image} width="99.5%" height="auto">
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className={styles.card__image}
+        width="99.5%"
+        height="auto">
         <source src={image} type="video/webm" />
       </video>
       <div className={styles.card__tags}>
