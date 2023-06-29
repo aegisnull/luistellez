@@ -1,6 +1,6 @@
-import styles from "./Home.module.scss";
-import Link from "next/link";
-import Image from "next/image";
+import styles from './Home.module.scss';
+import Link from 'next/link';
+import Image from 'next/image';
 
 function Home() {
   return (
@@ -32,13 +32,9 @@ function Home() {
         <div className={styles.home__tooltip}>
           <div className={styles.home__tooltip_square} />
           <div className={styles.home__tooltip_text}>
-            Currently working on
-            <a
-              href="https://github.com/aegisnull/adicare"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span className={styles.home__tooltip_text_bold}> AdiCare</span>
+            Open to new
+            <a href="https://www.linkedin.com/in/luistellezv/" target="_blank" rel="noreferrer">
+              <span className={styles.home__tooltip_text_bold}> Opportunities</span>
             </a>
           </div>
         </div>
