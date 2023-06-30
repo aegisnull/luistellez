@@ -27,7 +27,7 @@
     color: var(--gray-color);
     font-weight: 400;
     font-size: 16px;
-    font-family: "Fira Code", monospace;
+    font-family: 'Fira Code', monospace;
     line-height: 25px;
   }
 
@@ -59,7 +59,7 @@
       color: var(--gray-color);
       font-weight: 500;
       font-size: 16px;
-      font-family: "Fira Code", monospace;
+      font-family: 'Fira Code', monospace;
       line-height: 21px;
 
       &_bold {
@@ -90,6 +90,17 @@ $breakpoint-mobile: 1080px;
 
     &__container-avatar {
       padding-top: 24px;
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .home {
+    &__avatar {
+      width: 100%;
+      height: auto;
+      padding-top: 30px;
     }
   }
 }
