@@ -1,4 +1,4 @@
-import { Client } from "@notionhq/client";
+import { Client } from '@notionhq/client';
 
 const notion = new Client({
   auth: process.env.NOTION_TOKEN,
@@ -8,15 +8,15 @@ export const getAllPublished = async () => {
   const posts = await notion.databases.query({
     database_id: process.env.NOTION_DATABASE_ID,
     filter: {
-      property: "Published",
+      property: 'Published',
       checkbox: {
         equals: true,
       },
     },
     sorts: [
       {
-        property: "Date",
-        direction: "descending",
+        property: 'Date',
+        direction: 'descending',
       },
     ],
   });
@@ -45,18 +45,18 @@ const getPageMetaData = (post) => {
 
 function getToday(datestring) {
   const months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
   ];
   let date = new Date();
   if (datestring) {
@@ -69,14 +69,14 @@ function getToday(datestring) {
   return today;
 }
 
-const { NotionToMarkdown } = require("notion-to-md");
+const { NotionToMarkdown } = require('notion-to-md');
 const n2m = new NotionToMarkdown({ notionClient: notion });
 
 export const getSingleBlogPostBySlug = async (slug) => {
   const response = await notion.databases.query({
     database_id: process.env.NOTION_DATABASE_ID,
     filter: {
-      property: "Slug",
+      property: 'Slug',
       formula: {
         string: {
           equals: slug,

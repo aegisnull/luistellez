@@ -6,11 +6,11 @@ import Posts from '@/components/Posts/Posts';
 
 const Post = ({ post }) => {
   return (
-    <div className="App">
+    <div className='App'>
       <Head>
         <title>{post.metadata.title}</title>
-        <meta name="description" content={post.metadata.description} />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name='description' content={post.metadata.description} />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
       </Head>
       <Header />
       <Posts post={post} />

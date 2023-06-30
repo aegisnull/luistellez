@@ -10,13 +10,13 @@ import { getAllPublished } from '../lib/notion';
 function Index({ posts }) {
   return (
     <>
-      <div className="App">
+      <div className='App'>
         <Header />
         <Head>
           <title>Luis Tellez | Front End Developer</title>
-          <meta name="description" content="Developer Portfolio of Luis Tellez" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link rel="icon" href="/logo.svg" />
+          <meta name='description' content='Developer Portfolio of Luis Tellez' />
+          <meta name='viewport' content='width=device-width, initial-scale=1' />
+          <link rel='icon' href='/logo.svg' />
         </Head>
         <Main posts={posts} />
         <Footer />

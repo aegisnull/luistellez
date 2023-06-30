@@ -1,7 +1,7 @@
 .container {
-  padding: 0 20px;
   max-width: 700px;
   margin: 0 auto;
+  padding: 0 20px;
   line-height: 1.5;
   white-space: pre-line;
 }
@@ -16,8 +16,8 @@
 }
 
 .container figure {
-  margin-left: 0;
   margin-right: 0;
+  margin-left: 0;
 }
 
 .container figcaption {
@@ -38,9 +38,9 @@
 }
 
 .code {
+  padding: 2px 4px;
   font-family: monospace;
   background-color: rgb(242, 242, 242);
-  padding: 2px 4px;
   border-radius: 2px;
 }
 
@@ -49,19 +49,19 @@
 }
 
 .pre {
-  background-color: rgb(242, 242, 242);
-  padding: 2px 4px;
   margin: 20px 0;
-  line-height: 2.3;
-  border-radius: 12px;
+  padding: 2px 4px;
   overflow: auto;
+  line-height: 2.3;
+  background-color: rgb(242, 242, 242);
+  border-radius: 12px;
 }
 
 .code_block {
-  padding: 20px;
-  font-family: monospace;
   display: flex;
   flex-wrap: wrap;
+  padding: 20px;
+  font-family: monospace;
 }
 
 .file {
@@ -75,8 +75,8 @@
 
 .file:hover {
   background: rgba(55, 53, 47, 0.08);
-  cursor: pointer;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .italic {
@@ -101,13 +101,13 @@
   border-collapse: collapse;
 }
 .table th {
-  border: 1px solid currentColor;
-  background-color: rgb(242, 242, 242);
   padding: 6px 12px;
+  background-color: rgb(242, 242, 242);
+  border: 1px solid currentColor;
 }
 .table td {
-  border: 1px solid currentColor;
   padding: 6px 12px;
+  border: 1px solid currentColor;
 }
 
 .row {
@@ -119,8 +119,8 @@
 }
 
 .childPage {
-  border: 1px solid currentColor;
   padding: 20px;
+  border: 1px solid currentColor;
   border-radius: 12px;
 }
 
@@ -132,7 +132,7 @@
   }
   .file:hover {
     background: rgba(255, 255, 255, 0.1);
-    cursor: pointer;
     border-radius: 2px;
+    cursor: pointer;
   }
 }
