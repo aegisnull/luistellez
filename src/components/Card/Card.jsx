@@ -1,18 +1,12 @@
 import styles from './Card.module.scss';
+import Image from 'next/image';
 
 function Card({ image, tags, title, description, live, github }) {
   return (
     <article className={styles.card}>
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        className={styles.card__image}
-        width="99.5%"
-        height="auto"
-        src={image}
-      />
+      <div className={styles.card__image}>
+        <Image src={image} alt={title} width={330} height={201} />
+      </div>
       <div className={styles.card__tags}>
         {tags.map((tag, index) => (
           <span key={index} className={styles.card__tag}>

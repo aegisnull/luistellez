@@ -2,7 +2,7 @@ const cardData = [
   {
     id: 1,
     image:
-      'https://user-images.githubusercontent.com/27663011/213897954-0a5e1b49-773b-4790-9ded-ee9c7a02ed15.webm',
+      'https://user-images.githubusercontent.com/27663011/212429268-38a790be-a69f-4219-b336-2d709a7038b9.gif',
     tags: ['React', 'NodeJS', 'ExpressJS', 'MongoDB'],
     title: 'News Explorer',
     description: 'News Reader Full Stack App',
@@ -12,7 +12,7 @@ const cardData = [
   {
     id: 2,
     image:
-      'https://user-images.githubusercontent.com/27663011/213898091-5b70f8ba-f172-41ee-993b-8e14b349ef04.webm',
+      'https://camo.githubusercontent.com/11f092ff9112bb0d096bb3f11331ce72976dc2623c96d57a255365470f4b8ad9/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f464c38324852634f7352383239704e4e51762f67697068792e676966',
     tags: ['HTML', 'CSS', 'JavaScript'],
     title: 'Moody',
     description: 'Hackathon Project Landing Page',
@@ -22,7 +22,7 @@ const cardData = [
   {
     id: 3,
     image:
-      'https://user-images.githubusercontent.com/27663011/213898105-5b145fbc-9b7a-4e1e-9e1f-96c0c6a9f65a.webm',
+      'https://github.com/aegisnull/react-around-api-full_es/assets/27663011/b8f431c5-49c0-4b16-ad33-9a25f34032ee',
     tags: ['React', 'NodeJS', 'ExpressJS', 'MongoDB'],
     title: 'Around The U.S.',
     description: 'Instagram like app',
@@ -32,7 +32,7 @@ const cardData = [
   {
     id: 4,
     image:
-      'https://user-images.githubusercontent.com/27663011/213898124-9ce0d236-a355-459a-90dd-adbb0208ce6d.webm',
+      'https://private-user-images.githubusercontent.com/27663011/250006518-039d88a9-12af-4db3-8dae-ba995b36e6a0.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg4MTA0NjM3LCJuYmYiOjE2ODgxMDQzMzcsInBhdGgiOiIvMjc2NjMwMTEvMjUwMDA2NTE4LTAzOWQ4OGE5LTEyYWYtNGRiMy04ZGFlLWJhOTk1YjM2ZTZhMC5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMwNjMwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMDYzMFQwNTUyMTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02ZGFkZmVhZmMyMDc3OTdmZjM2NmU4YzJjZGFmMDdhZTMxNDYxZTg2ZWI0MzM4YzNhMDY5OTkwMTAwMTU5NzE5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.9e6p54mW33t09mKrP6kt9Cjoa7jW5W7PWts-D1MyjBw',
     tags: ['WordPress', 'PHP', 'HTML', 'CSS'],
     title: 'GMG Manufacturing',
     description: 'Local Manufacturing  Website',
@@ -41,7 +41,7 @@ const cardData = [
   {
     id: 5,
     image:
-      'https://user-images.githubusercontent.com/27663011/213898146-5761ad79-d819-4481-b433-4c1d2aa19da5.webm',
+      'https://private-user-images.githubusercontent.com/27663011/250007044-01082e82-0433-44ec-8633-d51b6befb431.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg4MTA0ODIzLCJuYmYiOjE2ODgxMDQ1MjMsInBhdGgiOiIvMjc2NjMwMTEvMjUwMDA3MDQ0LTAxMDgyZTgyLTA0MzMtNDRlYy04NjMzLWQ1MWI2YmVmYjQzMS5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMwNjMwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMDYzMFQwNTU1MjNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wZjFlYTNiOWMxYWRkMTliZDVhMGFiNWVkYTNlZjk5NDg5NDYwZWZmMWE5OThjYzkzNWEwMGQwZmU5NGNjMDdiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.cMjmEfe2k31jrlvdsvhVeFyLQ8iB-ArrYaehzwrvhoo',
     tags: ['HTML', 'CSS', 'jQuery'],
     title: 'Circulo Café',
     description: 'Coffee Shop Website',
@@ -50,7 +50,7 @@ const cardData = [
   {
     id: 6,
     image:
-      'https://user-images.githubusercontent.com/27663011/213898184-0a2fe67c-9dea-4086-8d4f-6f55ffa00716.webm',
+      'https://github.com/aegisnull/prepara-tu-conta/assets/27663011/e5d2fcee-dcd5-4853-9e3d-b594a9017cdf',
     tags: ['HTML', 'CSS', 'jQuery'],
     title: 'Prepara tu Conta',
     description: 'Accounting Website',
@@ -59,7 +59,7 @@ const cardData = [
   {
     id: 7,
     image:
-      'https://user-images.githubusercontent.com/27663011/213898199-d247b9d6-229d-4a0c-a765-0a1f0d6a4410.webm',
+      'https://github.com/aegisnull/practicum-art-gallery/assets/27663011/871f2efe-e37d-4327-b8d3-b91735791d48',
     tags: ['HTML', 'CSS', 'CSS Grid'],
     title: 'Practicum Art Gallery',
     description: 'Art Gallery Website',
@@ -69,7 +69,7 @@ const cardData = [
   {
     id: 8,
     image:
-      'https://user-images.githubusercontent.com/27663011/213898207-4f2fc689-80f5-486b-8856-06fe0803ce59.webm',
+      'https://github.com/aegisnull/aprender-a-aprender/assets/27663011/c5e9f257-75f0-4b2e-9d53-74df9b206627',
     tags: ['HTML', 'CSS', 'BEM'],
     title: 'Aprender a Aprender',
     description: 'Learning Info Website',
@@ -79,7 +79,7 @@ const cardData = [
   {
     id: 9,
     image:
-      'https://user-images.githubusercontent.com/27663011/213898241-74ad4f65-9f9b-46ff-ae93-f7c16d470eeb.webm',
+      'https://github.com/aegisnull/memorama/assets/27663011/7fcc9d01-3f21-49c0-ad76-7e7aa6df5768',
     tags: ['HTML', 'CSS', 'JavaScript'],
     title: 'Memorama Game',
     description: 'Memory Game Website',
@@ -89,7 +89,7 @@ const cardData = [
   {
     id: 10,
     image:
-      'https://user-images.githubusercontent.com/27663011/213898282-441125d5-46c8-4782-9de9-3404d433a88e.webm',
+      'https://private-user-images.githubusercontent.com/27663011/250008214-0e0cc633-206a-44c4-977c-931ce16de248.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg4MTA1MjcwLCJuYmYiOjE2ODgxMDQ5NzAsInBhdGgiOiIvMjc2NjMwMTEvMjUwMDA4MjE0LTBlMGNjNjMzLTIwNmEtNDRjNC05NzdjLTkzMWNlMTZkZTI0OC5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMwNjMwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMDYzMFQwNjAyNTBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00ZDY0ZDRjYTEyMDQ3ZDg1NGY2OTI2NWEyNDA2YjNkNDdlNWIxZjNiYmE1YWY5MTA1ZTU5ZjVhYzRhNDQ4ZmI3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.OPEm4OH0TZ7w_TJ_hlUr9PFNccUvUUG7-0FOzS3zfB8',
     tags: ['WordPress', 'PHP', 'HTML', 'CSS'],
     title: 'Intelegal',
     description: 'Website for Law Firm',
@@ -98,7 +98,7 @@ const cardData = [
   {
     id: 11,
     image:
-      'https://user-images.githubusercontent.com/27663011/213898310-f0d73e8f-b109-4996-a4a3-81f77cf0026c.webm',
+      'https://github.com/aegisnull/odin-landing-page/assets/27663011/6cd6ac23-bb35-4f02-bc07-ce34838c55b3',
     tags: ['HTML', 'CSS'],
     title: 'Odin Landing Page',
     description: 'Simple Landing Page',
@@ -108,11 +108,11 @@ const cardData = [
   {
     id: 12,
     image:
-      'https://user-images.githubusercontent.com/27663011/213898326-1806ba53-293b-4e97-a3e0-0ead6b16e521.webm',
+      'https://private-user-images.githubusercontent.com/27663011/250008748-fd556730-3fa8-4c36-89da-5ffd2ac9f948.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg4MTA1NDU1LCJuYmYiOjE2ODgxMDUxNTUsInBhdGgiOiIvMjc2NjMwMTEvMjUwMDA4NzQ4LWZkNTU2NzMwLTNmYTgtNGMzNi04OWRhLTVmZmQyYWM5Zjk0OC5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMwNjMwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMDYzMFQwNjA1NTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wYjY1ODdkNmRjYTNlNjRiNGYyOTZhYTMxMjNkNzAwZDUwMWUzOTcyODJjN2JkNmZlMTVjOTUyMDc1YzM3OThlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.h57zqZV_e7W_9DlS90wdVM4RD6ICbZAHeHoJmsmg2HE',
     tags: ['WordPress', 'PHP', 'HTML', 'CSS'],
     title: 'Intelegal Landing Page',
     description: 'Landing Page for Real Estate',
-    live: 'https://vulnerables.intelegal.com.mx/desarrollo-inmobiliario/',
+    live: '#',
   },
 ];
 
