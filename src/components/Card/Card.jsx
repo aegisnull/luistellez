@@ -10,9 +10,9 @@ function Card({ image, tags, title, description, live, github }) {
         playsInline
         className={styles.card__image}
         width="99.5%"
-        height="auto">
-        <source src={image} type="video/webm" />
-      </video>
+        height="auto"
+        src={image}
+      />
       <div className={styles.card__tags}>
         {tags.map((tag, index) => (
           <span key={index} className={styles.card__tag}>
