@@ -1,9 +1,9 @@
-import styles from "./Projects.module.scss";
-import React from "react";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import Card from "../Card/Card";
-import cardData from "../../utils/Projects";
+import styles from './Projects.module.scss';
+import React from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import Card from '../Card/Card';
+import cardData from '../../utils/Projects';
 
 function Projects() {
   const router = useRouter();
@@ -14,7 +14,7 @@ function Projects() {
   };
 
   React.useEffect(() => {
-    if (router.pathname === "/projects") {
+    if (router.pathname === '/projects') {
       setCardsToShow(cardData.length);
     }
   }, [router.pathname]);
@@ -23,12 +23,12 @@ function Projects() {
     <section className={styles.projects}>
       <div className={styles.projects__container}>
         <div className={styles.projects__title}>
-          <h2 className="title">projects</h2>
+          <h2 className='title'>projects</h2>
           <div className={styles.projects__line} />
         </div>
-        {router.pathname === "/" ? (
+        {router.pathname === '/' ? (
           <div className={styles.projects__nav}>
-            <Link href="/projects">View all</Link>
+            <Link href='/projects'>View all</Link>
           </div>
         ) : null}
       </div>
@@ -46,11 +46,7 @@ function Projects() {
         ))}
       </div>
       {cardData.length > cardsToShow && (
-        <button
-          onClick={handleViewMore}
-          type="button"
-          className={styles.projects__button}
-        >
+        <button onClick={handleViewMore} type='button' className={styles.projects__button}>
           View more
         </button>
       )}

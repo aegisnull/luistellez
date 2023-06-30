@@ -13,7 +13,7 @@
     width: 24px;
     height: 24px;
     background-color: transparent;
-    background-image: url("../../../public/images/mobile-menu.svg");
+    background-image: url('../../../public/images/mobile-menu.svg');
     border: none;
   }
 
@@ -27,7 +27,7 @@
         color: var(--gray-color);
         font-weight: 400;
         font-size: 16px;
-        font-family: "Fira Code", monospace;
+        font-family: 'Fira Code', monospace;
         line-height: 21px;
         text-decoration: none;
       }
@@ -39,7 +39,7 @@
       }
 
       &::before {
-        content: "#";
+        content: '#';
         color: var(--accent-color);
       }
     }
@@ -84,7 +84,7 @@ $breakpoint-tablet: 600px;
       width: 24px;
       height: 24px;
       background-color: transparent;
-      background-image: url("../../../public/images/close.svg");
+      background-image: url('../../../public/images/close.svg');
       border: none;
       cursor: pointer;
     }
@@ -96,7 +96,7 @@ $breakpoint-tablet: 600px;
       display: block;
       width: 105px;
       height: 21px;
-      background-image: url("../../../public/images/logo.svg");
+      background-image: url('../../../public/images/logo.svg');
       cursor: pointer;
     }
 

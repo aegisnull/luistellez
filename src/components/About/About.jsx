@@ -6,7 +6,7 @@ function About() {
     <section className={styles.about}>
       <div className={styles.about__container}>
         <div className={styles.about__title}>
-          <h2 className="title">about</h2>
+          <h2 className='title'>about</h2>
           <div className={styles.about__line} />
         </div>
       </div>
@@ -29,8 +29,8 @@ function About() {
           className={styles.about__content_img}
           width={474}
           height={449}
-          src="/images/about-me.webp"
-          alt="about"
+          src='/images/about-me.webp'
+          alt='about'
         />
       </div>
     </section>

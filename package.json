@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write 'src/**/*.{js,css,sass}'"
+    "format": "prettier --write 'src/**/*.{js,css,jsx,scss}'"
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",

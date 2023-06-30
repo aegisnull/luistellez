@@ -1,22 +1,22 @@
-import styles from "./Skills.module.scss";
-import skills from "../../utils/Skills";
-import Image from "next/image";
+import styles from './Skills.module.scss';
+import skills from '../../utils/Skills';
+import Image from 'next/image';
 
 function Skills() {
   return (
     <section className={styles.skills}>
       <div className={styles.skills__container}>
         <div className={styles.skills__title}>
-          <h2 className="title">skills</h2>
+          <h2 className='title'>skills</h2>
           <div className={styles.skills__line} />
         </div>
       </div>
       <div className={styles.skills__container_content}>
         <Image
-          src="./images/skills.svg"
+          src='./images/skills.svg'
           width={349}
           height={286}
-          alt="skills"
+          alt='skills'
           className={styles.skills__image}
         />
         <div className={styles.skills__card_container}>

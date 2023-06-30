@@ -22,12 +22,9 @@
 
     &::before,
     &::after {
-      content: url("../../../public/images/quotes.svg");
+      content: url('../../../public/images/quotes.svg');
       position: absolute;
-      background-image: linear-gradient(
-        var(--background-color),
-        var(--background-color)
-      );
+      background-image: linear-gradient(var(--background-color), var(--background-color));
       background-repeat: no-repeat;
       background-size: 100% 40%;
     }
@@ -48,7 +45,7 @@
     color: var(--gray-color);
     font-weight: 400;
     font-size: 16px;
-    font-family: "Fira Code", monospace;
+    font-family: 'Fira Code', monospace;
     line-height: 16px;
     border: 1px solid var(--gray-color);
   }

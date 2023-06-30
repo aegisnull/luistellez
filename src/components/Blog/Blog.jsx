@@ -10,19 +10,19 @@ function Blog({ posts }) {
     <section className={styles.blog}>
       <div className={styles.blog__container}>
         <div className={styles.blog__title}>
-          <h2 className="title">Blog</h2>
+          <h2 className='title'>Blog</h2>
           <div className={styles.blog__line} />
         </div>
         {router.pathname === '/' ? (
           <div className={styles.blog__nav}>
-            <Link href="/blog">View all</Link>
+            <Link href='/blog'>View all</Link>
           </div>
         ) : null}
       </div>
       <div className={styles.blog__cards}>
         {posts.map((post, index) => (
           <article key={index} className={styles.card}>
-            <img className={styles.card__image} width="328px" height="200px" src={post.cover} />
+            <img className={styles.card__image} width='328px' height='200px' src={post.cover} />
             <div className={styles.card__tags}>
               {post.tags.map((tag, index) => (
                 <span key={index} className={styles.card__tag}>

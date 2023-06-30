@@ -5,7 +5,7 @@ import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
 const CodeBlock = ({ language, codestring }) => {
   return (
-    <SyntaxHighlighter language={language} style={vscDarkPlus} PreTag="div">
+    <SyntaxHighlighter language={language} style={vscDarkPlus} PreTag='div'>
       {codestring}
     </SyntaxHighlighter>
   );
@@ -32,7 +32,8 @@ function Posts({ post }) {
               </code>
             );
           },
-        }}>
+        }}
+      >
         {post.markdown}
       </ReactMarkdown>
     </section>

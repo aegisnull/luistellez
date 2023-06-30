@@ -9,7 +9,7 @@ import Blog from '../Blog/Blog';
 function Main({ posts }) {
   return (
     <>
-      <main id="home">
+      <main id='home'>
         <Home />
         <Quote />
         <Projects />
