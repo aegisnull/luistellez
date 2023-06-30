@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './InfoTooltip.module.scss';
 import SuccessMark from '../../../public/images/success-mark.svg';
 import FailMark from '../../../public/images/failed-mark.svg';
 import Image from 'next/image';
+import styles from './InfoTooltip.module.scss';
 
 function InfoTooltip(props) {
   const image = props.isSuccess ? SuccessMark : FailMark;

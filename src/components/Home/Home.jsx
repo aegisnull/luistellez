@@ -1,6 +1,6 @@
-import styles from './Home.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
+import styles from './Home.module.scss';
 
 function Home() {
   return (

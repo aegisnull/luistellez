@@ -1,6 +1,6 @@
-import styles from './Contact.module.scss';
 import emailjs from '@emailjs/browser';
 import React, { useRef, useState } from 'react';
+import styles from './Contact.module.scss';
 import InfoTooltip from '../InfoTooltip/InfoTooltip';
 
 function Contact() {

@@ -1,8 +1,8 @@
-import styles from './Header.module.scss';
 import React from 'react';
 import Link from 'next/link';
-import MobileMenu from './MobileMenu';
 import Image from 'next/image';
+import styles from './Header.module.scss';
+import MobileMenu from './MobileMenu';
 
 function Header() {
   const [isOpen, setIsOpen] = React.useState(false);

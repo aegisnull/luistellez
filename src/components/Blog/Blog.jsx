@@ -1,5 +1,5 @@
-import styles from './Blog.module.scss';
 import Link from 'next/link';
+import styles from './Blog.module.scss';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 

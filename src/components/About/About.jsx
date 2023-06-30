@@ -1,5 +1,5 @@
-import styles from './About.module.scss';
 import Image from 'next/image';
+import styles from './About.module.scss';
 
 function About() {
   return (

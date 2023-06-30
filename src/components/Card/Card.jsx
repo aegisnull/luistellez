@@ -1,5 +1,5 @@
-import styles from './Card.module.scss';
 import Image from 'next/image';
+import styles from './Card.module.scss';
 
 function Card({ image, tags, title, description, live, github }) {
   return (
