@@ -2,6 +2,7 @@ import styles from './Posts.module.scss';
 import ReactMarkdown from 'react-markdown';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+import Image from 'next/image';
 
 const CodeBlock = ({ language, codestring }) => {
   return (
@@ -14,7 +15,7 @@ const CodeBlock = ({ language, codestring }) => {
 function Posts({ post }) {
   return (
     <section className={styles.container}>
-      <img className={styles.blog__cover} src={post.metadata.cover} />
+      <Image className={styles.blog__cover} src={post.metadata.cover} alt={post.metadata.title} />
       <h2 className={styles.blog__title}>{post.metadata.title}</h2>
       <span className={styles.blog__date}>{post.metadata.date}</span>
       <p className={styles.post__tags}>{post.metadata.tags.join(', ')}</p>
