@@ -1,6 +1,7 @@
 import styles from './Blog.module.scss';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 
 function Blog({ posts }) {
   const router = useRouter();
@@ -22,7 +23,13 @@ function Blog({ posts }) {
       <div className={styles.blog__cards}>
         {posts.map((post, index) => (
           <article key={index} className={styles.card}>
-            <img className={styles.card__image} width='328px' height='200px' src={post.cover} />
+            <Image
+              className={styles.card__image}
+              src={post.cover}
+              width={328}
+              height={200}
+              alt={post.title}
+            />
             <div className={styles.card__tags}>
               {post.tags.map((tag, index) => (
                 <span key={index} className={styles.card__tag}>
