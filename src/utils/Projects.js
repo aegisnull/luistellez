@@ -1,8 +1,7 @@
 const cardData = [
   {
     id: 1,
-    image:
-      'https://user-images.githubusercontent.com/27663011/212429268-38a790be-a69f-4219-b336-2d709a7038b9.gif',
+    image: '/images/NewsExplorer.webp',
     tags: ['React', 'NodeJS', 'ExpressJS', 'MongoDB'],
     title: 'News Explorer',
     description: 'News Reader Full Stack App',
