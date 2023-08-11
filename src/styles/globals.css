@@ -3,11 +3,16 @@
 @import '../vendor/animations.css';
 
 :root {
-  --background-color: #282c33;
-  --accent-color: #c778dd;
-  --gray-color: #abb2bf;
+  --background-color: #252e42;
+  --accent-color: #ff80ff;
+  --gray-color: #cacfd7;
   --white-color: #fff;
   --code-color: #282c33;
+  --primary-color: #ff80ff;
+  --secondary-color: #96bee9;
+  --tertiary-color: #7971f4;
+  --quaternary-color: #8798de;
+  --quinary-color: #8d5cf0;
 }
 
 body {

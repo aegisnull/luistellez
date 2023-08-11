@@ -15,10 +15,10 @@ function Header() {
     <header className={styles.header}>
       <Link href='/'>
         <Image
-          src='/images/logo.svg'
+          src='/images/logo-bw.svg'
           alt='Logo'
-          width={107}
-          height={21}
+          width={170}
+          height={60}
           className={styles.header__logo}
         />
       </Link>
