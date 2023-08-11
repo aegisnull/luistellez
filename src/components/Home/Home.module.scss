@@ -16,7 +16,7 @@
     line-height: 42.2px;
 
     &_accent {
-      color: var(--accent-color);
+      color: var(--primary-color);
     }
   }
 
@@ -51,7 +51,7 @@
       width: 16px;
       height: 16px;
       margin-left: 8px;
-      background-color: var(--accent-color);
+      background-color: var(--primary-color);
     }
 
     &_text {
@@ -67,7 +67,7 @@
         font-weight: 600;
 
         &:hover {
-          color: var(--accent-color);
+          color: var(--primary-color);
           cursor: pointer;
           transition: 0.2s;
         }

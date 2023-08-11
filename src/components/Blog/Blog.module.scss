@@ -18,7 +18,7 @@
     width: 511px;
     height: 1px;
     margin-left: 16px;
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
   }
 
   &__nav {
@@ -29,7 +29,7 @@
     line-height: 21px;
 
     &:hover {
-      color: var(--accent-color);
+      color: var(--primary-color);
       cursor: pointer;
       transition: 0.2s;
     }
@@ -43,7 +43,7 @@
       text-decoration: none;
 
       &:hover {
-        color: var(--accent-color);
+        color: var(--primary-color);
         cursor: pointer;
         transition: 0.2s;
       }
