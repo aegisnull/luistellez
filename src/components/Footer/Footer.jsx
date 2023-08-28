@@ -8,7 +8,7 @@ function Footer() {
         <div className={styles.footer__container_info}>
           <div className={styles.footer__container_info_contact}>
             <Image
-              src='/images/logo.svg'
+              src='/images/logo_light.svg'
               alt='Luis Tellez'
               width={50}
               height={50}
