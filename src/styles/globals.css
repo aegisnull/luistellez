@@ -41,11 +41,11 @@ body {
 
 .button_accent {
   width: fit-content;
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--primary-color);
 }
 
 .button_accent:hover {
-  background-color: var(--accent-color);
+  background-color: var(--primary-color);
   cursor: pointer;
   transition: 0.3s;
 }
