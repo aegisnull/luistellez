@@ -10,12 +10,7 @@ function InfoTooltip({ isOpen, isSuccess, onClose }) {
     ? 'Success! I will respond to you soon.'
     : 'Oops, something went wrong! Please try again.';
   const imageAlt = isSuccess ? 'Success' : 'Fail';
-  const [isVisible, setIsVisible] = React.useState(false);
   const containerRef = React.useRef(null);
-
-  React.useEffect(() => {
-    setIsVisible(isOpen);
-  }, [isOpen]);
 
   React.useEffect(() => {
     if (!isOpen) return undefined;
@@ -41,7 +36,7 @@ function InfoTooltip({ isOpen, isSuccess, onClose }) {
     };
   }, [isOpen, onClose]);
 
-  if (!isVisible) {
+  if (!isOpen) {
     return null;
   }
 

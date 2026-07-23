@@ -7,17 +7,14 @@ import cardData from '../../utils/Projects';
 
 function Projects() {
   const router = useRouter();
-  const [cardsToShow, setCardsToShow] = React.useState(3);
+  const isProjectsPage = router.pathname === '/projects';
+  const [extraCards, setExtraCards] = React.useState(0);
+
+  const cardsToShow = isProjectsPage ? cardData.length : Math.min(3 + extraCards, cardData.length);
 
   const handleViewMore = () => {
-    setCardsToShow(cardsToShow + 3);
+    setExtraCards((count) => count + 3);
   };
-
-  React.useEffect(() => {
-    if (router.pathname === '/projects') {
-      setCardsToShow(cardData.length);
-    }
-  }, [router.pathname]);
 
   return (
     <section className={styles.projects}>
@@ -26,7 +23,7 @@ function Projects() {
           <h2 className='title'>projects</h2>
           <div className={styles.projects__line} />
         </div>
-        {router.pathname === '/' ? (
+        {!isProjectsPage ? (
           <div className={styles.projects__nav}>
             <Link href='/projects'>View all</Link>
           </div>
@@ -45,7 +42,7 @@ function Projects() {
           />
         ))}
       </div>
-      {cardData.length > cardsToShow && (
+      {!isProjectsPage && cardData.length > cardsToShow && (
         <button onClick={handleViewMore} type='button' className={styles.projects__button}>
           View more
         </button>

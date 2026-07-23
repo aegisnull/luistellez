@@ -36,9 +36,9 @@ function Posts({ post }) {
         components={{
           p: ({ children }) => <p className={styles.blog__paragraph}>{children}</p>,
           h2: ({ children }) => <h2 className={styles.blog__subheading}>{children}</h2>,
-          code({ inline, className, children, ...props }) {
+          code({ className, children, ...props }) {
             const match = /language-(\w+)/.exec(className || '');
-            return !inline && match ? (
+            return match ? (
               <CodeBlock codestring={String(children).replace(/\n$/, '')} language={match[1]} />
             ) : (
               <code className={className} {...props}>

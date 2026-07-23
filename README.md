@@ -4,6 +4,8 @@
 
 Personal developer portfolio built with **Next.js**, React, and Sass. Includes a Notion-powered blog and an EmailJS contact form.
 
+Requires **Node.js 24.x**.
+
 ## Features
 
 - Responsive portfolio layout (home, projects, skills, about, contact)
