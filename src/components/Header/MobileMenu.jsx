@@ -1,32 +1,39 @@
 import Link from 'next/link';
+import styles from './Header.module.scss';
 
 function MobileMenu({ isOpen, setIsOpen }) {
   return (
-    <div className={`header__mobile-menu ${isOpen ? 'mobile-menu--open' : ''}`}>
-      <div className='header__mobile-menu__logo' />
+    <div
+      id='mobile-menu'
+      className={styles['header__mobile-menu']}
+      role='dialog'
+      aria-modal='true'
+      aria-label='Mobile navigation'
+    >
+      <div className={styles['header__mobile-menu__logo']} />
       <button
         type='button'
-        className='header__mobile-menu__close-btn'
+        className={styles['header__mobile-menu__close-btn']}
         onClick={() => setIsOpen(false)}
         aria-label='Close mobile menu'
       />
-      <ul className='header__nav header__nav_mobile'>
-        <li className='header__nav_link header__nav_link_mobile'>
+      <ul className={`${styles.header__nav} ${styles.header__nav_mobile}`}>
+        <li className={`${styles.header__nav_link} ${styles.header__nav_link_mobile}`}>
           <Link href='/' onClick={() => setIsOpen(false)}>
             Home
           </Link>
         </li>
-        <li className='header__nav_link header__nav_link_mobile'>
+        <li className={`${styles.header__nav_link} ${styles.header__nav_link_mobile}`}>
           <Link href='/projects' onClick={() => setIsOpen(false)}>
             Projects
           </Link>
         </li>
-        {/* <li className='header__nav_link header__nav_link_mobile'>
-          <Link to='/about-me' onClick={() => setIsOpen(false)}>
-            About Me
+        <li className={`${styles.header__nav_link} ${styles.header__nav_link_mobile}`}>
+          <Link href='/blog' onClick={() => setIsOpen(false)}>
+            Blog
           </Link>
-        </li> */}
-        <li className='header__nav_link header__nav_link_mobile'>
+        </li>
+        <li className={`${styles.header__nav_link} ${styles.header__nav_link_mobile}`}>
           <Link href='/contact' onClick={() => setIsOpen(false)}>
             Contact
           </Link>

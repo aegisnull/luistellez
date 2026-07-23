@@ -8,15 +8,33 @@ function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
 
   function handleMobileMenuClick() {
-    setIsOpen(!isOpen);
+    setIsOpen((open) => !open);
   }
+
+  React.useEffect(() => {
+    if (!isOpen) return undefined;
+
+    const handleEscape = (event) => {
+      if (event.key === 'Escape') {
+        setIsOpen(false);
+      }
+    };
+
+    document.body.style.overflow = 'hidden';
+    window.addEventListener('keydown', handleEscape);
+
+    return () => {
+      document.body.style.overflow = '';
+      window.removeEventListener('keydown', handleEscape);
+    };
+  }, [isOpen]);
 
   return (
     <header className={styles.header}>
       <Link href='/'>
         <Image
           src='/images/logo_light.svg'
-          alt='Logo'
+          alt='Luis Tellez'
           width={150}
           height={50}
           className={styles.header__logo}
@@ -26,19 +44,12 @@ function Header() {
         <li className={styles.header__nav_link}>
           <Link href='/'>home</Link>
         </li>
-
         <li className={styles.header__nav_link}>
           <Link href='/projects'>projects</Link>
         </li>
-
-        {/*         <li className='header__nav_link'>
-          <a href='#about-me'>about-me</a>
-        </li> */}
-
         <li className={styles.header__nav_link}>
           <Link href='/blog'>blog</Link>
         </li>
-
         <li className={styles.header__nav_link}>
           <Link href='/contact'>contact</Link>
         </li>
@@ -48,6 +59,8 @@ function Header() {
         type='button'
         onClick={handleMobileMenuClick}
         aria-label='Toggle mobile menu'
+        aria-expanded={isOpen}
+        aria-controls='mobile-menu'
       />
       {isOpen ? <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} /> : null}
     </header>

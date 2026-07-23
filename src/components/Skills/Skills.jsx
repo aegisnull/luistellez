@@ -13,10 +13,10 @@ function Skills() {
       </div>
       <div className={styles.skills__container_content}>
         <Image
-          src='./images/skills.svg'
+          src='/images/skills.svg'
           width={349}
           height={286}
-          alt='skills'
+          alt=''
           className={styles.skills__image}
         />
         <div className={styles.skills__card_container}>
@@ -24,8 +24,8 @@ function Skills() {
             <div key={skill.id} className={styles.skills__card}>
               <h3 className={styles.skills__card_title}>{skill.title}</h3>
               <ul className={styles.skills__card_list}>
-                {skill.items.map((item, index) => (
-                  <li key={index} className={styles.skills__card_item}>
+                {skill.items.map((item) => (
+                  <li key={item} className={styles.skills__card_item}>
                     {item}
                   </li>
                 ))}

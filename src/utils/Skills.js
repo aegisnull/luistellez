@@ -2,7 +2,7 @@ const skills = [
   {
     id: 1,
     title: 'Languages',
-    items: ['JavaScript'],
+    items: ['JavaScript', 'HTML', 'CSS', 'PHP'],
   },
   {
     id: 2,
@@ -12,17 +12,17 @@ const skills = [
   {
     id: 3,
     title: 'Tools',
-    items: ['Git', 'GitHub', 'VS Code', 'Postman', 'Figma', 'Photoshop', 'Cyberduck'],
+    items: ['Git', 'GitHub', 'VS Code', 'Postman', 'Figma', 'Photoshop'],
   },
   {
     id: 4,
     title: 'Other',
-    items: ['HTML', 'CSS', 'SASS', 'REST'],
+    items: ['SASS', 'REST', 'WordPress', 'BEM'],
   },
   {
     id: 5,
     title: 'Frameworks',
-    items: ['React', 'Express', 'Node'],
+    items: ['React', 'Next.js', 'Express', 'Node'],
   },
   {
     id: 6,
@@ -30,4 +30,5 @@ const skills = [
     items: ['Jest', 'Cypress', 'React Testing Library', 'K6'],
   },
 ];
+
 export default skills;

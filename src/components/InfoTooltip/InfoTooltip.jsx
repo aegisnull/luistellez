@@ -4,45 +4,62 @@ import FailMark from '../../../public/images/failed-mark.svg';
 import Image from 'next/image';
 import styles from './InfoTooltip.module.scss';
 
-function InfoTooltip(props) {
-  const image = props.isSuccess ? SuccessMark : FailMark;
-  const text = props.isSuccess
+function InfoTooltip({ isOpen, isSuccess, onClose }) {
+  const image = isSuccess ? SuccessMark : FailMark;
+  const text = isSuccess
     ? 'Success! I will respond to you soon.'
     : 'Oops, something went wrong! Please try again.';
-  const imageAlt = props.isSuccess ? 'Success' : 'Fail';
+  const imageAlt = isSuccess ? 'Success' : 'Fail';
   const [isVisible, setIsVisible] = React.useState(false);
+  const containerRef = React.useRef(null);
 
   React.useEffect(() => {
-    if (props.isOpen) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
-  }, [props.isOpen]);
+    setIsVisible(isOpen);
+  }, [isOpen]);
 
   React.useEffect(() => {
+    if (!isOpen) return undefined;
+
     function handleClickOutside(event) {
-      const modalContainer = document.querySelector(`.${styles.modal__container}`);
-      if (!modalContainer.contains(event.target)) {
-        props.onClose();
+      if (containerRef.current && !containerRef.current.contains(event.target)) {
+        onClose();
       }
     }
+
+    function handleEscape(event) {
+      if (event.key === 'Escape') {
+        onClose();
+      }
+    }
+
     window.addEventListener('mousedown', handleClickOutside);
+    window.addEventListener('keydown', handleEscape);
+
     return () => {
       window.removeEventListener('mousedown', handleClickOutside);
+      window.removeEventListener('keydown', handleEscape);
     };
-  });
+  }, [isOpen, onClose]);
+
+  if (!isVisible) {
+    return null;
+  }
 
   return (
     <div
-      className={`${styles.modal} ${styles.modal_tooltip} ${isVisible ? styles.modal_active : ''}`}
+      className={`${styles.modal} ${styles.modal_tooltip} ${styles.modal_active}`}
+      role='dialog'
+      aria-modal='true'
+      aria-label={text}
     >
-      <div className={styles.modal__container}>
+      <div className={styles.modal__container} ref={containerRef}>
         <Image className={styles.modal__tooltip_image} src={image} alt={imageAlt} />
         <h3 className={`${styles.modal__title} ${styles.modal__tooltip_text}`}>{text}</h3>
         <button
+          type='button'
           className={`${styles.modal__close_button} ${styles.modal__close_tooltip}`}
-          onClick={props.onClose}
+          onClick={onClose}
+          aria-label='Close dialog'
         />
       </div>
     </div>

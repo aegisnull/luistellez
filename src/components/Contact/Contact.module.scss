@@ -99,11 +99,28 @@
     border: 1px solid var(--primary-color);
   }
 
-  .contact__button:hover {
+  .contact__button:hover:not(:disabled) {
     background: var(--primary-color);
     cursor: pointer;
     transition: 0.2s;
   }
+
+  .contact__button:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+}
+
+.visually_hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 $breakpoint-tablet: 931px;

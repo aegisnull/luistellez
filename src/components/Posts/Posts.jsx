@@ -13,17 +13,30 @@ const CodeBlock = ({ language, codestring }) => {
 };
 
 function Posts({ post }) {
+  const { metadata, markdown } = post;
+
   return (
     <section className={styles.container}>
-      <Image className={styles.blog__cover} src={post.metadata.cover} alt={post.metadata.title} />
-      <h2 className={styles.blog__title}>{post.metadata.title}</h2>
-      <span className={styles.blog__date}>{post.metadata.date}</span>
-      <p className={styles.post__tags}>{post.metadata.tags.join(', ')}</p>
+      {metadata.cover ? (
+        <Image
+          className={styles.blog__cover}
+          src={metadata.cover}
+          alt={metadata.title}
+          width={1024}
+          height={512}
+          priority
+        />
+      ) : null}
+      <h1 className={styles.blog__title}>{metadata.title}</h1>
+      <span className={styles.blog__date}>{metadata.date}</span>
+      {metadata.tags?.length ? (
+        <p className={styles.post__tags}>{metadata.tags.join(', ')}</p>
+      ) : null}
       <ReactMarkdown
         components={{
           p: ({ children }) => <p className={styles.blog__paragraph}>{children}</p>,
           h2: ({ children }) => <h2 className={styles.blog__subheading}>{children}</h2>,
-          code({ node, inline, className, children, ...props }) {
+          code({ inline, className, children, ...props }) {
             const match = /language-(\w+)/.exec(className || '');
             return !inline && match ? (
               <CodeBlock codestring={String(children).replace(/\n$/, '')} language={match[1]} />
@@ -35,7 +48,7 @@ function Posts({ post }) {
           },
         }}
       >
-        {post.markdown}
+        {typeof markdown === 'string' ? markdown : ''}
       </ReactMarkdown>
     </section>
   );

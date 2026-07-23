@@ -11,12 +11,12 @@ function Home() {
           <span className={styles.home__title_accent}> web developer</span> and
           <span className={styles.home__title_accent}> UI/UX Enthusiast</span>
         </h1>
-        <h2 className={styles.home__subtitle}>
+        <p className={styles.home__subtitle}>
           I build sophisticated websites and web applications.
-        </h2>
+        </p>
         <div className='button_accent'>
-          <Link href='/contact'>
-            <div className='button__text'>Contact me !!</div>
+          <Link href='/contact' className='button__text'>
+            Contact me
           </Link>
         </div>
       </div>
@@ -26,14 +26,18 @@ function Home() {
           width={453}
           height={383}
           alt='Luis Tellez'
-          priority={true}
+          priority
           className={styles.home__avatar}
         />
         <div className={styles.home__tooltip}>
           <div className={styles.home__tooltip_square} />
           <div className={styles.home__tooltip_text}>
             Open to new
-            <a href='https://www.linkedin.com/in/luistellezv/' target='_blank' rel='noreferrer'>
+            <a
+              href='https://www.linkedin.com/in/luistellezv/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <span className={styles.home__tooltip_text_bold}> Opportunities</span>
             </a>
           </div>

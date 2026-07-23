@@ -62,7 +62,7 @@ $breakpoint-tablet: 600px;
       }
     }
 
-    &__menu-btn {
+    &__menu_btn {
       display: block;
       cursor: pointer;
     }
@@ -71,7 +71,7 @@ $breakpoint-tablet: 600px;
       position: fixed;
       top: 0;
       left: 0;
-      z-index: 1;
+      z-index: 10;
       width: 100vw;
       height: 100vh;
       background-color: var(--background-color);

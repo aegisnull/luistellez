@@ -1,27 +1,21 @@
-import Head from 'next/head';
-//import { Inter } from "@next/font/google";
 import Main from '../components/Main/Main';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
+import SEO from '../components/SEO/SEO';
 import { getAllPublished } from '../lib/notion';
-
-//const inter = Inter({ subsets: ["latin"] });
 
 function Index({ posts }) {
   return (
-    <>
-      <div className='App'>
-        <Header />
-        <Head>
-          <title>Luis Tellez | Front End Developer</title>
-          <meta name='description' content='Developer Portfolio of Luis Tellez' />
-          <meta name='viewport' content='width=device-width, initial-scale=1' />
-          <link rel='icon' href='/logo.svg' />
-        </Head>
-        <Main posts={posts} />
-        <Footer />
-      </div>
-    </>
+    <div className='App'>
+      <SEO
+        title='Luis Tellez | Front End Developer'
+        description='Developer portfolio of Luis Tellez — projects, skills, blog posts, and contact.'
+        path='/'
+      />
+      <Header />
+      <Main posts={posts} />
+      <Footer />
+    </div>
   );
 }
 
