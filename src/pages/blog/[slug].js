@@ -1,17 +1,18 @@
-import Head from 'next/head';
-import { getAllPublished, getSingleBlogPostBySlug } from '../../lib/notion';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import Posts from '@/components/Posts/Posts';
+import SEO from '@/components/SEO/SEO';
+import { getAllPublished, getSingleBlogPostBySlug } from '../../lib/notion';
 
 const Post = ({ post }) => {
   return (
     <div className='App'>
-      <Head>
-        <title>{post.metadata.title}</title>
-        <meta name='description' content={post.metadata.description} />
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
-      </Head>
+      <SEO
+        title={post.metadata.title}
+        description={post.metadata.description || 'Blog post by Luis Tellez'}
+        path={`/blog/${post.metadata.slug}`}
+        image={post.metadata.cover || undefined}
+      />
       <Header />
       <Posts post={post} />
       <Footer />
@@ -21,6 +22,13 @@ const Post = ({ post }) => {
 
 export const getStaticProps = async ({ params }) => {
   const post = await getSingleBlogPostBySlug(params.slug);
+
+  if (!post) {
+    return {
+      notFound: true,
+    };
+  }
+
   return {
     props: {
       post,

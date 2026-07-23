@@ -2,9 +2,11 @@
   display: flex;
   padding-top: 65px;
   padding-bottom: 112px;
+  animation: home-fade-in 0.7s ease-out both;
 
   &__container_info {
     padding-top: 71px;
+    animation: home-slide-up 0.75s ease-out both;
   }
 
   &__title {
@@ -35,6 +37,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: home-fade-in 0.9s ease-out 0.15s both;
   }
 
   &__avatar {
@@ -45,6 +48,12 @@
     display: flex;
     align-items: center;
     border: 1px solid var(--gray-color);
+    transition: border-color 0.2s ease, transform 0.2s ease;
+
+    &:hover {
+      border-color: var(--primary-color);
+      transform: translateY(-2px);
+    }
 
     &_square {
       display: block;
@@ -76,6 +85,28 @@
   }
 }
 
+@keyframes home-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes home-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 $breakpoint-mobile: 1080px;
 
 @media screen and (max-width: $breakpoint-mobile) {
@@ -83,12 +114,12 @@ $breakpoint-mobile: 1080px;
     flex-direction: column;
     padding-top: 34px;
 
-    &__container-info {
+    &__container_info {
       margin: auto;
       padding-top: 0;
     }
 
-    &__container-avatar {
+    &__container_avatar {
       max-width: 100%;
       padding-top: 24px;
     }

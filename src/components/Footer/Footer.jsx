@@ -24,10 +24,9 @@ function Footer() {
           <p className={styles.footer__socials_title}>Media</p>
           <div className={styles.footer__socials}>
             <a
-              href='
-              https://github.com/aegisnull'
+              href='https://github.com/aegisnull'
               target='_blank'
-              rel='noreferrer'
+              rel='noopener noreferrer'
               className={styles.footer__socials_link}
             >
               <Image
@@ -35,14 +34,13 @@ function Footer() {
                 src='/images/github.svg'
                 width={30}
                 height={30}
-                alt='GitHub icon'
+                alt='GitHub'
               />
             </a>
             <a
-              href='
-              https://twitter.com/LuisTellezDev'
+              href='https://twitter.com/LuisTellezDev'
               target='_blank'
-              rel='noreferrer'
+              rel='noopener noreferrer'
               className={styles.footer__socials_link}
             >
               <Image
@@ -50,14 +48,13 @@ function Footer() {
                 src='/images/twitter.svg'
                 width={30}
                 height={30}
-                alt='Twitter icon'
+                alt='Twitter'
               />
             </a>
             <a
-              href='
-              https://www.linkedin.com/in/luistellezv/'
+              href='https://www.linkedin.com/in/luistellezv/'
               target='_blank'
-              rel='noreferrer'
+              rel='noopener noreferrer'
               className={styles.footer__socials_link}
             >
               <Image
@@ -65,7 +62,7 @@ function Footer() {
                 src='/images/linkedin.svg'
                 width={30}
                 height={30}
-                alt='LinkedIn icon'
+                alt='LinkedIn'
               />
             </a>
           </div>

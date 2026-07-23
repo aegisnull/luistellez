@@ -14,13 +14,12 @@ const cardData = [
     tags: ['ExpressJS', 'MongoDB', 'K6'],
     title: 'General Store Backend',
     description: 'eCommerce App Backend',
-    live: 'http://news-explorer.projects.luistellez.com',
     github: 'https://github.com/aegisnull/general-store-backend',
   },
   {
     id: 3,
     image: '/images/projects/ReactCalendar.webp',
-    tags: ['VitéJS', 'JS Date'],
+    tags: ['ViteJS', 'JS Date'],
     title: 'React Calendar',
     description: 'React Calendar App',
     live: 'https://react-calendar-altomobile.netlify.app',
@@ -32,7 +31,7 @@ const cardData = [
     tags: ['React', 'NodeJS', 'ExpressJS', 'MongoDB'],
     title: 'News Explorer',
     description: 'News Reader Full Stack App',
-    live: 'http://news-explorer.projects.luistellez.com',
+    live: 'https://news-explorer.projects.luistellez.com',
     github: 'https://github.com/aegisnull/news-explorer-frontend',
   },
   {
@@ -50,7 +49,7 @@ const cardData = [
     tags: ['React', 'NodeJS', 'ExpressJS', 'MongoDB'],
     title: 'Around The U.S.',
     description: 'Instagram like app',
-    live: 'http://aroundus.projects.luistellez.com',
+    live: 'https://aroundus.projects.luistellez.com',
     github: 'https://github.com/aegisnull/react-around-api-full_es',
   },
   {
@@ -127,7 +126,6 @@ const cardData = [
     tags: ['WordPress', 'PHP', 'HTML', 'CSS'],
     title: 'Intelegal Landing Page',
     description: 'Landing Page for Real Estate',
-    live: '#',
   },
 ];
 

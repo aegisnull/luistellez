@@ -2,72 +2,93 @@
 
 <img width="500" alt="luistellez.com" src="https://user-images.githubusercontent.com/27663011/213899549-b1f201c7-7d63-4e7b-8f4c-e4849f007182.png">
 
-Welcome to my developer portfolio! This portfolio was built using React, a JavaScript library for building user interfaces.
+Personal developer portfolio built with **Next.js**, React, and Sass. Includes a Notion-powered blog and an EmailJS contact form.
+
+Requires **Node.js 24.x**.
 
 ## Features
 
-- Responsive design for easy viewing on any device
-- Dynamic routing for easy navigation
-- Clean, modern design
-- Showcase of my projects, with links to their Github repository and live website (if available)
-- About me section, including my skills and contact information
-
-## Lighthouse Report
-
-<img width="432" alt="Lighthouse report" src="https://user-images.githubusercontent.com/27663011/218025451-0d7581b5-45fa-49fc-8032-c764df77d69d.png">
-
-<img width="499" alt="Performance metrics" src="https://user-images.githubusercontent.com/27663011/218025462-20355851-fb64-40da-bf97-c322e7235caf.png">
-
+- Responsive portfolio layout (home, projects, skills, about, contact)
+- Dynamic project and skills cards from local data
+- Blog powered by Notion (ISR)
+- Contact form via EmailJS
+- Vercel Analytics
 
 ## Installation
 
 1. Clone the repository
 
-`git clone https://github.com/aegisnull/luistellez.git`
+```bash
+git clone https://github.com/aegisnull/luistellez.git
+cd luistellez
+```
 
-2.  Install dependencies
+2. Install dependencies
 
-`npm install`
+```bash
+npm install
+```
 
-3. Start the development server
+3. Copy environment variables and fill in values
 
-`npm start`
+```bash
+cp .env.example .env.local
+```
 
-The development server will start on port 3000. Navigate to `http://localhost:3000/` to view the application in the browser.
+4. Start the development server
 
-## Deployment
+```bash
+npm run dev
+```
 
-To deploy the application, run the following command:
+Open [http://localhost:3000](http://localhost:3000).
 
-`npm run build`
+## Environment variables
 
-This will create a production-ready build of the portfolio in the `build` folder. You can then deploy the contents of this folder to a hosting service of your choice.
+| Variable | Description |
+| --- | --- |
+| `NOTION_TOKEN` | Notion internal integration token |
+| `NOTION_DATABASE_ID` | Notion database ID for blog posts |
+| `NEXT_PUBLIC_EMAILJS_SERVICE_ID` | EmailJS service ID |
+| `NEXT_PUBLIC_EMAILJS_TEMPLATE_ID` | EmailJS template ID |
+| `NEXT_PUBLIC_EMAILJS_PUBLIC_KEY` | EmailJS public key |
+
+## Scripts
+
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start local development server |
+| `npm run build` | Create a production build |
+| `npm start` | Serve the production build |
+| `npm run lint` | Run Next.js ESLint |
+| `npm run format` | Format source files with Prettier |
 
 ## Customization
 
-Feel free to customize the portfolio to suit your needs. You can change the content, design, and functionality as you see fit.
+Add projects in `src/utils/Projects.js`:
 
-You can add your own projects by editing the src/utils/Projects.js file, with the following format:
-
-```Javascript
+```javascript
 {
-    image:
-      'https://user-images.githubusercontent.com/27663011/213897954-0a5e1b49-773b-4790-9ded-ee9c7a02ed15.webm',
-    tags: ['React', 'NodeJS', 'ExpressJS', 'MongoDB'],
-    title: 'News Explorer',
-    description: 'News Reader Full Stack App',
-    live: 'http://news-explorer.projects.luistellez.com',
-    github: 'https://github.com/aegisnull/news-explorer-frontend',
-  },
+  id: 16,
+  image: '/images/projects/example.webp',
+  tags: ['React', 'NodeJS'],
+  title: 'Example Project',
+  description: 'Short description',
+  live: 'https://example.com',
+  github: 'https://github.com/you/example',
+}
 ```
 
-You can add your own skills by editing the src/utils/Skills.js file, with the following format:
+Add skills in `src/utils/Skills.js`:
 
-```Javascript
- {
-    title: 'Tools',
-    items: ['Git', 'GitHub', 'VS Code', 'Postman', 'Figma', 'Photoshop', 'Cyberduck'],
-  },
+```javascript
+{
+  id: 7,
+  title: 'Tools',
+  items: ['Git', 'GitHub', 'VS Code'],
+}
 ```
 
-In both cases, Cards will be dinamically generated.
+## Deployment
+
+Deploy on Vercel (or any Node host). Set the environment variables above in the hosting dashboard, then run `npm run build`.
