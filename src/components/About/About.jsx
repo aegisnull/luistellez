@@ -27,10 +27,11 @@ function About() {
         </div>
         <Image
           className={styles.about__content_img}
-          width={474}
-          height={449}
-          src='/images/about-me.webp'
-          alt='about'
+          width={480}
+          height={420}
+          src='/images/about-workspace.svg'
+          alt='Illustrated code editor introducing Luis as a web developer'
+          unoptimized
         />
       </div>
     </section>

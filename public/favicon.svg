@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Luis Tellez">
+  <rect width="32" height="32" rx="6" fill="#252e42"/>
+  <g transform="translate(8 7)" fill="#ff80ff">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0H8V4H4H0V8V12V16H4H8V12H12H16V8V4V0H12ZM4 12H8V8H12V4H8V8H4V12Z"/>
+  </g>
+</svg>
