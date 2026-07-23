@@ -131,7 +131,7 @@ export const getSingleBlogPostBySlug = async (slug) => {
       markdown,
     };
   } catch (error) {
-    console.error(`Failed to fetch Notion post for slug "${slug}":`, error);
+    console.error('Failed to fetch Notion post for slug:', slug, error);
     return null;
   }
 };
