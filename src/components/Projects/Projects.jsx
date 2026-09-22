@@ -3,6 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Card from '../Card/Card';
+import Reveal from '../Reveal/Reveal';
 import cardData from '../../utils/Projects';
 
 function Projects() {
@@ -18,7 +19,7 @@ function Projects() {
 
   return (
     <section className={styles.projects}>
-      <div className={styles.projects__container}>
+      <Reveal className={styles.projects__container}>
         <div className={styles.projects__title}>
           <h2 className='title'>projects</h2>
           <div className={styles.projects__line} />
@@ -28,24 +29,27 @@ function Projects() {
             <Link href='/projects'>View all</Link>
           </div>
         ) : null}
-      </div>
+      </Reveal>
       <div className={styles.projects__cards}>
-        {cardData.slice(0, cardsToShow).map((card) => (
-          <Card
-            key={card.id}
-            image={card.image}
-            tags={card.tags}
-            title={card.title}
-            description={card.description}
-            live={card.live}
-            github={card.github}
-          />
+        {cardData.slice(0, cardsToShow).map((card, index) => (
+          <Reveal key={card.id} delay={Math.min(index, 5) * 80} variant='scale'>
+            <Card
+              image={card.image}
+              tags={card.tags}
+              title={card.title}
+              description={card.description}
+              live={card.live}
+              github={card.github}
+            />
+          </Reveal>
         ))}
       </div>
       {!isProjectsPage && cardData.length > cardsToShow && (
-        <button onClick={handleViewMore} type='button' className={styles.projects__button}>
-          View more
-        </button>
+        <Reveal delay={120}>
+          <button onClick={handleViewMore} type='button' className={styles.projects__button}>
+            View more
+          </button>
+        </Reveal>
       )}
     </section>
   );

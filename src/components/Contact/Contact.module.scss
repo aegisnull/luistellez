@@ -28,6 +28,8 @@
     height: 1px;
     margin-left: 16px;
     background-color: var(--primary-color);
+    transform-origin: left center;
+    animation: section-line-draw 0.85s var(--ease-out, ease-out) both;
   }
 }
 
@@ -150,4 +152,22 @@ $breakpoint-mobile: 426px;
 
 .hidden {
   display: none;
+}
+
+@keyframes section-line-draw {
+  from {
+    transform: scaleX(0);
+    opacity: 0.25;
+  }
+
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact__line {
+    animation: none;
+  }
 }

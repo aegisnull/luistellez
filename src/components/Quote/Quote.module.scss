@@ -19,6 +19,16 @@
     font-family: Roboto-Slab, serif;
     line-height: 32px;
     border: 1px solid var(--gray-color);
+    transition:
+      border-color 0.35s var(--ease-out, ease-out),
+      box-shadow 0.35s var(--ease-out, ease-out),
+      transform 0.35s var(--ease-out, ease-out);
+
+    &:hover {
+      border-color: var(--primary-color);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+    }
 
     &::before,
     &::after {
@@ -48,5 +58,22 @@
     font-family: 'Fira Code', monospace;
     line-height: 16px;
     border: 1px solid var(--gray-color);
+    transition: border-color 0.3s ease, color 0.3s ease;
+  }
+
+  &__container:hover &__author {
+    border-color: rgba(255, 128, 255, 0.5);
+    color: var(--white-color);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .quote__text {
+    transition: none;
+
+    &:hover {
+      transform: none;
+      box-shadow: none;
+    }
   }
 }

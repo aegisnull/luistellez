@@ -13,6 +13,10 @@
   --tertiary-color: #7971f4;
   --quaternary-color: #8798de;
   --quinary-color: #8d5cf0;
+  --motion-fast: 180ms;
+  --motion-base: 280ms;
+  --motion-slow: 500ms;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 body {
@@ -31,26 +35,62 @@ body {
 .button {
   width: fit-content;
   border: 1px solid var(--gray-color);
+  transition:
+    background-color var(--motion-base) var(--ease-out),
+    border-color var(--motion-base) var(--ease-out),
+    transform var(--motion-fast) var(--ease-out),
+    box-shadow var(--motion-base) var(--ease-out);
 }
 
 .button:hover {
   background-color: var(--gray-color);
   cursor: pointer;
-  transition: 0.3s;
+  transform: translateY(-1px);
 }
 
 .button_accent {
+  position: relative;
   width: fit-content;
+  overflow: hidden;
   border: 1px solid var(--primary-color);
+  transition:
+    background-color var(--motion-base) var(--ease-out),
+    transform var(--motion-fast) var(--ease-out),
+    box-shadow var(--motion-base) var(--ease-out);
+}
+
+.button_accent::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    100deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.2) 50%,
+    transparent 100%
+  );
+  transform: skewX(-20deg);
+  transition: left 0.55s var(--ease-out);
+  pointer-events: none;
 }
 
 .button_accent:hover {
   background-color: var(--primary-color);
   cursor: pointer;
-  transition: 0.3s;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 128, 255, 0.22);
+}
+
+.button_accent:hover::after {
+  left: 140%;
 }
 
 .button__text {
+  position: relative;
+  z-index: 1;
   padding: 8px 16px;
   color: var(--white-color);
   font-weight: 500;
@@ -84,4 +124,26 @@ html {
 
 a {
   text-decoration: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .button,
+  .button_accent,
+  .button_accent::after {
+    transition: none;
+  }
+
+  .button:hover,
+  .button_accent:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .button_accent:hover::after {
+    left: -120%;
+  }
 }

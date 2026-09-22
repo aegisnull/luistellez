@@ -1,0 +1,46 @@
+.reveal {
+  opacity: 0;
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0ms),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.reveal_up {
+  transform: translateY(28px);
+}
+
+.reveal_fade {
+  transform: none;
+}
+
+.reveal_scale {
+  transform: translateY(18px) scale(0.96);
+}
+
+.reveal_left {
+  transform: translateX(-28px);
+}
+
+.reveal_right {
+  transform: translateX(28px);
+}
+
+.reveal_visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal_up,
+  .reveal_fade,
+  .reveal_scale,
+  .reveal_left,
+  .reveal_right,
+  .reveal_visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
