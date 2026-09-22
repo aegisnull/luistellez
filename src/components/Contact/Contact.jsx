@@ -2,6 +2,7 @@ import emailjs from '@emailjs/browser';
 import React, { useRef, useState } from 'react';
 import styles from './Contact.module.scss';
 import InfoTooltip from '../InfoTooltip/InfoTooltip';
+import Reveal from '../Reveal/Reveal';
 
 const EMAILJS_SERVICE_ID =
   process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || 'service_dqm28n8';
@@ -54,72 +55,76 @@ function Contact() {
 
   return (
     <section className={styles.contact}>
-      <div className={styles.contact__container}>
+      <Reveal className={styles.contact__container}>
         <div className={styles.contact__title}>
           <h2 className='title'>contact</h2>
           <div className={styles.contact__line} />
         </div>
-      </div>
-      <p className={styles.contact__paragraph}>
-        I am interested in new opportunities and challenges. If you have any questions or want to
-        work with me, please contact me.
-      </p>
-      <div className={styles.contact_form}>
-        <form ref={refForm} onSubmit={handleSubmit} noValidate={false}>
-          <ul>
-            <li className={styles.half}>
-              <label className={styles.visually_hidden} htmlFor='contact-name'>
-                Name
-              </label>
-              <input id='contact-name' type='text' name='name' placeholder='Name' required />
-            </li>
-            <li className={styles.half}>
-              <label className={styles.visually_hidden} htmlFor='contact-email'>
-                Email
-              </label>
-              <input id='contact-email' type='email' name='email' placeholder='Email' required />
-            </li>
-            <li>
-              <label className={styles.visually_hidden} htmlFor='contact-subject'>
-                Subject
-              </label>
+      </Reveal>
+      <Reveal delay={80}>
+        <p className={styles.contact__paragraph}>
+          I am interested in new opportunities and challenges. If you have any questions or want to
+          work with me, please contact me.
+        </p>
+      </Reveal>
+      <Reveal delay={140} variant='scale'>
+        <div className={styles.contact_form}>
+          <form ref={refForm} onSubmit={handleSubmit} noValidate={false}>
+            <ul>
+              <li className={styles.half}>
+                <label className={styles.visually_hidden} htmlFor='contact-name'>
+                  Name
+                </label>
+                <input id='contact-name' type='text' name='name' placeholder='Name' required />
+              </li>
+              <li className={styles.half}>
+                <label className={styles.visually_hidden} htmlFor='contact-email'>
+                  Email
+                </label>
+                <input id='contact-email' type='email' name='email' placeholder='Email' required />
+              </li>
+              <li>
+                <label className={styles.visually_hidden} htmlFor='contact-subject'>
+                  Subject
+                </label>
+                <input
+                  id='contact-subject'
+                  type='text'
+                  name='subject'
+                  placeholder='Subject'
+                  required
+                />
+              </li>
+              <li>
+                <label className={styles.visually_hidden} htmlFor='contact-message'>
+                  Message
+                </label>
+                <textarea id='contact-message' name='message' placeholder='Message' required />
+              </li>
+              <li className={styles.hidden} aria-hidden='true'>
+                <label htmlFor='email-confirm'>Email Confirm</label>
+                <input
+                  id='email-confirm'
+                  type='text'
+                  placeholder='Email Confirm'
+                  name='email-confirm'
+                  tabIndex={-1}
+                  autoComplete='off'
+                />
+              </li>
+            </ul>
+            <br />
+            <div>
               <input
-                id='contact-subject'
-                type='text'
-                name='subject'
-                placeholder='Subject'
-                required
+                type='submit'
+                className={styles.contact__button}
+                value={isSubmitting ? 'Sending…' : 'Send'}
+                disabled={isSubmitting}
               />
-            </li>
-            <li>
-              <label className={styles.visually_hidden} htmlFor='contact-message'>
-                Message
-              </label>
-              <textarea id='contact-message' name='message' placeholder='Message' required />
-            </li>
-            <li className={styles.hidden} aria-hidden='true'>
-              <label htmlFor='email-confirm'>Email Confirm</label>
-              <input
-                id='email-confirm'
-                type='text'
-                placeholder='Email Confirm'
-                name='email-confirm'
-                tabIndex={-1}
-                autoComplete='off'
-              />
-            </li>
-          </ul>
-          <br />
-          <div>
-            <input
-              type='submit'
-              className={styles.contact__button}
-              value={isSubmitting ? 'Sending…' : 'Send'}
-              disabled={isSubmitting}
-            />
-          </div>
-        </form>
-      </div>
+            </div>
+          </form>
+        </div>
+      </Reveal>
       <InfoTooltip onClose={closeModal} isOpen={isOpen} isSuccess={isSuccess} />
     </section>
   );

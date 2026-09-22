@@ -17,6 +17,8 @@
     height: 1px;
     margin-left: 16px;
     background-color: var(--primary-color);
+    transform-origin: left center;
+    animation: line-draw 0.9s var(--ease-out, ease-out) both;
   }
 
   &__content {
@@ -36,6 +38,7 @@
       max-width: 480px;
       height: auto;
       flex-shrink: 0;
+      animation: about-float 5.5s ease-in-out infinite;
     }
   }
 
@@ -45,6 +48,29 @@
     font-size: 16px;
     font-family: 'Fira Code', monospace;
     line-height: 21px;
+  }
+}
+
+@keyframes line-draw {
+  from {
+    transform: scaleX(0);
+    opacity: 0.2;
+  }
+
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes about-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
   }
 }
 
@@ -81,5 +107,12 @@ $breakpoint-mobile: 783px;
         margin: 0 auto;
       }
     }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about__line,
+  .about__content_img {
+    animation: none;
   }
 }

@@ -19,6 +19,8 @@
     height: 1px;
     margin-left: 16px;
     background-color: var(--primary-color);
+    transform-origin: left center;
+    animation: section-line-draw 0.85s var(--ease-out, ease-out) both;
   }
 
   &__nav {
@@ -27,11 +29,12 @@
     font-size: 16px;
     font-family: 'Fira Code', monospace;
     line-height: 21px;
+    transition: color 0.2s ease, transform 0.2s var(--ease-out, ease-out);
 
     &:hover {
       color: var(--primary-color);
       cursor: pointer;
-      transition: 0.2s;
+      transform: translateX(4px);
     }
 
     &::after {
@@ -41,11 +44,11 @@
     a {
       color: var(--white-color);
       text-decoration: none;
+      transition: color 0.2s ease;
 
       &:hover {
         color: var(--primary-color);
         cursor: pointer;
-        transition: 0.2s;
       }
     }
   }
@@ -73,6 +76,24 @@
   margin: auto;
   overflow: hidden;
   border: 1px solid #eaeaea;
+  transition:
+    transform 0.35s var(--ease-out, ease-out),
+    box-shadow 0.35s var(--ease-out, ease-out),
+    border-color 0.35s var(--ease-out, ease-out);
+
+  &:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-6px);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.28);
+  }
+
+  &__image {
+    transition: transform 0.5s var(--ease-out, ease-out);
+  }
+
+  &:hover &__image {
+    transform: scale(1.03);
+  }
 
   &__image_placeholder {
     width: 100%;
@@ -86,6 +107,11 @@
     font-size: 24px;
     font-family: Roboto-Slab, serif;
     line-height: 31.65px;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--primary-color);
+    }
   }
 
   &__content {
@@ -158,5 +184,30 @@ $breakpoint-mobile: 426px;
     &__line {
       display: none;
     }
+  }
+}
+
+@keyframes section-line-draw {
+  from {
+    transform: scaleX(0);
+    opacity: 0.25;
+  }
+
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blog__line {
+    animation: none;
+  }
+
+  .blog__nav:hover,
+  .card:hover,
+  .card:hover .card__image {
+    transform: none;
+    box-shadow: none;
   }
 }

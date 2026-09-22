@@ -19,6 +19,12 @@
     height: 1px;
     margin-left: 16px;
     background-color: var(--primary-color);
+    transform-origin: left center;
+  }
+
+  &__container.reveal_visible &__line,
+  &__line {
+    animation: section-line-draw 0.85s var(--ease-out, ease-out) both;
   }
 
   &__nav {
@@ -27,11 +33,12 @@
     font-size: 16px;
     font-family: 'Fira Code', monospace;
     line-height: 21px;
+    transition: color 0.2s ease, transform 0.2s var(--ease-out, ease-out);
 
     &:hover {
       color: var(--primary-color);
       cursor: pointer;
-      transition: 0.2s;
+      transform: translateX(4px);
     }
 
     &::after {
@@ -41,11 +48,11 @@
     a {
       color: var(--white-color);
       text-decoration: none;
+      transition: color 0.2s ease;
 
       &:hover {
         color: var(--primary-color);
         cursor: pointer;
-        transition: 0.2s;
       }
     }
   }
@@ -73,12 +80,29 @@
     background-color: transparent;
     border: 1px solid var(--primary-color);
     outline: none;
+    transition:
+      background-color 0.25s var(--ease-out, ease-out),
+      transform 0.25s var(--ease-out, ease-out),
+      box-shadow 0.25s var(--ease-out, ease-out);
 
     &:hover {
       background-color: var(--primary-color);
       cursor: pointer;
-      transition: 0.2s;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 22px rgba(255, 128, 255, 0.2);
     }
+  }
+}
+
+@keyframes section-line-draw {
+  from {
+    transform: scaleX(0);
+    opacity: 0.25;
+  }
+
+  to {
+    transform: scaleX(1);
+    opacity: 1;
   }
 }
 
@@ -112,5 +136,17 @@ $breakpoint-mobile: 426px;
     &__button {
       margin-top: 32px;
     }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .projects__line {
+    animation: none;
+  }
+
+  .projects__nav:hover,
+  .projects__button:hover {
+    transform: none;
+    box-shadow: none;
   }
 }

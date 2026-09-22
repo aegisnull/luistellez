@@ -6,6 +6,12 @@
 
   &__logo {
     cursor: pointer;
+    transition: opacity 0.25s ease, transform 0.25s var(--ease-out, ease-out);
+
+    &:hover {
+      opacity: 0.85;
+      transform: translateY(-1px);
+    }
   }
 
   &__menu_btn {
@@ -15,6 +21,12 @@
     background-color: transparent;
     background-image: url('../../../public/images/mobile-menu.svg');
     border: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.8;
+      transform: scale(1.05);
+    }
   }
 
   &__nav {
@@ -24,18 +36,40 @@
 
     &_link {
       & > a {
+        position: relative;
         color: var(--gray-color);
         font-weight: 400;
         font-size: 16px;
         font-family: 'Fira Code', monospace;
         line-height: 21px;
         text-decoration: none;
+        transition: color 0.2s ease;
+
+        &::after {
+          content: '';
+          position: absolute;
+          right: 0;
+          bottom: -4px;
+          left: 0;
+          height: 1px;
+          background: var(--primary-color);
+          transform: scaleX(0);
+          transform-origin: left center;
+          transition: transform 0.28s var(--ease-out, ease-out);
+        }
+
+        &:hover {
+          color: var(--white-color);
+        }
+
+        &:hover::after {
+          transform: scaleX(1);
+        }
       }
 
       & > a.active {
         color: var(--white-color);
         font-weight: 500;
-        transition: 0.2s;
       }
 
       &::before {
@@ -59,6 +93,7 @@ $breakpoint-tablet: 600px;
         gap: 32px;
         padding: 0 16px;
         transform: translate(0, 70%);
+        animation: mobile-nav-in 0.45s var(--ease-out, ease-out) both;
       }
     }
 
@@ -75,6 +110,7 @@ $breakpoint-tablet: 600px;
       width: 100vw;
       height: 100vh;
       background-color: var(--background-color);
+      animation: mobile-menu-fade 0.3s var(--ease-out, ease-out) both;
     }
 
     &__mobile-menu__close-btn {
@@ -87,6 +123,12 @@ $breakpoint-tablet: 600px;
       background-image: url('../../../public/images/close.svg');
       border: none;
       cursor: pointer;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+
+      &:hover {
+        opacity: 0.75;
+        transform: rotate(90deg);
+      }
     }
 
     &__mobile-menu__logo {
@@ -103,6 +145,65 @@ $breakpoint-tablet: 600px;
     &__nav_link_mobile {
       font-size: 32px;
       line-height: 42px;
+      animation: mobile-link-in 0.4s var(--ease-out, ease-out) both;
+
+      @for $i from 1 through 4 {
+        &:nth-child(#{$i}) {
+          animation-delay: #{0.05 + ($i * 0.05)}s;
+        }
+      }
     }
+  }
+}
+
+@keyframes mobile-menu-fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes mobile-nav-in {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0, 70%);
+  }
+}
+
+@keyframes mobile-link-in {
+  from {
+    opacity: 0;
+    transform: translateX(-12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header__logo,
+  .header__menu_btn,
+  .header__nav_link > a,
+  .header__nav_link > a::after,
+  .header__mobile-menu,
+  .header__nav_mobile,
+  .header__nav_link_mobile,
+  .header__mobile-menu__close-btn {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .header__nav_link > a::after {
+    transform: none;
   }
 }
