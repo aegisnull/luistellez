@@ -7,6 +7,8 @@ const notion = new Client({
 
 const n2m = new NotionToMarkdown({ notionClient: notion });
 
+let cachedDataSourceId;
+
 const getTags = (tags = []) => tags.map((tag) => tag.name);
 
 const getPlainText = (richText = []) => richText?.[0]?.plain_text || '';
@@ -65,27 +67,60 @@ const getPageMetaData = (post) => {
   };
 };
 
+async function getDataSourceId() {
+  if (cachedDataSourceId) {
+    return cachedDataSourceId;
+  }
+
+  const databaseId = process.env.NOTION_DATABASE_ID;
+  if (!databaseId) {
+    return null;
+  }
+
+  const database = await notion.databases.retrieve({ database_id: databaseId });
+  const dataSourceId = database.data_sources?.[0]?.id;
+
+  if (!dataSourceId) {
+    throw new Error('No data source found for Notion database');
+  }
+
+  cachedDataSourceId = dataSourceId;
+  return cachedDataSourceId;
+}
+
+async function queryPublishedPosts(filter, sorts) {
+  const dataSourceId = await getDataSourceId();
+  if (!dataSourceId) {
+    return { results: [] };
+  }
+
+  return notion.dataSources.query({
+    data_source_id: dataSourceId,
+    filter,
+    sorts,
+  });
+}
+
 export const getAllPublished = async () => {
   if (!process.env.NOTION_TOKEN || !process.env.NOTION_DATABASE_ID) {
     return [];
   }
 
   try {
-    const posts = await notion.databases.query({
-      database_id: process.env.NOTION_DATABASE_ID,
-      filter: {
+    const posts = await queryPublishedPosts(
+      {
         property: 'Published',
         checkbox: {
           equals: true,
         },
       },
-      sorts: [
+      [
         {
           property: 'Date',
           direction: 'descending',
         },
       ],
-    });
+    );
 
     return posts.results.map(getPageMetaData).filter((post) => post?.slug);
   } catch (error) {
@@ -100,14 +135,11 @@ export const getSingleBlogPostBySlug = async (slug) => {
   }
 
   try {
-    const response = await notion.databases.query({
-      database_id: process.env.NOTION_DATABASE_ID,
-      filter: {
-        property: 'Slug',
-        formula: {
-          string: {
-            equals: slug,
-          },
+    const response = await queryPublishedPosts({
+      property: 'Slug',
+      formula: {
+        string: {
+          equals: slug,
         },
       },
     });

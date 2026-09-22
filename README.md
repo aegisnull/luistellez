@@ -4,7 +4,9 @@
 
 Personal developer portfolio built with **Next.js**, React, and Sass. Includes a Notion-powered blog and an EmailJS contact form.
 
-Requires **Node.js 24.x**.
+Requires **Node.js 24.x** and **npm 10+** (npm 12 recommended on Node 24).
+
+Stack is kept on current latest majors: Next.js 16, React 19, Notion SDK 5.
 
 ## Features
 
